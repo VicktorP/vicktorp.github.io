@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function (event) {
   const pressTitle = document.querySelector('.press-title'),
-    nameColor = document.querySelector('.name-color');
+    nameColor = document.querySelector('.name-color'),
+    nameColorHex = document.querySelector('.name-color-hex');
 
   document.addEventListener('keydown', function (event) {
     if (event.code == 'Space') changeBackgroundColor();
@@ -10,21 +11,27 @@ document.addEventListener('DOMContentLoaded', function (event) {
     return Math.floor(Math.random() * 255);
   }
 
-  let r, g, b, rgb;
-  r = g = b = 255;
-  nameColor.textContent = '( ' + r + ', ' + g + ', ' + b + ' )';
-
   const changeBackgroundColor = function () {
+    let r, g, b, rgb, rHex, gHex, bHex;
+
     r = getRandom();
+    rHex = r.toString(16).toUpperCase();
+    if (rHex.length === 1) rHex = '0' + rHex;
     g = getRandom();
+    gHex = g.toString(16).toUpperCase();
+    if (gHex.length === 1) gHex = '0' + gHex;
     b = getRandom();
+    bHex = b.toString(16).toUpperCase();
+    if (bHex.length === 1) bHex = '0' + bHex;
+
     nameColor.textContent = '( ' + r + ', ' + g + ', ' + b + ' )';
+    nameColorHex.textContent = '# ' + rHex + ' ' + gHex + ' ' + bHex;
     rgb = 'rgb' + nameColor.textContent;
     document.body.style.backgroundColor = rgb;
-    if (r < 127 && g < 127 && b < 127) {
-      pressTitle.style.color = nameColor.style.color = 'white';
+    if (r < 150 && g < 150 && b < 150) {
+      pressTitle.style.color = nameColor.style.color = nameColorHex.style.color = 'white';
     } else {
-      pressTitle.style.color = nameColor.style.color = 'black';
+      pressTitle.style.color = nameColor.style.color = nameColorHex.style.color = 'black';
     }
   };
 });
