@@ -83,6 +83,11 @@ body {
   outline: none;
 }
 
+.text-to-copy:focus {
+  border: none;
+  outline: none;
+}
+
 .copy-text {
   border: none;
   background-color: tomato;
