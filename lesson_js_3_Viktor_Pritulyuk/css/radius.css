@@ -1,0 +1,92 @@
+body {
+  background-color: rgb(201, 198, 198);
+}
+
+.wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.input-wrap {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  background-color: #fff;
+  border: rgb(100, 172, 214) solid 3px;
+  border-radius: 10%;
+}
+
+.input-number {
+  width: 40px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.input-radius {
+  max-width: 90%;
+  display: block;
+}
+
+.left-top-wrap {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  border-top-left-radius: 50%;
+}
+
+.right-top-wrap {
+  grid-row: 2 / 3;
+  grid-column: 8 / 9;
+  border-top-right-radius: 50%;
+}
+
+.left-bottom-wrap {
+  grid-row: 8 / 9;
+  grid-column: 2 / 3;
+  border-bottom-left-radius: 50%;
+}
+
+.right-bottom-wrap {
+  grid-row: 8 / 9;
+  grid-column: 8 / 9;
+  border-bottom-right-radius: 50%;
+}
+
+.output {
+  grid-row: 3 / -3;
+  grid-column: 3 / -3;
+  background-color: #fff;
+}
+
+.text {
+  grid-row: 4 / 7;
+  grid-column: 4 / 7;
+  margin: 50px;
+  order: 2;
+  background-color: rgb(243, 245, 140);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+  border: tomato outset 5px;
+}
+
+.text-to-copy {
+  flex-grow: 1;
+  border: none;
+  background-color: inherit;
+  width: 100%;
+  resize: none;
+}
+
+.copy-text {
+  border: none;
+  background-color: tomato;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  /* Саша, томато для тебя)) */
+}
