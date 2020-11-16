@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function (event) {
   const pressTitle = document.querySelector('.press-title'),
     nameColor = document.querySelector('.name-color'),
-    nameColorHex = document.querySelector('.name-color-hex');
+    nameColorHex = document.querySelector('.name-color-hex'),
+    colorBG = document.querySelector('.color_BG');
   let keyUp = 1;
 
   document.addEventListener('keydown', function (event) {
@@ -32,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
     nameColor.textContent = '( ' + r + ', ' + g + ', ' + b + ' )';
     nameColorHex.textContent = '# ' + rHex + ' ' + gHex + ' ' + bHex;
     rgb = 'rgb' + nameColor.textContent;
-    document.body.style.backgroundColor = rgb;
+    colorBG.style.backgroundColor = rgb;
     if (r < 150 && g < 150 && b < 150) {
       pressTitle.style.color = nameColor.style.color = nameColorHex.style.color = 'white';
     } else {

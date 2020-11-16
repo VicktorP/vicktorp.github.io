@@ -1,10 +1,5 @@
-body {
-  background-color: white;
-  overflow: hidden;
-}
-
-div {
-  height: calc(100vh - 180px);
+.color_BG {
+  height: 100%;
   background-color: transparent;
   display: flex;
   flex-wrap: wrap;
