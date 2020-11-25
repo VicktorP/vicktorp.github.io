@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/color.css" />
+    <link rel="stylesheet" href="./css/radius.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/skeleton.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>dz JS5</title>
+  </head>
+  <body>
+    <div class="wrap__tab">
+      <ul class="tabulators">
+        <li class="tab__switch" data-content="0">Background's color</li>
+        <li class="tab__switch" data-content="1">Border-Radius</li>
+        <li class="tab__switch" data-content="2">Form validation</li>
+      </ul>
+      <div class="tab__content">
+        <div class="tab color_BG content_din">
+          <h1 class="press-title">Press SPACE</h1>
+          <p class="name-color"></p>
+          <p class="name-color-hex"></p>
+        </div>
+        <div class="tab wrapper content_din">
+          <div class="input-wrap left-top-wrap">
+            <div>
+              <input type="number" class="input-number number-left-top" min="0" max="50" />
+              <input type="radio" name="left-top-choice" value="px" />px
+              <input type="radio" name="left-top-choice" value="%" checked />%
+            </div>
+            <input type="range" class="input-radius input-left-top" min="0" max="50" />
+          </div>
+          <div class="input-wrap right-top-wrap">
+            <div>
+              <input type="number" class="input-number number-right-top" min="0" max="50" />
+              <input type="radio" name="right-top-choice" value="px" />px
+              <input type="radio" name="right-top-choice" value="%" checked />%
+            </div>
+            <input type="range" class="input-radius input-right-top" min="0" max="50" />
+          </div>
+          <div class="input-wrap left-bottom-wrap">
+            <div>
+              <input type="number" class="input-number number-left-bottom" min="0" max="50" />
+              <input type="radio" name="left-bottom-choice" value="px" />px
+              <input type="radio" name="left-bottom-choice" value="%" checked />%
+            </div>
+            <input type="range" class="input-radius input-left-bottom" min="0" max="50" />
+          </div>
+          <div class="input-wrap right-bottom-wrap">
+            <div>
+              <input type="number" class="input-number number-right-bottom" min="0" max="50" />
+              <input type="radio" name="right-bottom-choice" value="px" />px
+              <input type="radio" name="right-bottom-choice" value="%" checked />%
+            </div>
+            <input type="range" class="input-radius input-right-bottom" min="0" max="50" />
+          </div>
+          <div class="output"></div>
+          <div class="text">
+            <textarea class="text-to-copy"></textarea>
+            <button class="copy-text">Copy style to buffer</button>
+          </div>
+        </div>
+        <div class="tab valid-form content_din">
+          <div class="form__wrap">
+            <form class="js-form" action="#" method="POST">
+              <div class="row">
+                <div class="six columns">
+                  <label for="NameInput"
+                    >Ваше имя
+                    <input
+                      class="u-full-width"
+                      type="text"
+                      placeholder="Ваше имя"
+                      id="NameInput"
+                      name="user-name"
+                      required
+                      data-validate-field="username"
+                    />
+                  </label>
+                </div>
+                <div class="six columns">
+                  <label for="EmailInput"
+                    >Ваша почта
+                    <input
+                      class="u-full-width"
+                      type="email"
+                      placeholder="test@mailbox.com"
+                      id="EmailInput"
+                      name="user-email"
+                      required
+                      data-validate-field="useremail"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="six columns">
+                  <label for="telInput"
+                    >Ваш номер телефона
+                    <input
+                      class="u-full-width telephone"
+                      type="tel"
+                      id="telInput"
+                      name="user-telephone"
+                      required
+                      data-validate-field="usertel"
+                    />
+                  </label>
+                </div>
+                <div class="six columns">
+                  <label for="RecipientInput"
+                    >У тебя все получается?
+                    <select class="u-full-width" id="RecipientInput" name="user-select" required>
+                      <option value="Конечно">Конечно</option>
+                      <option value="Ну такое">Ну такое</option>
+                      <option value="Ой, ага, гляди">Ой, а у тебя типа получается?</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <label for="Message"
+                >Сообщение
+                <textarea
+                  class="u-full-width valid-area"
+                  placeholder="Сообщение"
+                  id="Message"
+                  name="user-message"
+                  required
+                ></textarea>
+              </label>
+              <input class="button-primary" type="submit" value="Отправить" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/inputmask.min.js"></script>
+    <script src="./js/just-validate.min.js"></script>
+    <script src="./js/radius.js"></script>
+    <script src="./js/color.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
