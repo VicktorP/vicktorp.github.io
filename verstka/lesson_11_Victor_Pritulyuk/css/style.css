@@ -1,0 +1,296 @@
+@import url("../fonts/stylesheet.css");
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  color: #202020;
+  font-family: hellix, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #202020;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.hr-our {
+  margin-top: 100px;
+  display: block;
+}
+
+.hr-our__container {
+  position: relative;
+}
+
+.hr-our__text {
+  display: inline-block;
+  padding: 0 20px;
+  margin: 0 0 0 -20px;
+  color: #c2c2c2;
+  background-color: #fff;
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+
+.header__top {
+  margin-top: 50px;
+}
+
+.header__logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #202020;
+}
+
+.header__logo-img {
+  height: 58px;
+  width: 58px;
+}
+
+.header__logo-text {
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 24px;
+}
+
+.header__navigation {
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.header__navigation .active {
+  padding: 5px 15px;
+  background-color: #5528ff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.header__menu-item {
+  display: inline-block;
+}
+
+.header__menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header__menu-link {
+  display: inline-block;
+  font-family: Hellix, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #202020;
+}
+
+.header__content {
+  margin-top: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header__content-title {
+  font-size: 58px;
+  line-height: 68px;
+}
+
+.header__content-text {
+  font-size: 32px;
+  color: #4f4f4f;
+  margin-top: 25px;
+}
+
+.header__content-button {
+  display: inline-block;
+  margin: 70px 0 0 15px;
+  background-color: #5528ff;
+  padding: 15px 52px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.services__row {
+  margin-top: 20px;
+}
+
+.services__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+}
+
+.services__card__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15%;
+}
+
+.services__card__img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.services__card__text {
+  width: 80%;
+  padding-left: 20px;
+}
+
+.services__card__title {
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.services__card__desc {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #b2b2b2;
+}
+
+.clients {
+  margin-top: 20px;
+}
+
+.clients__row {
+  padding: 0 50px;
+}
+
+.clients__picture {
+  display: block;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clients__img {
+  display: inline-block;
+}
+
+.team__row {
+  margin-top: 40px;
+}
+
+.team__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  margin-top: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team__card__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.team__card__img {
+  display: inline-block;
+  width: 100%;
+}
+
+.team__card__text {
+  width: 45%;
+  margin-left: 35px;
+}
+
+.team__card__name {
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.team__card__job {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #b2b2b2;
+}
+
+.footer {
+  margin-top: 100px;
+  padding: 20px 0;
+  background-color: #f7f7f7;
+  height: 100px;
+}
+
+.footer__logo {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+}
+
+.footer__logo-img {
+  width: 100%;
+}
+
+.footer__social-menu {
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+
+.footer__social-item {
+  display: inline-block;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.footer__social-link {
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */
