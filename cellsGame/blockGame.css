@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font-size: 24px;
+}
+
+.conditions {
+  margin-top: 50px;
+  margin-left: 150px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+select {
+  margin-bottom: 10px;
+}
+
+.table {
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+
+.block {
+  text-align: center;
+  vertical-align: center;
+  height: 45px;
+  width: 46px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.selected {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 0 2px;
+}
+
+.complete {
+  background-color: rgb(206, 205, 205);
+}
