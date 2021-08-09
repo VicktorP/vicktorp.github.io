@@ -9,15 +9,16 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="skills-details-container">
     <div class="skills">
       <div class="photo">
         <img class="photo-img" src="img/photo.jpg" alt="Photo">
       </div>
-      <div class="skill">
-        <h2 class="skill-title" id="skill-title-myself">О себе</h2>
-        <p class="skill-desc title-desc" id="skill-myself">Спокоен, прагматичен, целеустремлен</p>
-      </div>      
+      <p class="about-myself">
+        tel. : +38-095-159-11-31 <br />
+        tel. : +38-096-725-46-46 <br />
+        Email: pritulyukv@gmail.com
+      </p>    
       <div class="skill">
         <h4 class="skill-title">Front-end</h4>
         <div class="skill-wrap">
@@ -36,6 +37,12 @@
           <p class="skill-desc">JavaScript</p>
           <div class="skill-bar">
             <div class="skill-status js-bar"></div>
+          </div>
+        </div>
+        <div class="skill-wrap">
+          <p class="skill-desc">GIT</p>
+          <div class="skill-bar">
+            <div class="skill-status git-bar"></div>
           </div>
         </div>
         <div class="skill-wrap">
@@ -94,7 +101,7 @@
         </div>
       </div>
       <div class="skill">
-        <h4 class="skill-title">soft-skills</h4>
+        <h4 class="skill-title">Soft-skills</h4>
         <div class="skill-wrap">
           <p class="skill-desc" id="skill-stress">Стрессоустойчивость</p>
           <div class="skill-bar">
@@ -102,21 +109,36 @@
           </div>
         </div>
         <div class="skill-wrap">
-          <p class="skill-desc" id="skill-team-work">Работа в коллективе</p>
+          <p class="skill-desc" id="skill-commun">Коммуникабельность</p>
           <div class="skill-bar">
-            <div class="skill-status team-bar"></div>
+            <div class="skill-status commun-bar"></div>
+          </div>
+        </div>         
+        <div class="skill-wrap">
+          <p class="skill-desc" id="skill-org">Организованность</p>
+          <div class="skill-bar">
+            <div class="skill-status org-bar"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4 class="skill-title">Языки</h4>
+        <div class="skill-wrap">
+          <p class="skill-desc" id="skill-stress">Русский</p>
+          <div class="skill-bar">
+            <div class="skill-status rus-bar"></div>
           </div>
         </div>
         <div class="skill-wrap">
-          <p class="skill-desc" id="skill-english">Английский язык - В2</p>
+          <p class="skill-desc" id="skill-team-work">Украинский</p>
           <div class="skill-bar">
-            <div class="skill-status english-bar"></div>
+            <div class="skill-status ukr-bar"></div>
           </div>
-        </div> 
+        </div>         
         <div class="skill-wrap">
-          <p class="skill-desc" id="skill-google">Умение гуглить</p>
+          <p class="skill-desc" id="skill-google">Английский</p>
           <div class="skill-bar">
-            <div class="skill-status google-bar"></div>
+            <div class="skill-status eng-bar"></div>
           </div>
         </div>
       </div>
@@ -124,8 +146,7 @@
 
     <div class="details">
       <div class="details__languages-checker">
-        <div class="languages-checker-wrapper js-over" id="languages-checker-wrapper">    
-
+        <div class="languages-checker-wrapper js-over" id="languages-checker-wrapper">
           <ul class="languages-list">
             <li class="language-item" id="language-shower">
               RU
@@ -142,156 +163,81 @@
           </ul>    
           <div class="language-dropdown-arrow-wrapper">
             <img class="language-dropdown-arrow" id="language-dropdown-arrow" src="./img/arrow_down_2.png" alt="listArrowDown">
-          </div>    
-
+          </div>
         </div>
-      </div>
-
+      </div>      
       <section class="section-title">
+        <h1 class="my-title" id="my-full-name">Притулюк Виктор</h1>
+        <p class="job-title">Front-end web developer junior</p>    
+        <p class="my-mission">Здравствуйте. <br /> 
+                              Моя цель - найти новую возможность для роста как специалиста. Я практикую HTML5, CSS3, JavaScript, изучаю React. В данный момент проживаю в пригороде Киева,
+                            но к городу или области не привязан и готов к релокации. Для меня важна работа на результат в команде.
+        </p>       
+      </section>
 
-        <div class="point">
-          <div class="point-title"></div>
-          <div class="point-desc line-bottom">
-            <h1 class="my-title" id="my-full-name">Притулюк Виктор</h1>
-            <p class="job-title"><strong>Front-end web developer</strong></p>
-          </div>
+      <section class="section-stage">         
+        <h2 class="stage-title">Опыт работы</h2>
+        <div class="stage-info">
+          <h3 class="job-title">Frontend разработчик</h3>
+          <p class="stage-date">07.2020 - настоящее время</p>
+          <p class="stage-place">Фриланс</p>
+          <ul class="job-duties">
+            <li class="duty-item">Под руководством коллег менторов занимаюсь разработкой и созданием веб приложений</li>
+            <li class="duty-item">Оптимизирую, обновляю и вношу изменения в устаревшие сайты</li>
+            <li class="duty-item">Самообучение программированию</li>
+          </ul>
         </div>
-        <div class="point">
-          <div class="point-title"></div>
-          <div class="point-desc attributes">
-            <p class="contacts-info">
-              E-mail: pritulyukv@gmail.com<br>
-              Phone: +38-095-159-11-31<br>
-            </p>
-          </div>
+        <div class="stage-info">
+          <h3 class="job-title">Менеджер отдела маркетинга</h3>
+          <p class="stage-date">10.2017 - 07.2020</p>
+          <p class="stage-place">SanWell - оптовая торговля, дистрибуция, импорт и экспорт сантехнической продукции</p>
+          <ul class="job-duties">
+            <li class="duty-item">Контроль наполнения интернет-магазина компании актуальной продукцией</li>
+            <li class="duty-item">Планирование и разработка рекламных акций</li>
+            <li class="duty-item">Поиск / создание / редактирование контента</li>
+          </ul>
+        </div>
+        <div class="stage-info">
+          <h3 class="job-title">Заведующий розничным отделом склада</h3>
+          <p class="stage-date">05.2012 - 10.2017</p>
+          <p class="stage-place">SanWell - оптовая торговля, дистрибуция, импорт и экспорт сантехнической продукции</p>
+          <ul class="job-duties">
+            <li class="duty-item">Обеспечение бесперебойной работы склада</li>
+            <li class="duty-item">Ведение складского учета</li>
+            <li class="duty-item">Управление коллективом, распределение задач</li>
+          </ul>
         </div>
       </section>
 
-      <section class="section-experience">        
-        <div class="point">
-          <h3 class="point-title pos-rel">Experience</h3>
-          <div class="point-desc line-top">
-            <p></p>
-          </div>
-        </div>
-        <div class="point">
-          <div class="point-title">
-            <div class="line-bottom">
-              <div class="point-title-text">
-                <p class="date">07.2020 - 08.2021</p>
-                <p class="work" id="last-work">Freelance</p>
-              </div>
-            </div>
-          </div>
-          <div class="point-desc">
-            <p class="point-desc-text">
-              <p id="last-work-description">
-                - Разработка веб-приложений простой и средней сложности. <br />
-                - Перенос сайтов на новый хостинг. <br />
-                - Администрирование сайтов.
-              </p>
-            </p>
-          </div>
-        </div>
-        <div class="point">
-          <div class="point-title">
-            <div class="line-bottom">
-              <p class="point-title-text">
-                <span class="date">10.2016 - 07.2020</span><br>
-                <p class="work" id="middle-work">
-                  Компания SanWELL <br />
-                  Оптовая торговля, дистрибуция, импорт и экспорт сантехнической продукции
-                </p>
-              </p>
-            </div>
-          </div>
-          <div class="point-desc">
-            <p class="point-desc-text">
-              <p id="middle-work-description">
-                Менеджер маркетингового отдела. <br />
-                - Контроль наполнения интернет-магазина компании актуальной продукцией. <br />
-                - Планирование и разработка рекламных акций. <br />
-                - Поиск / создание / редактирование контента.
-              </p>
-            </p>
-          </div>
-        </div>
-        <div class="point">
-          <div class="point-title">
-            <div class="line-bottom">
-              <p class="point-title-text">
-                <span class="date">05.2012 - 10.2016</span><br>
-                <p class="work" id="first-work">
-                  Компания SanWELL <br />
-                  Оптовая торговля, дистрибуция, импорт и экспорт сантехнической продукции
-                </p>
-              </p>
-            </div>
-          </div>
-          <div class="point-desc">
-            <p class="point-desc-text">
-              <p id="first-work-description">
-                Зааведующий розничным отделом склада. <br />
-                - Обеспечение бесперебойной работы склада. <br />
-                - Ведение складского учета. <br />
-                - Управление коллективом, распределение задач.
-              </p>
-            </p>
-          </div>
-        </div>
-      </section>
+      <section class="section-stage">         
+        <h2 class="stage-title">Образование</h2>
 
-      <section class="section-education">
-        <div class="point">
-          <h3 class="point-title pos-rel">Education</h3>
-          <div class="point-desc line-top">
-            <p></p>
-          </div>
+        <div class="stage-info">
+          <h3 class="study-title">Frontend разработчик</h3>
+          <p class="stage-date">09.2020 - 04.2021</p>
+          <p class="stage-place">IT School "Peace IT"</p>
+          <p class="study-description">Закончил с отличием</p>
         </div>
-        <div class="point">
-          <div class="point-title">
-            <div class="line-bottom">
-              <p class="point-title-text">
-                <span class="date">09.2020 - 04.2021</span><br>
-                <p class="study" id="last-study">IT SCHOOL "Peace IT"</p>
-              </p>
-            </div>
-          </div>
-          <div class="point-desc">
-            <p class="point-desc-text">
-              <p id="last-study-description">Курс "Frontend"</p>
-            </p>
-          </div>
+
+        <div class="stage-info">
+          <h3 class="study-title">Web разработка</h3>
+          <p class="stage-date">04.2018 - 04.2019</p>
+          <p class="stage-place">Компьютерная академия "ШАГ"</p>
+          <p class="study-description"></p>
         </div>
-        <div class="point">
-          <div class="point-title">
-            <div class="line-bottom">
-              <p class="point-title-text">
-                <span class="date">04.2018 - 04.2019</span><br>
-                <p class="study" id="middle-study">Компьютерная академия "ШАГ"</p>
-              </p>
-            </div>
-          </div>
-          <div class="point-desc">
-            <p class="point-desc-text">
-              <p id="middle-study-description">Курс "Web разработка"</p>
-            </p>
-          </div>
+
+        <div class="stage-info">
+          <h3 class="study-title">Техническое обслуживание персонального компьютера</h3>
+          <p class="stage-date">01.2018 - 03.2018</p>
+          <p class="stage-place">Институт профессиональных технологий</p>
+          <p class="study-description"></p>
         </div>
-        <div class="point">
-          <div class="point-title">
-            <div class="line-bottom">
-              <p class="point-title-text">
-                <span class="date">09.2000 - 06.2005</span><br>
-                <p class="study" id="first-study">ВНУ им. В.Даля</p>
-              </p>
-            </div>
-          </div>
-          <div class="point-desc">
-            <p class="point-desc-text">
-              <p id="first-study-description">"Автоматика и системы управления", квалификация специалист</p>
-            </p>
-          </div>
+
+        <div class="stage-info">
+          <h3 class="study-title">Автоматика и системы управления</h3>
+          <p class="stage-date">09.2000 - 06.2005</p>
+          <p class="stage-place">Восточноукраинский Национальный университет им. Владимира Даля</p>
+          <p class="study-description">квалификация - специалист</p>
         </div>
       </section>
 
