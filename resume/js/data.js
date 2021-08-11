@@ -16,12 +16,21 @@ const data = {
     experience: [
       {
         company: "Фріланс",
-        position: "Frontend розробник trainee",
+        position: "Front-end розробник trainee",
         date: "07.2020 - сьогодення",
         duties: [
           "Під керівництвом колег менторів займаюсь розробкою і створенням веб додатків",
           "Оптимізую, обновлюю та вношу зміни у застарілі сайти",
           "Продовжую самонавчання програмуванню"
+        ],
+        achieves: [
+          "Опанував верстку PerfectPixel",
+          "Навчився оптимізувати та не перевантажувати код",
+          "Працював з гілками GIT-а",
+          "Працював із сінхронним та асінхронним кодом",
+          "Застосовував ES6",
+          "Застосовував REST api",
+          "Закачував сайти на хостинг"
         ]
       }, {
         company: "SanWell - оптова торгівля, дистрибуція, імпорт та експорт сантехнічної продукції",
@@ -31,6 +40,11 @@ const data = {
           "Контроль наповнення інтернет-магазину компанії актуальною продукцією",
           "Планування і розробка рекламних акцій",
           "Пошук / створення / редагування контенту"
+        ],
+        achieves: [
+          'Налагодив комунікацію з іншими відділами, щоб уникнути ситуацій "Ой нам терміново, ще на вчора"',
+          "Візуальний контент проходив мій особливий відбір, пізніше компанія використовувала його для друку власних каталогів",
+          "Переконав керівництво компанії, що краще мати свою повноцінну фото-відео-студію і організував її роботу"
         ]
       }, {
         company: "SanWell - оптова торгівля, дистрибуція, імпорт та експорт сантехнічної продукції",
@@ -40,13 +54,16 @@ const data = {
           "Забезпечення безперебійної роботи складу",
           "Ведення складського обліку",
           "Управління колективом, розподіл задач"
+        ],
+        achieves: [
+          "Припинив низку пересортов і недостач на складі, вивів склад в постійний 0 за підсумками інвентаризації"
         ]
       }
     ],
     education: [
       {
         company: 'IT School "Peace IT"',
-        position: '"Frontend розробник"',
+        position: '"Front-end розробник"',
         date: "09.2020 - 04.2021",
         description: "Закінчив з відзнакою"
       }, {
@@ -77,19 +94,28 @@ const data = {
     languageEng: "Английский",
     fullname: "Притулюк Виктор",
     myMission: `Здравствуйте. <br /> 
-              Моя цель - найти новую возможность для роста как специалиста. Я практикую HTML5, CSS3, JavaScript. В данный момент изучаю React. Проживаю в пригороде Киева,
-              но к городу или области не привязан и готов к релокации. Для меня важна работа на результат в команде.`,
+              Люблю цифры и логические задачи, а потому хочу найти работу где много логики и надо думать. Я практикую HTML5, CSS3, JavaScript. В данный момент изучаю React. 
+              Проживаю в пригороде Киева, но к городу или области не привязан и готов к релокации.`,
     myExperience: "Опыт работы",
     myEducation: "Образование",
     experience: [
       {
         company: "Фриланс",
-        position: "Frontend разработчик trainee",
+        position: "Front-end разработчик trainee",
         date: "07.2020 - настоящее время",
         duties: [
-          "Под руководством коллег менторов занимаюсь разработкой и созданием веб приложений",
+          "Под руководством менторов занимаюсь разработкой и созданием веб приложений",
           "Оптимизирую, обновляю и вношу изменения в устаревшие сайты",
           "Самообучаюсь программированию"
+        ],
+        achieves: [
+          "Освоил верстку PerfectPixel",
+          "Научился оптимизировать и не перенагружать код",
+          "Работал с ветками GIT-а",
+          "Работал с синхронным и асинхронным кодом",
+          "Применял ES6",
+          "Применял REST api",
+          "Заливал сайты на хостинг"
         ]
       }, {
         company: "SanWell - оптовая торговля, дистрибуция, импорт и экспорт сантехнической продукции",
@@ -99,6 +125,11 @@ const data = {
           "Контроль наполнения интернет-магазина компании актуальной продукцией",
           "Планирование и разработка рекламных акций",
           "Поиск / создание / редактирование контента"
+        ],
+        achieves: [
+          'Наладил коммуникацию с другими отделами во избежание ситуаций "Ой нам срочно, еще на вчера"',
+          "Визуальный контент проходил мой особый отбор, позже компания использовала его для печати собственных каталогов",
+          "Убедил руководство компании, что лучше иметь свою полноценную фото-видео-студию и организовал её работу "
         ]
       }, {
         company: "SanWell - оптовая торговля, дистрибуция, импорт и экспорт сантехнической продукции",
@@ -108,13 +139,16 @@ const data = {
           "Обеспечение бесперебойной работы склада",
           "Ведение складского учета",
           "Управление коллективом, распределение задач"
+        ],
+        achieves: [
+          "Прекратил череду пересортов и недостач на складе, вывел склад в постоянный 0 по итогам инвентаризации"
         ]
       }
     ],
     education: [
       {
         company: 'IT School "Peace IT"',
-        position: '"Frontend разработчик"',
+        position: '"Front-end разработчик"',
         date: "09.2020 - 04.2021",
         description: "Закончил с отличием"
       }, {
@@ -152,12 +186,21 @@ const data = {
     experience: [
       {
         company: "Freelance",
-        position: "Frontend developer trainee",
+        position: "Front-end developer trainee",
         date: "07.2020 - present time",
         duties: [
           "Under the guidance of fellow mentors, I am engaged in the development and creation of web applications",
           "Optimizing, updating and making changes to outdated sites",
           "Self-study programming"
+        ],
+        achieves: [
+          "Mastered layout PerfectPixel ",
+          "Learned to optimize and not overload the code",
+          "Worked with GIT branches",
+          "Worked with synchronous and asynchronous code",
+          "Applied ES6",
+          "Applied REST api",
+          "Uploaded sites to hosting"
         ]
       }, {
         company: "SanWell - wholesale, distribution, import and export of sanitary products",
@@ -167,6 +210,11 @@ const data = {
           "Control of filling the company's online store with actual products",
           "Planning and development of promotions",
           "Search / create / edit content"
+        ],
+        achieves: [
+          'Established communication with other departments in order to avoid situations "Oh, we urgently, just yesterday"',
+          "Visual content passed a special selection, later the company used it to print its own catalogs",
+          "Convinced the company's management that it is better to have a full-fledged photo-video studio and organized its work"
         ]
       }, {
         company: "SanWell - wholesale, distribution, import and export of sanitary products",
@@ -176,13 +224,16 @@ const data = {
           "Ensuring the smooth operation of the warehouse",
           "Warehouse accounting",
           "Team management, distribution of tasks"
+        ],
+        achieves: [
+          "Stopped a series of re-grading and shortages in the warehouse, brought the warehouse to 0 according to the results of inventory"
         ]
       }
     ],
     education: [
       {
         company: 'IT School "Peace IT"',
-        position: '"Frontend developer"',
+        position: '"Front-end developer"',
         date: "09.2020 - 04.2021",
         description: "Graduated with honors"
       }, {

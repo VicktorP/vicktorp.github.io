@@ -107,11 +107,11 @@ ul {
 .git-bar{
   left: 70%;
 }
-.scss-bar {
-  left: 90%;
+.bs-bar {
+  left: 70%;
 }
 .gulp-bar {
-  left: 75%;
+  left: 50%;
 }
 .react-bar {
   left: 20%;
@@ -204,6 +204,7 @@ ul {
 }
 
 .my-title {
+  color: #fff;
   font-size: 28px;
   font-weight: 500;
 }
@@ -251,6 +252,19 @@ ul {
 
 .duty-item::before {
   content: "- ";
+}
+
+.achieves-wrapper {
+  margin-top: 20px;
+}
+
+.job-achieves {
+  margin: 5px 20px;
+}
+
+.achieve-item::before {
+  content: "\2713";
+  margin-right: 5px;
 }
 
 @media (max-width: 767px) {
@@ -311,5 +325,3 @@ ul {
       width: 100%;
     }
 }
-
-/* @media (min-height: 680px), screen and (orientation: portrait) and (orientation: landscape) { ... } */

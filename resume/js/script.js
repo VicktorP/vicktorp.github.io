@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const myTitle           = document.querySelector("#my-title");
   const cvvData           = document.querySelector("#cvv-data");
   const langShower        = document.querySelector("#language-shower");
   const langDownArrow     = document.querySelector("#language-dropdown-arrow");
@@ -14,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
   
-  let selectedLanguage = "ENG";
+  let selectedLanguage = "RU";
   let degree = 0;
 
   const renderStageInfo = (stage) => {
@@ -27,25 +28,27 @@ document.addEventListener("DOMContentLoaded", function () {
           <p class="stage-place">${stage[i].company}</p>
         `;
       if (stage[i].duties) {
-        stageHTML += `
-              <ul class="job-duties">
-              <li class="duty-item">${stage[i].duties[0]}</li>
-              <li class="duty-item">${stage[i].duties[1]}</li>
-              <li class="duty-item">${stage[i].duties[2]}</li>
-            </ul>
-          </div>
-        `;
+        stageHTML += `<ul class="job-duties">
+                        ${stage[i].duties.map( duty => `<li class="duty-item">${duty}</li>`).join("")}
+                      </ul>`;
+        stageHTML += `<p class="achieves-wrapper">Кратко о результатах: 
+                        <ul class="job-achieves">
+                          ${stage[i].achieves.map( achieve => `<li class="achieve-item">${achieve}</li>`).join("")}
+                        </ul>
+                      </p>
+                    </div>`;
       } else if (stage[i].description) {
-        stageHTML += `
-            <p class="study-description">${stage[i].description}</p>
-          </div>
-        `;
+        stageHTML += `<p class="study-description">
+                        ${stage[i].description}
+                      </p>
+                    </div>`;
       }    
     }
     return stageHTML;
   }
 
   const renderCVV = (lang) => {
+    myTitle.innerText = data[lang].fullname;
     stress.innerText = data[lang].stress;
     sociability.innerText = data[lang].sociability;
     organization.innerText = data[lang].organization;
@@ -55,9 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
     languageEng.innerText = data[lang].languageEng;
 
     cvvData.innerHTML = `
-      <section class="section-title">
-        <h1 class="my-title">${data[lang].fullname}</h1>
-        <p class="job-title">Front-end web developer junior</p>
+      <section class="section-title">        
+        <p class="job-title">Front-end web developer</p>
         <p class="my-mission">${data[lang].myMission}</p>
       </section>
       <section class="section-stage">
