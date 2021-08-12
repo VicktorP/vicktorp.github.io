@@ -1,0 +1,110 @@
+.team-gallery {
+  padding: 90px 0 65px;
+}
+
+.team-gallery-wrapper {
+  width: 100%;
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(104, 20px);
+}
+
+.team-person {
+  width: 100%;
+  position: relative;
+  color: #FFC11E;
+}
+
+.team-person:nth-child(1),
+.team-person:nth-child(2) {
+  grid-row: 1 / 30;
+}
+
+.team-person:nth-child(3) {
+  grid-row: 1 / 17;
+}
+
+.team-person:nth-child(4),
+.team-person:nth-child(5) {
+  grid-row: 32 / 57;
+}
+
+.team-person:nth-child(6) {
+  grid-row: 19 / 42;
+}
+
+.team-person:nth-child(7),
+.team-person:nth-child(8) {
+  grid-row: 59 / 84;
+}
+
+.team-person:nth-child(9) {
+  grid-row: 44 / 72;
+}
+
+.team-person:nth-child(10) {
+  grid-row: 78 / 84;
+}
+
+.team-person:nth-child(11),
+.team-person:nth-child(12),
+.team-person:nth-child(13) {
+  grid-row: 86 / 104;
+}
+
+.person-photo {
+  width: 100%;
+  object-fit: fill;
+}
+
+.person-name {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: 800;
+  font-size: 45px;  
+  line-height: 120%;
+  letter-spacing: 0.05em;
+}
+
+.first-part,
+.second-part {
+  display: block;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.person-white-shadow {
+  text-shadow: 0.1px 1.5px 0px #FFFFFF;
+}
+
+.person-black-shadow {
+  text-shadow: 1px 1.5px 0px #1D1D1F;
+}
+
+.person-job {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+}
+
+.person-job-bigger {
+  font-size: 35px;
+}
+
+.team-goal {
+  margin: 110px auto 0;
+  width: 486px;
+  height: 164px;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.05em;
+}

@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Lato-Medium.woff2") format("woff2"), url("../fonts/Lato-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: "SairaExtraCondensed";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/SairaExtraCondensed-Bold.woff2") format("woff2"), url("../fonts/SairaExtraCondensed-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "SairaExtraCondensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/SairaExtraCondensed-Regular.woff2") format("woff2"), url("../fonts/SairaExtraCondensed-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "SairaExtraCondensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/SairaExtraCondensed-Medium.woff2") format("woff2"), url("../fonts/SairaExtraCondensed-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: "SairaExtraCondensed";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/SairaExtraCondensed-SemiBold.woff2") format("woff2"), url("../fonts/SairaExtraCondensed-SemiBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Tradesmith";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Tradesmith-Regular.woff2") format("woff2"), url("../fonts/Tradesmith-Regular.woff") format("woff"); }

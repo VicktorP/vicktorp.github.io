@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamon&Felt</title>
+  <meta name="description" content="The best haircuts">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__logo">
+      <a class="header__logo-link" href="../index.html">Hamon&Felt</a>
+    </div>
+    <div class="header__menu">
+      <div class="header__phone-social">
+        <p class="head__phone"><span class="head-phone-number number1">+77786152383</span><span class="head-phone-number number2">+77786152383</span></p>
+        <div class="head__social-wrap">
+          <ul class="head-social social-nav">
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://web.telegram.org/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.75 12.5L13.75 17.5L21.25 25L26.25 5L3.75 13.75L8.75 16.25L11.25 23.75L15 18.75" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://www.linkedin.com/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.5 5H7.5C6.11929 5 5 6.11929 5 7.5V22.5C5 23.8807 6.11929 25 7.5 25H22.5C23.8807 25 25 23.8807 25 22.5V7.5C25 6.11929 23.8807 5 22.5 5Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 13.75V20" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10V10.0125" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 20V13.75" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20 20V16.25C20 15.587 19.7366 14.9511 19.2678 14.4822C18.7989 14.0134 18.163 13.75 17.5 13.75C16.837 13.75 16.2011 14.0134 15.7322 14.4822C15.2634 14.9511 15 15.587 15 16.25" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://www.facebook.com/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.75 12.5V17.5H12.5V26.25H17.5V17.5H21.25L22.5 12.5H17.5V10C17.5 9.66848 17.6317 9.35054 17.8661 9.11612C18.1005 8.8817 18.4185 8.75 18.75 8.75H22.5V3.75H18.75C17.0924 3.75 15.5027 4.40848 14.3306 5.58058C13.1585 6.75269 12.5 8.3424 12.5 10V12.5H8.75Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://www.instagram.com/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 5H10C7.23858 5 5 7.23858 5 10V20C5 22.7614 7.23858 25 10 25H20C22.7614 25 25 22.7614 25 20V10C25 7.23858 22.7614 5 20 5Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 18.75C17.0711 18.75 18.75 17.0711 18.75 15C18.75 12.9289 17.0711 11.25 15 11.25C12.9289 11.25 11.25 12.9289 11.25 15C11.25 17.0711 12.9289 18.75 15 18.75Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20.625 9.375V9.376" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://twitter.com/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M27.5 5.01227C26.25 5.62477 25.025 5.87352 23.75 6.24977C22.3487 4.66852 20.2712 4.58102 18.275 5.32852C16.2787 6.07602 14.9712 7.90352 15 9.99977V11.2498C10.9438 11.3535 7.33125 9.50602 5 6.24977C5 6.24977 -0.2275 15.541 10 19.9998C7.66 21.5585 5.32625 22.6098 2.5 22.4998C6.635 24.7535 11.1413 25.5285 15.0425 24.396C19.5175 23.096 23.195 19.7423 24.6062 14.7185C25.0272 13.1906 25.2363 11.6121 25.2275 10.0273C25.225 9.71602 27.115 6.56227 27.5 5.01102V5.01227Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>            
+          </ul>
+        </div>
+      </div>
+      <ul class="header__nav">
+        <li class="nav-item">
+          <a class="header__nav-link" href="../index.html">Main</a>
+        </li>
+        <li class="nav-item">
+          <a class="header__nav-link active-page-link" href="./services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="header__nav-link" href="./team.html">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="header__nav-link" href="./about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="header__nav-link" href="./book.html">Book</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  
+  <main class="main-services">
+    <section class="hero">
+      <div class="container-fluid hero-container">
+        <div class="text-slider">
+          <div class="swiper-container heroSwiperText">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p class="swiper-slide__text">
+                  Escape from the bustling city and immerse in nature while enjoying luxurious pampering by our professional hairstylists
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="swiper-slide__text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, reprehenderit.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="swiper-slide__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iusto praesentium atque labore quo repudiandae.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="swiper-slide__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempora culpa nemo repellendus enim natus vel animi molestias quo blanditiis.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-pagination heroSwiperText-pagination"></div>
+          </div>
+        </div>
+        <h1 class="hero__text">Services</h1>
+      </div>
+    </section>
+    <section class="services-list">
+      <div class="container services-list-container">
+        <div class="list-wrapper">
+          <div class="service-item">
+            <h3 class="service-high-level__title">Hair Cut</h3>
+            <span class="service__sex">Men</span>
+            <span class="service__sex">Ladies</span>
+            <h4 class="service-low-level__title">Hair Designer</h4>
+            <span class="service-price">$16</span>
+            <span class="service-price">$19</span>
+            <h4 class="service-low-level__title">Creative Director</h4>
+            <span class="service-price">$24</span>
+            <span class="service-price">$32</span>
+            <h4 class="service-low-level__title">Master Trainer</h4>
+            <span class="service-price">$32</span>
+            <span class="service-price">$43</span>
+          </div>
+          <div class="service-item">
+            <h3 class="service-high-level__title">Styling</h3>
+            <span class="service__sex">Men</span>
+            <span class="service__sex">Ladies</span>
+            <h4 class="service-low-level__title">Styling</h4>
+            <span class="service-price">$11</span>
+            <span class="service-price">$13</span>
+            <h4 class="service-low-level__title">Hair Styling</h4>
+            <span class="service-price">$31</span>
+            <span class="service-price">$41</span>          
+          </div>
+          <div class="service-item">
+            <h3 class="service-high-level__title">Color</h3>
+            <span class="service__sex">Men</span>
+            <span class="service__sex">Ladies</span>
+            <h4 class="service-low-level__title">Retouch</h4>
+            <span class="service-price">$26</span>
+            <span class="service-price">$29</span>
+            <h4 class="service-low-level__title">Bleach</h4>
+            <span class="service-price">$35</span>
+            <span class="service-price">$42</span>
+            <h4 class="service-low-level__title">Basic Highlight</h4>
+            <span class="service-price">$56</span>
+            <span class="service-price">$58</span>
+            <h4 class="service-low-level__title">Balayage Highlight</h4>
+            <span class="service-price">$83</span>
+            <span class="service-price">$102</span>
+            <h4 class="service-low-level__title">Caucasian Highlights</h4>
+            <span class="service-price">$96</span>
+            <span class="service-price"></span>
+          </div>
+          <div class="service-item">
+            <h3 class="service-high-level__title">Perm</h3>
+            <span class="service__sex">Men</span>
+            <span class="service__sex">Ladies</span>
+            <h4 class="service-low-level__title">Korean Root Perm</h4>
+            <span class="service-price">$43</span>
+            <span class="service-price">$49</span>
+            <h4 class="service-low-level__title">Korean Wave Perm </h4>
+            <span class="service-price">$95</span>
+            <span class="service-price">$95</span>
+            <h4 class="service-low-level__title">Digital Perm</h4>
+            <span class="service-price">$96</span>
+            <span class="service-price">$98</span>
+            <h4 class="service-low-level__title">Rebonding Perm</h4>
+            <span class="service-price">$105</span>
+            <span class="service-price">$112</span>
+          </div>
+          <div class="service-item">
+            <h3 class="service-high-level__title">Rebond</h3>
+            <span class="service__sex">Men</span>
+            <span class="service__sex">Ladies</span>
+            <h4 class="service-low-level__title">Fringe Rebonding</h4>
+            <span class="service-price">$116</span>
+            <span class="service-price">$119</span>
+            <h4 class="service-low-level__title">Volume Soft Rebonding</h4>
+            <span class="service-price">$124</span>
+            <span class="service-price">$132</span>
+            <h4 class="service-low-level__title">C Curve Rebonding </h4>
+            <span class="service-price">$132</span>
+            <span class="service-price">$143</span>
+          </div>
+          <div class="service-item">
+            <h3 class="service-high-level__title">Treatment</h3>
+            <span class="service__sex">Men</span>
+            <span class="service__sex">Ladies</span>
+            <h4 class="service-low-level__title">Scalp Treatment</h4>
+            <span class="service-price">$26</span>
+            <span class="service-price">$29</span>
+            <h4 class="service-low-level__title">Express Treatment</h4>
+            <span class="service-price">$45</span>
+            <span class="service-price">$52</span>
+            <h4 class="service-low-level__title">Luxury Treatment</h4>
+            <span class="service-price">$55</span>
+            <span class="service-price">$63</span>
+            <h4 class="service-low-level__title">Hair Spa Treatment</h4>
+            <span class="service-price">$73</span>
+            <span class="service-price">$82</span>
+            <h4 class="service-low-level__title">Brazilian Blowout</h4>
+            <span class="service-price">$96</span>
+            <span class="service-price">$109</span>
+          </div>
+        </div>
+        <div class="list-images">
+          <img class="service-image" src="../img/services/haircut_img.png" alt="serviceImage">
+          <img class="service-image" src="../img/services/rebond_img.png" alt="serviceImage">
+          <button class="service-button">Book NoW <img src="../img/icon/book now.png" alt=""></button>
+        </div>
+      </div>
+    </section>
+    <section class="face-analyze">
+      <div class="container face-analyze-container">
+        <p class="face-analyze__welcome">
+          Our team of experienced hair designers are trained to analyse face shapes and skin tones to bring out the best hairstyles to our customers.
+        </p>
+        <ul class="face-analyzes__list">
+          <li class="face-analyzes__item">
+            <h4 class="face-analyze__title">Understand your scalp and hair</h4>
+            <img class="face-analyze__image" src="../img/services/scalp_hair.png" alt="faceAnalyze">
+            <p class="face-analyze__text">Our hair designers will do a through diagnosis of your scalp and hair.</p>
+          </li>
+          <li class="face-analyzes__item">
+            <h4 class="face-analyze__title">Understand your face shape for the best hairstyle</h4>
+            <img class="face-analyze__image" src="../img/services/face_shape.png" alt="faceAnalyze">
+            <p class="face-analyze__text">Our hair designers will analyze your face shape to determine the best haircut/perm/rebond to complement your face shape.</p>
+          </li>
+          <li class="face-analyzes__item">
+            <h4 class="face-analyze__title">Understand your skin tone for the most appropriate hair color</h4>
+            <img class="face-analyze__image" src="../img/services/skin_tone.png" alt="faceAnalyze">
+            <p class="face-analyze__text">Our hair designers will analyze your skin tone to determine what shades of color will fit your skintone.</p>
+          </li>
+          <li class="face-analyzes__item">
+            <h4 class="face-analyze__title">Design your hairstyle with our stylist</h4>
+            <img class="face-analyze__image" src="../img/services/hair_style.png" alt="faceAnalyze">
+            <p class="face-analyze__text">Our hair designers will discuss and design a hairstyle for your according to you preference and lifestyle.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__menu">
+        <div class="footer__menu-wrap contact-wrap">
+          <h4 class="menu-wrap-title">Contact us</h4>
+          <ul class="menu-contacts">
+            <li class="nav-item">
+              <a class="nav-item-link" href="https://goo.gl/maps/UXS9QDnmzAVdwwwg6">
+                <img src="../img/icon/pointGold.svg" alt="mapPoint">
+                <p class="nav-item-link-text">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1874.3291173644473!2d-155.6778609036836!3d20.02285372053204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7953832fd712bdff%3A0x1979c94f76eb21e!2zNjUtMTI5OCBCIEthd2FpaGFlIFJkLCBXYWltZWEsIEhJIDk2NzQzLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1618444092154!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="tel:+77786152383">
+                <img src="../img/icon/phoneGold.svg" alt="callPhone">
+                <p class="nav-item-link-text">+77786152383 +77786152383</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="mailto:europe@ufeta.com">
+                <img src="../img/icon/mailGold.svg" alt="mailUs">
+                <p class="nav-item-link-text">europe@ufeta.com</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__menu-wrap nav-wrap">
+          <h4 class="menu-wrap-title">Quick links</h4>
+          <ul class="menu-nav">
+            <li class="nav-item">
+              <a class="nav-item-link" href="../index.html">Main</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="./team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="./services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="./book.html">Book</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__menu-wrap social-wrap">
+          <h4 class="menu-wrap-title">Follow us</h4>
+          <ul class="foot-social social-nav">
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://web.telegram.org/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.75 12.5L13.75 17.5L21.25 25L26.25 5L3.75 13.75L8.75 16.25L11.25 23.75L15 18.75" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://www.linkedin.com/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.5 5H7.5C6.11929 5 5 6.11929 5 7.5V22.5C5 23.8807 6.11929 25 7.5 25H22.5C23.8807 25 25 23.8807 25 22.5V7.5C25 6.11929 23.8807 5 22.5 5Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 13.75V20" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10V10.0125" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 20V13.75" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20 20V16.25C20 15.587 19.7366 14.9511 19.2678 14.4822C18.7989 14.0134 18.163 13.75 17.5 13.75C16.837 13.75 16.2011 14.0134 15.7322 14.4822C15.2634 14.9511 15 15.587 15 16.25" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://www.facebook.com/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.75 12.5V17.5H12.5V26.25H17.5V17.5H21.25L22.5 12.5H17.5V10C17.5 9.66848 17.6317 9.35054 17.8661 9.11612C18.1005 8.8817 18.4185 8.75 18.75 8.75H22.5V3.75H18.75C17.0924 3.75 15.5027 4.40848 14.3306 5.58058C13.1585 6.75269 12.5 8.3424 12.5 10V12.5H8.75Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://www.instagram.com/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 5H10C7.23858 5 5 7.23858 5 10V20C5 22.7614 7.23858 25 10 25H20C22.7614 25 25 22.7614 25 20V10C25 7.23858 22.7614 5 20 5Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 18.75C17.0711 18.75 18.75 17.0711 18.75 15C18.75 12.9289 17.0711 11.25 15 11.25C12.9289 11.25 11.25 12.9289 11.25 15C11.25 17.0711 12.9289 18.75 15 18.75Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20.625 9.375V9.376" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://twitter.com/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M27.5 5.01227C26.25 5.62477 25.025 5.87352 23.75 6.24977C22.3487 4.66852 20.2712 4.58102 18.275 5.32852C16.2787 6.07602 14.9712 7.90352 15 9.99977V11.2498C10.9438 11.3535 7.33125 9.50602 5 6.24977C5 6.24977 -0.2275 15.541 10 19.9998C7.66 21.5585 5.32625 22.6098 2.5 22.4998C6.635 24.7535 11.1413 25.5285 15.0425 24.396C19.5175 23.096 23.195 19.7423 24.6062 14.7185C25.0272 13.1906 25.2363 11.6121 25.2275 10.0273C25.225 9.71602 27.115 6.56227 27.5 5.01102V5.01227Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__privacy">
+        <div class="footer__privacy-logo">
+          <a class="footer__privacy-logo-link" href="#">Hamon&Felt</a>
+        </div>
+        <div class="footer__privacy-nav">
+          <a class="footer__privacy-nav-link" href="#">About</a>
+          <a class="footer__privacy-nav-link" href="#">Help & Info</a>
+          <a class="footer__privacy-nav-link" href="#">Privacy</a>
+        </div> 
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/common.js"></script>
+</body>
+</html>

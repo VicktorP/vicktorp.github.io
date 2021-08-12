@@ -1,0 +1,127 @@
+.main-about {  
+  color: #1D1D1F;
+}
+
+.our-our {
+  padding: 120px 0 115px;
+}
+
+.our-smth-wrapper + .our-smth-wrapper {
+  margin-top: 100px;
+}
+
+.our-title {
+font-weight: bold;
+font-size: 70px;
+line-height: 120%;
+letter-spacing: 0.05em;
+margin-bottom: 35px;
+}
+
+.our-content {
+  margin-left: 100px;
+}
+
+.mini-our-content {
+  margin: 0 auto;
+  width: 770px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mini-our-content .our-text {
+  text-align: center;
+}
+
+.our-text {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+}
+
+.our-image {
+  box-shadow: -3px -4px #d2aa1b, 2px 4px #000;
+  margin-bottom: 35px;
+}
+
+.our-values.inner {
+  margin-left: 60px;
+}
+
+.our-value-item {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 200%; 
+  letter-spacing: 0.05em;
+}
+
+.address {
+  margin-bottom: 80px;
+}
+
+.address-container-outer {
+  min-height: 800px;
+  background-image: url("../img/map.jpg");
+}
+
+.address-container-inner {
+  padding: 60px 0;
+}
+
+.contacts-block {
+  width: 300px;
+  height: 420px;
+  border: 2px solid #1D1D1F;
+  background-color: #fff;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.data-wrapper + .data-wrapper {
+  margin-top: 25px;
+}
+
+.data-title {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+}
+
+.data-value {
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+}
+
+.social-links-wrapper .foot-social.social-nav svg {
+  stroke: #1D1D1F;
+}
+
+.social-links-wrapper .foot-social.social-nav svg:hover {
+  stroke: #ffc11e;
+}
+
+.address-book-button {
+  width: 500px;
+  height: 120px;
+  margin-top: 50px;
+  padding: 0 60px 0 55px;
+  background-color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 120%; 
+  letter-spacing: 0.05em;
+  color: #FFC11E;
+}

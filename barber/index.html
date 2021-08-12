@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamon&Felt</title>
+  <meta name="description" content="The best haircuts">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="mobile-menu-button-wrapper">
+      <button class="mobile-menu-button">
+        <img class="mobile-menu-img" src="./img/icon/menu_mobile.png" alt="mobileMenuImage">
+      </button>
+    </div>
+    <div class="header__logo">
+      <a class="header__logo-link" href="index.html">Hamon&Felt</a>
+    </div>
+    <div class="header__menu">
+      <div class="header__phone-social">
+        <p class="head__phone"><span class="head-phone-number number1">+77786152383</span><span class="head-phone-number number2">+77786152383</span></p>
+        <div class="head__social-wrap">
+          <ul class="head-social social-nav">
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://web.telegram.org/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.75 12.5L13.75 17.5L21.25 25L26.25 5L3.75 13.75L8.75 16.25L11.25 23.75L15 18.75" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://www.linkedin.com/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.5 5H7.5C6.11929 5 5 6.11929 5 7.5V22.5C5 23.8807 6.11929 25 7.5 25H22.5C23.8807 25 25 23.8807 25 22.5V7.5C25 6.11929 23.8807 5 22.5 5Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 13.75V20" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10V10.0125" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 20V13.75" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20 20V16.25C20 15.587 19.7366 14.9511 19.2678 14.4822C18.7989 14.0134 18.163 13.75 17.5 13.75C16.837 13.75 16.2011 14.0134 15.7322 14.4822C15.2634 14.9511 15 15.587 15 16.25" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://www.facebook.com/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.75 12.5V17.5H12.5V26.25H17.5V17.5H21.25L22.5 12.5H17.5V10C17.5 9.66848 17.6317 9.35054 17.8661 9.11612C18.1005 8.8817 18.4185 8.75 18.75 8.75H22.5V3.75H18.75C17.0924 3.75 15.5027 4.40848 14.3306 5.58058C13.1585 6.75269 12.5 8.3424 12.5 10V12.5H8.75Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://www.instagram.com/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 5H10C7.23858 5 5 7.23858 5 10V20C5 22.7614 7.23858 25 10 25H20C22.7614 25 25 22.7614 25 20V10C25 7.23858 22.7614 5 20 5Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 18.75C17.0711 18.75 18.75 17.0711 18.75 15C18.75 12.9289 17.0711 11.25 15 11.25C12.9289 11.25 11.25 12.9289 11.25 15C11.25 17.0711 12.9289 18.75 15 18.75Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20.625 9.375V9.376" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://twitter.com/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M27.5 5.01227C26.25 5.62477 25.025 5.87352 23.75 6.24977C22.3487 4.66852 20.2712 4.58102 18.275 5.32852C16.2787 6.07602 14.9712 7.90352 15 9.99977V11.2498C10.9438 11.3535 7.33125 9.50602 5 6.24977C5 6.24977 -0.2275 15.541 10 19.9998C7.66 21.5585 5.32625 22.6098 2.5 22.4998C6.635 24.7535 11.1413 25.5285 15.0425 24.396C19.5175 23.096 23.195 19.7423 24.6062 14.7185C25.0272 13.1906 25.2363 11.6121 25.2275 10.0273C25.225 9.71602 27.115 6.56227 27.5 5.01102V5.01227Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>            
+          </ul>
+        </div>
+      </div>
+      <ul class="header__nav">
+        <li class="nav-item">
+          <a class="header__nav-link active-page-link" href="index.html">Main</a>
+        </li>
+        <li class="nav-item">
+          <a class="header__nav-link" href="./pages/services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="header__nav-link" href="./pages/team.html">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="header__nav-link" href="./pages/about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="header__nav-link" href="./pages/book.html">Book</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile-book-button-wrapper">
+      <button class="mobile-book-button">
+        <img class="mobile-book-img" src="./img/icon/book_mobile.png" alt="mobileBookImage">
+      </button>
+    </div>
+  </header>
+
+  <main class="main-index">
+    <section class="hero">
+      <div class="container-fluid hero-container">
+        <div class="text-slider">
+          <div class="swiper-container heroSwiperText">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p class="swiper-slide__text">
+                  Escape from the bustling city and immerse in nature while enjoying luxurious pampering by our professional hairstylists
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="swiper-slide__text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, reprehenderit.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="swiper-slide__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iusto praesentium atque labore quo repudiandae.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="swiper-slide__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempora culpa nemo repellendus enim natus vel animi molestias quo blanditiis.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-pagination heroSwiperText-pagination"></div>
+          </div>
+        </div>
+        <h1 class="hero__text">Main</h1>
+      </div>
+    </section>
+    <section class="more-info">
+      <div class="container more-info-container">
+        <div class="more-info__block">
+          <div class="more-info__wrap">
+            <h3 class="more-info-title">12 YEARS </h3>
+            <p class="more-info-text">Barbershop is more of a men's salon. Here you can not only usefully spend time</p>
+          </div>
+          <div class="more-info__wrap">
+            <h3 class="more-info-title">84 AWORDS</h3>
+            <p class="more-info-text">Barbershop is more of a men's salon. Here you can not only usefully spend time</p>
+          </div>
+          <div class="more-info__wrap">
+            <h3 class="more-info-title">12 PEOPLE</h3>
+            <p class="more-info-text">Barbershop is more of a men's salon. Here you can not only usefully spend time</p>
+          </div>
+        </div>
+        <div class="more-info-picture">
+          <img class="more-info-image" src="./img/more-info-image.jpg" alt="image">
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container-fluid">
+        <div class="container services-container">
+          <h2 class="services__title">Services</h2>
+          <div class="services__gallery">
+            <div class="services__gallery-picture">
+              <img class="services__img" src="./img/services/hairStyling.jpg" alt="hair styling">
+              <div class="services__img-border-black"></div>
+              <div class="services__img-border-grey"></div>
+              <p class="services__img-title">Hair Styling</p>
+            </div>
+            <div class="services__gallery-picture">
+              <img class="services__img" src="./img/services/perm.jpg" alt="perm">
+              <div class="services__img-border-black"></div>          
+              <div class="services__img-border-grey"></div>
+              <p class="services__img-title">Perm</p>
+            </div>
+            <div class="services__gallery-picture">
+              <img class="services__img" src="./img/services/blowout.jpg" alt="blowout">
+              <div class="services__img-border-black"></div>
+              <div class="services__img-border-grey"></div>
+              <p class="services__img-title">Blowout</p>
+            </div>
+            <div class="services__gallery-picture">
+              <img class="services__img" src="./img/services/rebonding.jpg" alt="rebonding">
+              <div class="services__img-border-black"></div>
+              <div class="services__img-border-grey"></div>
+              <p class="services__img-title">Rebonding</p>
+            </div>
+            <div class="services__gallery-picture">
+              <img class="services__img" src="./img/services/balayage.jpg" alt="balayage">
+              <div class="services__img-border-black"></div>
+              <div class="services__img-border-grey"></div>
+              <p class="services__img-title">Balayage</p>
+            </div>
+            <div class="services__gallery-picture">
+              <img class="services__img" src="./img/services/washBlow.jpg" alt="wash & blow">
+              <div class="services__img-border-black"></div>
+              <div class="services__img-border-grey"></div>
+              <p class="services__img-title">Wash & Blow</p>
+            </div>
+            <p class="services__bg-word services__bg-hamon">Hamon &</p>
+            <p class="services__bg-word services__bg-felt">Felt</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our-team">
+      <div class="container our-team__container">
+        <h2 class="our-team__title">Our team</h2>
+        <div class="team-slider">
+          <div class="swiper-container teamSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="our-team__swiper-wrap">
+                  <div class="our-team__character-wrap">
+                    <img class="our-team__character-img" src="./img/team/RalphEdwards.jpg" alt="avatar">
+                    <p class="our-team__character-name">Ralph Edwards</p>
+                    <p class="our-team__character-job">hairdresser</p>
+                  </div>
+                  <div class="our-team__character-wrap">
+                    <img class="our-team__character-img" src="./img/team/DarleneRobertson.jpg" alt="avatar">
+                    <p class="our-team__character-name">Darlene Robertson</p>
+                    <p class="our-team__character-job">stylist</p>
+                  </div>
+                  <div class="our-team__character-wrap">
+                    <img class="our-team__character-img" src="./img/team/CameronWilliamson.jpg" alt="avatar">
+                    <p class="our-team__character-name">Cameron Williamson</p>
+                    <p class="our-team__character-job">chef</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="our-team__swiper-wrap">
+                  <div class="our-team__character-wrap">
+                    <img class="our-team__character-img" src="./img/team/RalphEdwards.jpg" alt="avatar">
+                    <p class="our-team__character-name">Ralph Edwards</p>
+                    <p class="our-team__character-job">hairdresser</p>
+                  </div>
+                  <div class="our-team__character-wrap">
+                    <img class="our-team__character-img" src="./img/team/DarleneRobertson.jpg" alt="avatar">
+                    <p class="our-team__character-name">Darlene Robertson</p>
+                    <p class="our-team__character-job">stylist</p>
+                  </div>
+                  <div class="our-team__character-wrap">
+                    <img class="our-team__character-img" src="./img/team/CameronWilliamson.jpg" alt="avatar">
+                    <p class="our-team__character-name">Cameron Williamson</p>
+                    <p class="our-team__character-job">chef</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="our-team__swiper-wrap">
+                  <div class="our-team__character-wrap">
+                    <img class="our-team__character-img" src="./img/team/RalphEdwards.jpg" alt="avatar">
+                    <p class="our-team__character-name">Ralph Edwards</p>
+                    <p class="our-team__character-job">hairdresser</p>
+                  </div>
+                  <div class="our-team__character-wrap">
+                    <img class="our-team__character-img" src="./img/team/DarleneRobertson.jpg" alt="avatar">
+                    <p class="our-team__character-name">Darlene Robertson</p>
+                    <p class="our-team__character-job">stylist</p>
+                  </div>
+                  <div class="our-team__character-wrap">
+                    <img class="our-team__character-img" src="./img/team/CameronWilliamson.jpg" alt="avatar">
+                    <p class="our-team__character-name">Cameron Williamson</p>
+                    <p class="our-team__character-job">chef</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="our-team__swiper-wrap">
+                  <div class="our-team__character-wrap">
+                    <img class="our-team__character-img" src="./img/team/RalphEdwards.jpg" alt="avatar">
+                    <p class="our-team__character-name">Ralph Edwards</p>
+                    <p class="our-team__character-job">hairdresser</p>
+                  </div>
+                  <div class="our-team__character-wrap">
+                    <img class="our-team__character-img" src="./img/team/DarleneRobertson.jpg" alt="avatar">
+                    <p class="our-team__character-name">Darlene Robertson</p>
+                    <p class="our-team__character-job">stylist</p>
+                  </div>
+                  <div class="our-team__character-wrap">
+                    <img class="our-team__character-img" src="./img/team/CameronWilliamson.jpg" alt="avatar">
+                    <p class="our-team__character-name">Cameron Williamson</p>
+                    <p class="our-team__character-job">chef</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="teamSwiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container gallery__container">
+        <div class="gallery__interiers">
+          <img class="gallery__img" src="./img/interiers/interier1.jpg" alt="interior">
+          <img class="gallery__img" src="./img/interiers/interier2.jpg" alt="interior">
+          <img class="gallery__img" src="./img/interiers/interier3.jpg" alt="interior">
+          <img class="gallery__img" src="./img/interiers/interier4.jpg" alt="interior">
+          <img class="gallery__img" src="./img/interiers/interier5.jpg" alt="interior">
+          <img class="gallery__img" src="./img/interiers/interier6.jpg" alt="interior">
+          <img class="gallery__img" src="./img/interiers/interier7.jpg" alt="interior">
+          <img class="gallery__img" src="./img/interiers/interier8.jpg" alt="interior">
+          <img class="gallery__img" src="./img/interiers/interier9.jpg" alt="interior">
+        </div>
+      </div>
+    </section>
+    <section class="social-links">
+      <div class="container social-links__container">
+        <ul class="social-links__menu">
+          <li class="social-links__item">
+            <a class="social-links__link" href="#">
+              <svg width="72" height="24" viewBox="0 0 72 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M71.0607 13.0607C71.6464 12.4749 71.6464 11.5251 71.0607 10.9393L61.5147 1.3934C60.9289 0.807611 59.9792 0.807611 59.3934 1.3934C58.8076 1.97919 58.8076 2.92893 59.3934 3.51472L67.8787 12L59.3934 20.4853C58.8076 21.0711 58.8076 22.0208 59.3934 22.6066C59.9792 23.1924 60.9289 23.1924 61.5147 22.6066L71.0607 13.0607ZM0 13.5H70V10.5H0V13.5Z" stroke="" fill=""/>
+              </svg>
+              <span class="social-links__link-span">Instagram</span>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link" href="#">
+              <svg width="72" height="24" viewBox="0 0 72 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M71.0607 13.0607C71.6464 12.4749 71.6464 11.5251 71.0607 10.9393L61.5147 1.3934C60.9289 0.807611 59.9792 0.807611 59.3934 1.3934C58.8076 1.97919 58.8076 2.92893 59.3934 3.51472L67.8787 12L59.3934 20.4853C58.8076 21.0711 58.8076 22.0208 59.3934 22.6066C59.9792 23.1924 60.9289 23.1924 61.5147 22.6066L71.0607 13.0607ZM0 13.5H70V10.5H0V13.5Z" stroke="" fill=""/>
+              </svg>
+              <span class="social-links__link-span">Facebook</span>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link" href="#">
+              <svg width="72" height="24" viewBox="0 0 72 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M71.0607 13.0607C71.6464 12.4749 71.6464 11.5251 71.0607 10.9393L61.5147 1.3934C60.9289 0.807611 59.9792 0.807611 59.3934 1.3934C58.8076 1.97919 58.8076 2.92893 59.3934 3.51472L67.8787 12L59.3934 20.4853C58.8076 21.0711 58.8076 22.0208 59.3934 22.6066C59.9792 23.1924 60.9289 23.1924 61.5147 22.6066L71.0607 13.0607ZM0 13.5H70V10.5H0V13.5Z" stroke="" fill=""/>
+              </svg>
+              <span class="social-links__link-span">Twitter</span>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link" href="#">
+              <svg width="72" height="24" viewBox="0 0 72 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M71.0607 13.0607C71.6464 12.4749 71.6464 11.5251 71.0607 10.9393L61.5147 1.3934C60.9289 0.807611 59.9792 0.807611 59.3934 1.3934C58.8076 1.97919 58.8076 2.92893 59.3934 3.51472L67.8787 12L59.3934 20.4853C58.8076 21.0711 58.8076 22.0208 59.3934 22.6066C59.9792 23.1924 60.9289 23.1924 61.5147 22.6066L71.0607 13.0607ZM0 13.5H70V10.5H0V13.5Z" stroke="" fill=""/>
+              </svg>
+              <span class="social-links__link-span">Snapchat</span>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link" href="#">
+              <svg width="72" height="24" viewBox="0 0 72 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M71.0607 13.0607C71.6464 12.4749 71.6464 11.5251 71.0607 10.9393L61.5147 1.3934C60.9289 0.807611 59.9792 0.807611 59.3934 1.3934C58.8076 1.97919 58.8076 2.92893 59.3934 3.51472L67.8787 12L59.3934 20.4853C58.8076 21.0711 58.8076 22.0208 59.3934 22.6066C59.9792 23.1924 60.9289 23.1924 61.5147 22.6066L71.0607 13.0607ZM0 13.5H70V10.5H0V13.5Z" stroke="" fill=""/>
+              </svg>
+              <span class="social-links__link-span">Whatsapp</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="book-now">
+      <div class="container book-now__container">
+        <h2 class="book-now__title">Book now</h2>
+        <div class="book-form-bg-wrapper">
+          <form class="book-now__form">
+            <input class="book-now__input-text" type="text" placeholder="Your name" name="name">
+            <input class="book-now__input-text" type="text" placeholder="Your phone"  name="phone">
+            <input class="book-now__input-text" type="text" placeholder="Choose time &darr;"  name="time">
+            <label class="book-now__sex">
+              <input class="radiobutton-sex" type="radio" name="sex" value="male">
+              <span class="radiobutton-sex_span">Male</span>
+            </label>
+            <label class="book-now__sex">
+              <input class="radiobutton-sex" type="radio" name="sex" value="female">
+              <span class="radiobutton-sex_span">Female</span>
+            </label>
+            <label class="book-now__sex">
+              <input class="radiobutton-sex" type="radio" name="sex" value="child">
+              <span class="radiobutton-sex_span">Child</span>
+            </label>
+            <textarea class="book-now__textarea" placeholder="Your comment" name="textarea"></textarea>
+          </form>
+          <div class="book-now__bg-text">
+            <p class="book-now__bg-word book-now__bg-hamon">Hamon& Felt</p>
+            <img class="book-now__img" src="./img/icon/blade.png" alt="AdLogo">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="comments">
+      <div class="container comments__container">
+        <div class="comments__wrapper">
+          <h3 class="comment__author">Darlene Robertson</h3>
+          <p class="comment__text">
+            Good place. Great ambience. Love the place and the service staff were all very friendly and nice. The breakfast service was superb. 
+            All the items are very fresh and delicious. First time trying dalgona coffee and I really love it. The soufflé pancakes were off the charts. 
+            Great dessert after a mouth watering breakfast set
+          </p>
+        </div>
+        <div class="comments__wrapper">
+          <h3 class="comment__author">Ralph Edwards</h3>
+          <p class="comment__text">
+            Overall, very satisfied with my experience here. Luna is very detailed and paid attention to all my needs. Will definitely come back again to get my hair done with Luna. Thank you Luna. Highly recommend Luna!!
+          </p>
+        </div>
+        <div class="comments__wrapper">
+          <h3 class="comment__author">Kathryn Murphy</h3>
+          <p class="comment__text">
+            Wonderful ambience. Excellent food quality! Really enjoyed ourselves. Special mention to Michelle Lee for taking so good care of us! Her recommendation of food was spot on! Thank you for such an excellent experience. <br />
+                                                        <br />
+            I will definitely come back.
+          </p>
+        </div>
+        <div class="comments__wrapper">
+          <h3 class="comment__author">Bessie Cooper</h3>
+          <p class="comment__text">
+            Good place. Great ambience. Love the place and the service staff were all very friendly and nice. The breakfast service was superb. All the items are very fresh and delicious. First time trying dalgona coffee and I really love it. The soufflé pancakes were off the charts. Great dessert after a mouth watering breakfast set
+          </p>
+        </div>
+        <div class="comments__wrapper">
+          <h3 class="comment__author">Annette Black</h3>
+          <p class="comment__text">
+            Overall, very satisfied with my experience here. Luna is very detailed and paid attention to all my needs. Will definitely come back again to get my hair done with Luna. 
+            Thank you Luna. Highly recommend Luna!!</p>
+        </div>
+        <div class="comments__wrapper">
+          <h3 class="comment__author">Jane Cooper</h3>
+          <p class="comment__text">
+            Wonderful ambience. Excellent food quality! Really enjoyed ourselves. Special mention to Michelle Lee for taking so good care of us! Her recommendation of food was spot on! Thank you for such an excellent experience. <br />
+                                                        <br />
+            I will definitely come back.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="phrase"></section>
+    <p class="phrase-text">Since 2004</p>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__menu">
+        <div class="footer__menu-wrap contact-wrap">
+          <h4 class="menu-wrap-title">Contact us</h4>
+          <ul class="menu-contacts">
+            <li class="nav-item">
+              <a class="nav-item-link" href="https://goo.gl/maps/UXS9QDnmzAVdwwwg6">
+                <img src="./img/icon/pointGold.svg" alt="mapPoint">
+                <p class="nav-item-link-text">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1874.3291173644473!2d-155.6778609036836!3d20.02285372053204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7953832fd712bdff%3A0x1979c94f76eb21e!2zNjUtMTI5OCBCIEthd2FpaGFlIFJkLCBXYWltZWEsIEhJIDk2NzQzLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1618444092154!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="tel:+77786152383">
+                <img src="./img/icon/phoneGold.svg" alt="callPhone">
+                <p class="nav-item-link-text">+77786152383 +77786152383</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="mailto:europe@ufeta.com">
+                <img src="./img/icon/mailGold.svg" alt="mailUs">
+                <p class="nav-item-link-text">europe@ufeta.com</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__menu-wrap nav-wrap">
+          <h4 class="menu-wrap-title">Quick links</h4>
+          <ul class="menu-nav">
+            <li class="nav-item">
+              <a class="nav-item-link" href="./index.html">Main</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="./pages/team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="./pages/services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="./pages/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="./pages/book.html">Book</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__menu-wrap social-wrap">
+          <h4 class="menu-wrap-title">Follow us</h4>
+          <ul class="foot-social social-nav">
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://web.telegram.org/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.75 12.5L13.75 17.5L21.25 25L26.25 5L3.75 13.75L8.75 16.25L11.25 23.75L15 18.75" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://www.linkedin.com/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.5 5H7.5C6.11929 5 5 6.11929 5 7.5V22.5C5 23.8807 6.11929 25 7.5 25H22.5C23.8807 25 25 23.8807 25 22.5V7.5C25 6.11929 23.8807 5 22.5 5Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 13.75V20" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 10V10.0125" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 20V13.75" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20 20V16.25C20 15.587 19.7366 14.9511 19.2678 14.4822C18.7989 14.0134 18.163 13.75 17.5 13.75C16.837 13.75 16.2011 14.0134 15.7322 14.4822C15.2634 14.9511 15 15.587 15 16.25" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://www.facebook.com/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.75 12.5V17.5H12.5V26.25H17.5V17.5H21.25L22.5 12.5H17.5V10C17.5 9.66848 17.6317 9.35054 17.8661 9.11612C18.1005 8.8817 18.4185 8.75 18.75 8.75H22.5V3.75H18.75C17.0924 3.75 15.5027 4.40848 14.3306 5.58058C13.1585 6.75269 12.5 8.3424 12.5 10V12.5H8.75Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://www.instagram.com/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 5H10C7.23858 5 5 7.23858 5 10V20C5 22.7614 7.23858 25 10 25H20C22.7614 25 25 22.7614 25 20V10C25 7.23858 22.7614 5 20 5Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 18.75C17.0711 18.75 18.75 17.0711 18.75 15C18.75 12.9289 17.0711 11.25 15 11.25C12.9289 11.25 11.25 12.9289 11.25 15C11.25 17.0711 12.9289 18.75 15 18.75Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20.625 9.375V9.376" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-nav-item">
+              <a class="social-nav-item-link" href="https://twitter.com/">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M27.5 5.01227C26.25 5.62477 25.025 5.87352 23.75 6.24977C22.3487 4.66852 20.2712 4.58102 18.275 5.32852C16.2787 6.07602 14.9712 7.90352 15 9.99977V11.2498C10.9438 11.3535 7.33125 9.50602 5 6.24977C5 6.24977 -0.2275 15.541 10 19.9998C7.66 21.5585 5.32625 22.6098 2.5 22.4998C6.635 24.7535 11.1413 25.5285 15.0425 24.396C19.5175 23.096 23.195 19.7423 24.6062 14.7185C25.0272 13.1906 25.2363 11.6121 25.2275 10.0273C25.225 9.71602 27.115 6.56227 27.5 5.01102V5.01227Z" stroke="" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__privacy">
+        <div class="footer__privacy-logo">
+          <a class="footer__privacy-logo-link" href="#">Hamon&Felt</a>
+        </div>
+        <div class="footer__privacy-nav">
+          <a class="footer__privacy-nav-link" href="#">About</a>
+          <a class="footer__privacy-nav-link" href="#">Help & Info</a>
+          <a class="footer__privacy-nav-link" href="#">Privacy</a>
+        </div> 
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/common.js"></script>
+</body>
+</html>

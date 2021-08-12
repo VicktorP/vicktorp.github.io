@@ -1,0 +1,136 @@
+.main-services {
+  font-style: normal;
+  color: #1D1D1F;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  padding-bottom: 200px;
+}
+
+.services-list {
+  margin-top: 125px;
+}
+
+.services-list-container {
+  display: flex;
+}
+
+.service-item {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 400px 185px 185px;
+}
+
+.service-item:first-child {
+  margin-top: 0;
+}
+
+.service-high-level__title {
+  font-weight: 400;
+  font-size: 45px;
+}
+
+.service__sex {
+  font-weight: 200;
+  font-size: 40px;
+}
+
+.service-low-level__title {
+  margin-top: 45px;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.service-price {
+  font-size: 35px;
+  align-self: flex-end;
+}
+
+.list-images {
+  width: 100%;
+  position: relative;
+}
+
+.service-image {
+  position: absolute;
+  left: 0;
+}
+
+.service-image:nth-child(1) {
+  top: 15%;
+}
+
+.service-image:nth-child(2) {
+  top: 60%;
+}
+
+.service-button {
+  width: 362px;
+  height: 117px;
+  padding: 25px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFC11E;
+  font-weight: bold;
+  font-size: 55px; 
+  color: #FFFFFF;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border: 1px solid #FFC11E;
+  cursor: pointer;
+}
+
+.service-button:focus {
+  border: 1px solid #000;
+  color: #000;
+}
+
+.face-analyze {
+  margin-top: 150px;
+}
+
+.face-analyze__welcome {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 120%;
+  width: 950px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #1D1D1F;
+  margin: 0 auto;
+}
+
+.face-analyzes__list {
+  margin-top: 150px;
+  width: 100%;
+  line-height: 120%;
+}
+
+.face-analyzes__item {  
+  display: flex;
+  justify-content: space-between;
+}
+
+.face-analyzes__item + .face-analyzes__item {
+  margin-top: 180px;
+}
+
+.face-analyze__title {
+  width: 362px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 120%;
+}
+
+.face-analyze__image {
+  box-shadow: -3px -4px #d2aa1b, 2px 4px #000;
+}
+
+.face-analyze__text {
+  width: 460px;
+  font-size: 40px; 
+  color: rgba(29, 29, 31, 0.7);
+  line-height: 120%;
+}
