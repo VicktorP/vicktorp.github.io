@@ -21,7 +21,7 @@
   font-family: "Tradesmith";
   font-weight: 400;
   font-size: 45px;
-  line-height: 54px;
+  line-height: 120%;
 }
 
 .header__menu {
@@ -84,4 +84,55 @@
 }
 
 /* ------------------------------------------------------------------------------------ */
-@media 
+
+@media (max-width: 1169px) {
+
+  .header {
+    height: 60px;
+    padding: 0 24px;
+  }
+  
+  .mobile-menu-button-wrapper,
+  .mobile-book-button-wrapper {
+    display: block;
+    height: 40px;
+    width: 40px;
+  }
+
+  .header__logo-link {    
+    font-size: 35px;    
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+
+@media (max-width: 767px) {
+
+  .header {
+    height: 40px;
+    padding: 0 15px;
+  } 
+
+  .mobile-menu-button-wrapper,
+  .mobile-book-button-wrapper {
+    height: 24px;
+    width: 24px;
+  }
+
+  .mobile-menu-img,
+  .mobile-book-img {
+    width: 100%;
+  }
+
+  .header__logo-link {    
+    font-size: 20px;    
+  }
+
+
+}

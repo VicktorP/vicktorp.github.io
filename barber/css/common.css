@@ -45,7 +45,7 @@ ul {
   overflow-y: hidden;
 }
 
-.hero .hero-container {
+.hero-container {
   padding-left: 290px;
   overflow: hidden;
 }
@@ -80,11 +80,11 @@ ul {
 }
 
 .hero .swiper-slide__text {
-  font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 120%;
   width: 311px;
+  letter-spacing: 0.05em;
 }
 
 .hero .heroSwiperText-pagination {
@@ -97,7 +97,7 @@ ul {
   width: 68px;
   height: 10px;
   background-color: #676767;
-  border-radius: 0;
+  border-radius: 2px;
   margin: 0;
   opacity: 1;
 }
@@ -109,3 +109,117 @@ ul {
 .hero .heroSwiperText-pagination .swiper-pagination-bullet-active {
   opacity: 0.2;
 }
+
+
+/* ------------------------------------------------------------------------------------ */
+
+/* @media (min-width: 768px) and (max-width: 1169px) { */
+  @media (max-width: 1169px) {
+
+    .container-fluid {
+      min-width: 768px;
+      width: 100%;
+    }
+
+    .container {
+      width: 768px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      height: 340px;
+    }
+
+    .hero .text-slider {
+      top: 80px;
+      left: 24px;
+      width: 225px;
+    }
+
+    .hero .heroSwiperText {
+      width: 225px;
+    }
+    
+    .hero .swiper-wrapper {
+      width: 220px;
+    }
+
+
+    .hero .heroSwiperText-pagination .swiper-pagination-bullet {
+      width: 40px;
+      height: 5px;      
+    }
+
+    .hero .swiper-pagination-bullet + .swiper-pagination-bullet {
+      margin-left: 20px;
+    }
+
+    .hero .swiper-slide__text {
+      font-size: 20px;
+      width: 217px;
+    }
+
+    .hero__text {     
+      font-size: 150px;
+      right: 0;
+      bottom: -40px;
+    }   
+  
+  }
+  
+  
+  /* ------------------------------------------------------------------------------------ */
+  
+  @media (max-width: 767px) {
+  
+    .container-fluid {
+      max-width: 360px;
+      width: 100%;
+    }
+
+    .container {
+      max-width: 360px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .hero {
+      height: 320px;
+    }
+
+    .hero .text-slider {
+      top: 60px;
+      left: 15px;
+      max-width: 160px;
+    }
+
+    .hero .heroSwiperText {
+      width: 160px;
+    }
+    
+    .hero .swiper-wrapper {
+      width: 160px;
+    }
+
+    .hero .heroSwiperText-pagination .swiper-pagination-bullet {
+      width: 30px;
+      height: 5px;      
+    }
+
+    .hero .swiper-pagination-bullet + .swiper-pagination-bullet {
+      margin-left: 11px;
+    }
+
+    .hero .swiper-slide__text {
+      font-size: 18px;
+      width: 155px;
+    }
+
+    .hero__text {     
+      font-size: 60px;
+      right: 0;
+      bottom: -18px;
+    }
+  
+  }
+  

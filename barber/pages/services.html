@@ -12,6 +12,11 @@
 <body>
 
   <header class="header">
+    <div class="mobile-menu-button-wrapper">
+      <button class="mobile-menu-button">
+        <img class="mobile-menu-img" src="../img/icon/menu_mobile.png" alt="mobileMenuImage">
+      </button>
+    </div>
     <div class="header__logo">
       <a class="header__logo-link" href="../index.html">Hamon&Felt</a>
     </div>
@@ -69,18 +74,23 @@
           <a class="header__nav-link" href="../index.html">Main</a>
         </li>
         <li class="nav-item">
-          <a class="header__nav-link active-page-link" href="./services.html">Services</a>
+          <a class="header__nav-link active-page-link" href="./pages/services.html">Services</a>
         </li>
         <li class="nav-item">
-          <a class="header__nav-link" href="./team.html">Team</a>
+          <a class="header__nav-link" href="./pages/team.html">Team</a>
         </li>
         <li class="nav-item">
-          <a class="header__nav-link" href="./about.html">About</a>
+          <a class="header__nav-link" href="./pages/about.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="header__nav-link" href="./book.html">Book</a>
+          <a class="header__nav-link" href="./pages/book.html">Book</a>
         </li>
       </ul>
+    </div>
+    <div class="mobile-book-button-wrapper">
+      <button class="mobile-book-button">
+        <img class="mobile-book-img" src="../img/icon/book_mobile.png" alt="mobileBookImage">
+      </button>
     </div>
   </header>
   
@@ -231,24 +241,32 @@
         </p>
         <ul class="face-analyzes__list">
           <li class="face-analyzes__item">
-            <h4 class="face-analyze__title">Understand your scalp and hair</h4>
+            <div class="face-text-wrapper">
+              <h4 class="face-analyze__title">Understand your scalp and hair</h4>            
+              <p class="face-analyze__text">Our hair designers will do a through diagnosis of your scalp and hair.</p>
+            </div>
             <img class="face-analyze__image" src="../img/services/scalp_hair.png" alt="faceAnalyze">
-            <p class="face-analyze__text">Our hair designers will do a through diagnosis of your scalp and hair.</p>
           </li>
           <li class="face-analyzes__item">
-            <h4 class="face-analyze__title">Understand your face shape for the best hairstyle</h4>
+            <div class="face-text-wrapper">
+              <h4 class="face-analyze__title">Understand your face shape for the best hairstyle</h4>
+              <p class="face-analyze__text">Our hair designers will analyze your face shape to determine the best haircut/perm/rebond to complement your face shape.</p>
+            </div>  
             <img class="face-analyze__image" src="../img/services/face_shape.png" alt="faceAnalyze">
-            <p class="face-analyze__text">Our hair designers will analyze your face shape to determine the best haircut/perm/rebond to complement your face shape.</p>
           </li>
           <li class="face-analyzes__item">
-            <h4 class="face-analyze__title">Understand your skin tone for the most appropriate hair color</h4>
+            <div class="face-text-wrapper">
+              <h4 class="face-analyze__title">Understand your skin tone for the most appropriate hair color</h4>
+              <p class="face-analyze__text">Our hair designers will analyze your skin tone to determine what shades of color will fit your skintone.</p>
+            </div>
             <img class="face-analyze__image" src="../img/services/skin_tone.png" alt="faceAnalyze">
-            <p class="face-analyze__text">Our hair designers will analyze your skin tone to determine what shades of color will fit your skintone.</p>
           </li>
           <li class="face-analyzes__item">
-            <h4 class="face-analyze__title">Design your hairstyle with our stylist</h4>
+            <div class="face-text-wrapper">
+              <h4 class="face-analyze__title">Design your hairstyle with our stylist</h4>
+              <p class="face-analyze__text">Our hair designers will discuss and design a hairstyle for your according to you preference and lifestyle.</p>
+            </div>
             <img class="face-analyze__image" src="../img/services/hair_style.png" alt="faceAnalyze">
-            <p class="face-analyze__text">Our hair designers will discuss and design a hairstyle for your according to you preference and lifestyle.</p>
           </li>
         </ul>
       </div>
@@ -283,7 +301,7 @@
           </ul>
         </div>
         <div class="footer__menu-wrap nav-wrap">
-          <h4 class="menu-wrap-title">Quick links</h4>
+          <h4 class="menu-wrap-title menu-wrap-title-links">Quick links</h4>
           <ul class="menu-nav">
             <li class="nav-item">
               <a class="nav-item-link" href="../index.html">Main</a>
@@ -303,7 +321,7 @@
           </ul>
         </div>
         <div class="footer__menu-wrap social-wrap">
-          <h4 class="menu-wrap-title">Follow us</h4>
+          <h4 class="menu-wrap-title menu-wrap-title-follow">Follow us</h4>
           <ul class="foot-social social-nav">
             <li class="social-nav-item">
               <a class="social-nav-item-link" href="https://web.telegram.org/">
