@@ -98,6 +98,10 @@
   font-size: 35px;
 }
 
+.js-team-person-button-middle {
+  display: none;
+}
+
 .team-goal {
   margin: 110px auto 0;
   width: 486px;
@@ -107,4 +111,133 @@
   line-height: 120%;
   text-align: center;
   letter-spacing: 0.05em;
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+
+@media (max-width: 1169px) {
+
+  .team-gallery {
+    padding: 0;
+    max-width: 768;
+  }
+
+  .team-gallery__container {
+    padding: 60px 24 70px;
+  }
+  
+  .team-gallery-wrapper {   
+    gap: 40px 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+    
+  .team-person:nth-child(1),
+  .team-person:nth-child(2) {
+    grid-row: 1 / 2;
+  }
+  
+  .team-person:nth-child(3),
+  .team-person:nth-child(4) {
+    grid-row: 2 / 3;
+    height: 346px;
+  }
+  
+  .team-person:nth-child(5),
+  .team-person:nth-child(6) {
+    grid-row: 3 / 4;
+  }
+  
+  .team-person:nth-child(7),
+  .team-person:nth-child(8) {
+    grid-row: 4 / 5;
+  }
+  
+  .team-person:nth-child(9),
+  .team-person:nth-child(11) {
+    grid-row: 5 / 6;
+  }
+  
+  
+  .team-person:nth-child(12),
+  .team-person:nth-child(13) {
+    grid-row: 6 / 7;
+  }
+  
+  .person-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    width: 345px;
+  }
+  
+  .person-name {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: 800;
+    font-size: 45px;  
+    line-height: 120%;
+    letter-spacing: 0.05em;
+  }
+  
+  .first-part,
+  .second-part {
+    display: block;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  .person-white-shadow {
+    text-shadow: 0.1px 1.5px 0px #FFFFFF;
+  }
+  
+  .person-black-shadow {
+    text-shadow: 1px 1.5px 0px #1D1D1F;
+  }
+  
+  .person-job {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+  }
+  
+  .person-job-bigger {
+    font-size: 35px;
+  }
+
+  .js-team-person-button-big {
+    display: none;
+  }
+
+  .js-team-person-button-middle {
+    display: block;
+  }
+
+  .team-person-button-middle {
+    width: 470px;
+    height: 120px;
+    position: static;
+  }
+  
+  .team-goal {
+    display: none;
+  }
+  
+
+
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+
+@media (max-width: 767px) {
+ 
+
 }
