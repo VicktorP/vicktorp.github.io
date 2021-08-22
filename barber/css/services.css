@@ -38,6 +38,7 @@
   margin-top: 45px;
   font-weight: 400;
   font-size: 30px;
+  margin-left: 100px;
 }
 
 .service-price {
@@ -155,6 +156,10 @@
       padding-bottom: 150px;
     }
 
+    .service-low-level__title {
+      margin-left: 90px;
+    }
+
     .list-images {
       display: none;
     }
@@ -239,6 +244,9 @@
       padding-left: 15px;
     }
 
+    .list-wrapper {
+      margin: 0 auto;
+    }
 
     .service-item {
       margin-top: 30px;
@@ -248,6 +256,10 @@
 
     .service-high-level__title {
       font-size: 30px;
+    }
+
+    .service-low-level__title {
+      margin-left: 0;
     }
 
     .service-low-level__title ~ .service-low-level__title {
