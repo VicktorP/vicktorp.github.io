@@ -12,6 +12,11 @@
 <body>
 
   <header class="header">
+    <div class="mobile-menu-button-wrapper">
+      <button class="mobile-menu-button">
+        <img class="mobile-menu-img" src="../img/icon/menu_mobile.png" alt="mobileMenuImage">
+      </button>
+    </div>
     <div class="header__logo">
       <a class="header__logo-link" href="../index.html">Hamon&Felt</a>
     </div>
@@ -69,18 +74,23 @@
           <a class="header__nav-link" href="../index.html">Main</a>
         </li>
         <li class="nav-item">
-          <a class="header__nav-link" href="./services.html">Services</a>
+          <a class="header__nav-link" href="./pages/services.html">Services</a>
         </li>
         <li class="nav-item">
-          <a class="header__nav-link" href="./team.html">Team</a>
+          <a class="header__nav-link" href="./pages/team.html">Team</a>
         </li>
         <li class="nav-item">
-          <a class="header__nav-link active-page-link" href="./about.html">About</a>
+          <a class="header__nav-link active-page-link" href="./pages/about.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="header__nav-link" href="./book.html">Book</a>
+          <a class="header__nav-link" href="./pages/book.html">Book</a>
         </li>
       </ul>
+    </div>
+    <div class="mobile-book-button-wrapper">
+      <button class="mobile-book-button">
+        <img class="mobile-book-img" src="../img/icon/book_mobile.png" alt="mobileBookImage">
+      </button>
     </div>
   </header>
 
@@ -132,7 +142,7 @@
         <div class="our-smth-wrapper">
           <h2 class="our-title">Our CEO</h2>
           <div class="our-content mini-our-content">
-            <img class="our-image" src="../img/more-info-image.jpg" alt="ourCEO">
+            <picture class="our-image-wrapper"><img class="our-image" src="../img/more-info-image.jpg" alt="ourCEO"></picture>
             <p class="our-text">
               Two things are infinite: the universe and human stupidity; and I'm not sure about the universe
             </p>
@@ -243,7 +253,7 @@
               </ul>
             </div>
           </div>
-          <button class="address-book-button">Book NoW <img src="../img/icon/book_now_gold.png" alt=""> </button>
+          <button class="address-book-button">Book NoW <picture class="address-book-button__image-wrapper"><img src="../img/icon/book_now_gold.png" alt=""></picture> </button>
         </div>
       </div>
     </section>
