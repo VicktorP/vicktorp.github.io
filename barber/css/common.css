@@ -178,7 +178,7 @@ ul {
     }
 
     .container {
-      min-width: 360px;
+      min-width: 320px;
       max-width: 767px;
       width: 100%;
       margin: 0 auto;
