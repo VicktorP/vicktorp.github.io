@@ -19,3 +19,10 @@ const swiper2 = new Swiper(".teamSwiper", {
   },
   simulateTouch: false,
 });
+
+const swiper3 = new Swiper(".teamSwiper-mini", {
+  navigation: {
+    nextEl: ".teamSwiper-mini__button-next",
+    prevEl: ".teamSwiper-mini__button-prev"
+  }
+});
