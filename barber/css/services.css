@@ -156,21 +156,30 @@
       padding-bottom: 150px;
     }
 
-    .service-low-level__title {
-      margin-left: 90px;
+    .services-list {
+      padding: 0;
     }
 
-    .list-images {
-      display: none;
+    .services-list-container {
+      padding: 0 24px;
+      display: block;
+    }
+
+    .service-item {
+      grid-template-columns: 345px 155px 155px;
     }
 
     .services-list {
       margin-top: 100px;
     }
 
-    .services-list-container {
-      padding-left: 24px;
+    .service-low-level__title {
+      margin-left: 90px;
     }
+
+    .list-images {
+      display: none;
+    }    
 
     .face-analyze {
       margin-top: 80px;
