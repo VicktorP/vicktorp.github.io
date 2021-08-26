@@ -25,6 +25,10 @@ ul {
   list-style-type: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1170px;
   width: 100%;
@@ -64,22 +68,22 @@ ul {
   margin: 0;
 }
 
-.hero .text-slider {
+.text-slider {
   position: absolute;
   top: 190px;
   left: 290px;
 }
 
-.hero .heroSwiperText {
+.heroSwiperText {
   padding-top: 30px;
   width: 362px;
 }
 
-.hero .swiper-wrapper {
+.swiper-wrapper {
   width: 362px;
 }
 
-.hero .swiper-slide__text {
+.swiper-slide__text {
   font-weight: bold;
   font-size: 40px;
   line-height: 120%;
@@ -87,13 +91,13 @@ ul {
   letter-spacing: 0.05em;
 }
 
-.hero .heroSwiperText-pagination {
+.heroSwiperText-pagination {
   text-align: left;
   left: 0;
   top: 0;
 }
 
-.hero .heroSwiperText-pagination .swiper-pagination-bullet {
+.heroSwiperText-pagination .swiper-pagination-bullet {
   width: 68px;
   height: 10px;
   background-color: #676767;
@@ -102,11 +106,15 @@ ul {
   opacity: 1;
 }
 
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
+}
+
 .hero .swiper-pagination-bullet + .swiper-pagination-bullet {
   margin-left: 30px;
 }
 
-.hero .heroSwiperText-pagination .swiper-pagination-bullet-active {
+.heroSwiperText-pagination .swiper-pagination-bullet-active {
   opacity: 0.2;
 }
 

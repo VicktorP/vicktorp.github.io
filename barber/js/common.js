@@ -2,11 +2,12 @@ const swiper1 = new Swiper(".heroSwiperText", {
   speed: 1000,
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+    clickable: true
   },
   autoplay: {
     delay: 4000,
   },
+  touchEventsTarget: 'container'
 });
 
 const swiper2 = new Swiper(".teamSwiper", {
@@ -17,7 +18,7 @@ const swiper2 = new Swiper(".teamSwiper", {
       return '<span class="' + teamBullet + '">' + (index + 1) + "</span>";
     },
   },
-  simulateTouch: false,
+  simulateTouch: false
 });
 
 const swiper3 = new Swiper(".teamSwiper-mini", {
