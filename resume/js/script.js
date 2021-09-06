@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         stageHTML += `<ul class="job-duties">
                         ${stage[i].duties.map( duty => `<li class="duty-item">${duty}</li>`).join("")}
                       </ul>`;
-        stageHTML += `<p class="achieves-wrapper">Кратко о результатах: 
+        stageHTML += `<p class="achieves-wrapper">${data[selectedLanguage].result}: 
                         <ul class="job-achieves">
                           ${stage[i].achieves.map( achieve => `<li class="achieve-item">${achieve}</li>`).join("")}
                         </ul>

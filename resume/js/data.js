@@ -13,6 +13,7 @@ const data = {
                 передмісті Києва, але до міста або області не прив'язаний і готовий до релокації. Для мене важлива робота на результат в команді.`,
     myExperience: "Досвід роботи",
     myEducation: "Освіта",
+    result: "Коротко про результати",
     experience: [
       {
         company: "Фріланс",
@@ -98,6 +99,7 @@ const data = {
               Проживаю в пригороде Киева, но к городу или области не привязан и готов к релокации.`,
     myExperience: "Опыт работы",
     myEducation: "Образование",
+    result: "Кратко о результатах",
     experience: [
       {
         company: "Фриланс",
@@ -183,6 +185,7 @@ const data = {
                 of Kiev, but I am not tied to the city or region and is ready for relocation. Working for results in a team is important for me.`,
     myExperience: "Work experience",
     myEducation: "Education",
+    result: "About the results",
     experience: [
       {
         company: "Freelance",
