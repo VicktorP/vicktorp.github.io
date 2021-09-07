@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let mySwiper = new Swiper('.swiper-container', {
+  let mySwiper = new Swiper('.swiper', {
     loop: true,
     spaceBetween: 20,
     breakpoints:{
@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
   })
 })

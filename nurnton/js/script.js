@@ -1,16 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // ! Анимация
-    // *Секции
-    ScrollOut({
-        once: true,
-        targets: '.section__container',
-        onShown: function (el) {
-            el.classList.add('animate__zoomIn')
-        }
-    })
+    // // sections
+    // ScrollOut({
+    //     once: true,
+    //     targets: '.section__container',
+    //     onShown: function (el) {
+    //         el.classList.add('animate__zoomIn')
+    //     }
+    // })
 
-    // *Подвал
+    // footer
     ScrollOut({
         once: true,
         targets: '.footer__top',
@@ -19,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         }
     })
-    // * Проекты
+    // projects
     ScrollOut({
         once: true,
         targets: '.blog__wrap',
@@ -32,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     })
 
-    // * Галереи изображений
+    // galleries
     ScrollOut({
         once: true,
         targets: '.gallery__inner',
@@ -46,8 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
 
-    // ! Мобильное меню
-
+    // mobile menu
     const hamburger = document.querySelector(".hamburger");
     const mobileMenu = document.querySelector(".mobile-menu");
 
@@ -60,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburger.addEventListener("click", toggleMobileMenu);
 
 
-    //! Модальное окно
+    // modal 
 
     const modal = document.querySelector(".form-container");
     const open = document.querySelector(".open-modal");
