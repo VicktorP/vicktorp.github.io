@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Digital project</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7.0.3/swiper-bundle.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="stylesheet" href="css/hamburgers.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -47,37 +47,40 @@
 		</div>
 	</header>
 
-	<section class="section__container section__slider">
-		<div class="container">
-			<div class="slider-wrap">
-				<div class="slider-wrap__left">
-					<div class="box__name name-home">
-						<h2 class="content__name">Project</h2>
-						<strong class="content__name--accent">Nurtown</strong>
-					</div>
-					<div class="slider-nav">
-						<div class="slider-arrow hero-arrow">
-							<img class="swiper-button-prev"  src="./img/arrow-left-long.svg" alt="prev"/>
-							<img class="swiper-button-next"  src="./img/arrow-right-long.svg" alt="next"/>
-						</div>
-						<div class="swiper-pagination hero-pagination"></div>
-					</div>
+	<section class="container section__container section__slider animate__animated" data-scroll>
+		<div class="slider-wrap">
+
+			<div class="slider-wrap__left">
+
+				<div class="box__name name-home">
+					<h2 class="content__name">Project</h2>
+					<strong class="content__name--accent">Nurtown</strong>
 				</div>
-				<div class="slider-wrap__right">
-					<div class="swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img class="slider__img" src="./img/project.jpg" alt="Project" />
-								<a href="#" class="button button--transparent slider__button">Взглянуть <img class="arrow" src="./img/arrow.svg" alt="arrow" /></a>
-							</div>
-							<div class="swiper-slide">
-								<img class="slider__img" src="./img/project.jpg" alt="Project" />
-								<a href="#" class="button button--transparent slider__button">Взглянуть <img class="arrow" src="./img/arrow.svg" alt="arrow" /></a>
-							</div>
+				<div class="slider-nav">
+					<div class="slider-arrow hero-arrow">
+						<img class="swiper-button-prev"  src="./img/arrow-left-long.svg" alt="prev"/>
+						<img class="swiper-button-next"  src="./img/arrow-right-long.svg" alt="next"/>
+					</div>
+					<div class="swiper-pagination hero-pagination"></div>
+				</div>
+
+			</div>
+
+			<div class="slider-wrap__right">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img class="slider__img" src="./img/project.jpg" alt="Project" />
+							<a href="#" class="button button--transparent slider__button">Взглянуть <img class="arrow" src="./img/arrow.svg" alt="arrow" /></a>
+						</div>
+						<div class="swiper-slide">
+							<img class="slider__img" src="./img/project.jpg" alt="Project" />
+							<a href="#" class="button button--transparent slider__button">Взглянуть <img class="arrow" src="./img/arrow.svg" alt="arrow" /></a>
 						</div>
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</section>
 	<section class="container section__container animate__animated" data-scroll>
@@ -272,7 +275,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/form.js"></script>
 	<script src="js/fslightbox.js"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/swiper@7.0.3/swiper-bundle.min.js"></script>
 	<script src="js/slider.js"></script>
 	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 	<script src="js/script.js"></script>

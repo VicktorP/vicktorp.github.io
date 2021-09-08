@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // // sections
-    // ScrollOut({
-    //     once: true,
-    //     targets: '.section__container',
-    //     onShown: function (el) {
-    //         el.classList.add('animate__zoomIn')
-    //     }
-    // })
+    // sections
+    ScrollOut({
+        once: true,
+        targets: '.section__container',
+        onShown: function (el) {
+            el.classList.add('animate__zoomIn')
+        }
+    })
 
     // footer
     ScrollOut({
