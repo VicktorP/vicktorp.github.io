@@ -300,28 +300,29 @@ ul {
   .details {
     width: 100%;
   }
+}
 
-  @media (max-width: 590px) {  
+@media (max-width: 590px) {  
     
-    .general-info-wrapper {
-      width: 100%;
-    }
-  
-    .general-info {
-      width: 300px;
-      margin: 0 auto 50px;
-    }
-  
-    .about-myself {
-      text-align: center;
-    }
-  
-    .skill {
-      width: 300px;
-      margin: 0 auto;
-    }
-  
-    .details {
-      width: 100%;
-    }
+  .general-info-wrapper {
+    width: 100%;
+  }
+
+  .general-info {
+    width: 300px;
+    margin: 0 auto 50px;
+  }
+
+  .about-myself {
+    text-align: center;
+  }
+
+  .skill {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .details {
+    width: 100%;
+  }
 }
