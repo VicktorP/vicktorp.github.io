@@ -105,10 +105,10 @@ ul {
   left: 80%;
 }
 .git-bar{
-  left: 70%;
+  left: 50%;
 }
 .bs-bar {
-  left: 70%;
+  left: 50%;
 }
 .gulp-bar {
   left: 50%;
@@ -117,7 +117,7 @@ ul {
   left: 20%;
 }
 .mysql-bar {
-  left: 60%;
+  left: 40%;
 }
 .php-bar {
   left: 30%;
@@ -138,7 +138,7 @@ ul {
   left: 100%;
 }
 .org-bar {
-  left: 95%;
+  left: 90%;
 }
 .rus-bar{
   left: 100%;
