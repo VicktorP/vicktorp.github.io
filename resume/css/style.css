@@ -102,7 +102,7 @@ ul {
   left: 90%;
 }
 .js-bar {
-  left: 80%;
+  left: 85%;
 }
 .git-bar{
   left: 50%;
@@ -111,13 +111,13 @@ ul {
   left: 50%;
 }
 .gulp-bar {
-  left: 50%;
+  left: 40%;
 }
 .react-bar {
-  left: 20%;
+  left: 40%;
 }
 .mysql-bar {
-  left: 40%;
+  left: 30%;
 }
 .php-bar {
   left: 30%;
@@ -147,7 +147,7 @@ ul {
   left: 100%;
 }
 .eng-bar{
-  left: 70%;
+  left: 75%;
 }
 
 .details {
