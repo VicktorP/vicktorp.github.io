@@ -11,11 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const titleLanguages    = document.querySelector("#skill-title-languages");
   const languageUkr       = document.querySelector("#skill-language-ukr");
   const languageRus       = document.querySelector("#skill-language-rus");
-  const languageEng       = document.querySelector("#skill-language-eng");
-
+  const languageEng       = document.querySelector("#skill-language-eng");  
   
-  
-  let selectedLanguage = "RU";
+  let selectedLanguage = "ENG";
   let degree = 0;
 
   const renderStageInfo = (stage) => {
