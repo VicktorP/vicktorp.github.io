@@ -16,7 +16,7 @@ const data = {
     result: "Коротко про результати",
     experience: [
       {
-        company: "Epam Laboratory",
+        company: "EPAM Laboratory",
         position: "Front-end розробник. Charity project",
         date: "09.2022 - теперішній час",
         duties: [
@@ -108,7 +108,7 @@ const data = {
     result: "Кратко о результатах",
     experience: [
       {
-        company: "Epam Laboratory",
+        company: "EPAM Laboratory",
         position: "Front-end разработчик. Charity project",
         date: "09.2022 - настоящее время",
         duties: [
@@ -200,7 +200,7 @@ const data = {
     result: "About the results",
     experience: [
       {
-        company: "Epam Laboratory",
+        company: "EPAM Laboratory",
         position: "Front-end разработчик. Charity project",
         date: "09.2022 - today",
         duties: [
