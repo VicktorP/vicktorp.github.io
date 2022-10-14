@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const myTitle           = document.querySelector("#my-title");
   const cvvData           = document.querySelector("#cvv-data");
   const langShower        = document.querySelector("#language-shower");
   const langDownArrow     = document.querySelector("#language-dropdown-arrow");
@@ -11,10 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const titleLanguages    = document.querySelector("#skill-title-languages");
   const languageUkr       = document.querySelector("#skill-language-ukr");
   const languageRus       = document.querySelector("#skill-language-rus");
-  const languageEng       = document.querySelector("#skill-language-eng");  
+  const languageEng       = document.querySelector("#skill-language-eng");
   
   let selectedLanguage = "ENG";
-  let degree = 0;
+  let arrowRotationAngle = 0;
 
   const renderStageInfo = (stage) => {
     let stageHTML = "";
@@ -46,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const renderCVV = (lang) => {
-    myTitle.innerText = data[lang].fullname;
     stress.innerText = data[lang].stress;
     sociability.innerText = data[lang].sociability;
     organization.innerText = data[lang].organization;
@@ -57,8 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     cvvData.innerHTML = `
       <section class="section-title">        
-        <p class="job-title">Front-end web developer</p>
-        <p class="my-mission">${data[lang].myMission}</p>
+        <h1 class="my-title" id="my-title">${data[lang].fullName}</h1>
       </section>
       <section class="section-stage">
         <h2 class="stage-title">${data[lang].myExperience}</h2>
@@ -75,8 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const changeShowLanguagesList = () => {
     langCheckWrapper.classList.toggle("js-over");
-    degree += 180;
-    langDownArrow.style.transform = `rotate(${degree}deg)`;
+    arrowRotationAngle += 180;
+    langDownArrow.style.transform = `rotate(${arrowRotationAngle}deg)`;
   }
 
  
@@ -84,8 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
     selectedLanguage = event.target.innerText; 
     langShower.innerText = selectedLanguage;
     langCheckWrapper.classList.add("js-over");
-    degree += 180;
-    langDownArrow.style.transform = `rotate(${degree}deg)`;
+    arrowRotationAngle += 180;
+    langDownArrow.style.transform = `rotate(${arrowRotationAngle}deg)`;
     renderCVV(selectedLanguage);
   }
 

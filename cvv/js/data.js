@@ -7,7 +7,7 @@ const data = {
     languageUkr: "Українська",
     languageRus: "Російська",
     languageEng: "Англійська",
-    fullname: "Притулюк Віктор",
+    fullName: "Притулюк Віктор",
     myMission: `Добридень. <br /> 
                 Моя мета - знайти нову можливість для зростання як фахівця. Я практикую HTML5, CSS3, JavaScript. В даний момент вивчаю React. Перебуваю зараз в 
                 передмісті Києва, але до міста або області не прив'язаний і готовий до релокації. Для мене важлива робота на результат в команді.`,
@@ -16,22 +16,28 @@ const data = {
     result: "Коротко про результати",
     experience: [
       {
-        company: "Фріланс",
-        position: "Front-end розробник trainee",
-        date: "07.2020 - сьогодення",
+        company: "Epam Laboratory",
+        position: "Front-end розробник. Charity project",
+        date: "09.2022 - теперішній час",
         duties: [
-          "Під керівництвом колег менторів займаюсь розробкою і створенням веб додатків",
-          "Оптимізую, обновлюю та вношу зміни у застарілі сайти",
-          "Продовжую самонавчання програмуванню"
+          "Робота із Front-end частиною сайту",
+          "Работа за Scrum методологією",
+          "Ревью кода інших розробників"
         ],
         achieves: [
-          "Опанував верстку PerfectPixel",
-          "Навчився оптимізувати та не перевантажувати код",
-          "Працював з гілками GIT-а",
-          "Працював із сінхронним та асінхронним кодом",
-          "Застосовував ES6",
-          "Застосовував REST api",
-          "Закачував сайти на хостинг"
+          "Виконання завдань",
+          "Пошук помилок у чужому коді та виправлення своїх",
+          "Розвиток проекту"
+        ]
+      }, {
+        company: "Фріланс",
+        position: "Front-end розробник",
+        date: "05.2021 - теперішній час",
+        duties: [],
+        achieves: [
+          "Сайты-визитки",
+          "Оптимизация legacy кода",
+          "Самообучаюсь программированию"
         ]
       }, {
         company: "SanWell - оптова торгівля, дистрибуція, імпорт та експорт сантехнічної продукції",
@@ -63,6 +69,11 @@ const data = {
     ],
     education: [
       {
+        company: 'EPAM Laboratory',
+        position: '"Front-end разработка"',
+        date: "11.2021 - теперішній час",
+        description: "Курс JS, React, Angular, NodeJS"
+      }, {
         company: 'IT School "Peace IT"',
         position: '"Front-end розробник"',
         date: "09.2020 - 04.2021",
@@ -71,11 +82,6 @@ const data = {
         company: `Комп'ютерна академія "КРОК"`,
         position: '"Web розробка"',
         date: "04.2018 - 04.2019",
-        description: ""
-      }, {
-        company: 'Інститут профессіональних технологій',
-        position: `"Технічне обслуговування персонального комп'ютера"`,
-        date: "01.2018 - 03.2018",
         description: ""
       }, {
         company: 'Східноукраїнський Національный університет ім. Володимира Даля',
@@ -93,7 +99,7 @@ const data = {
     languageUkr: "Украинский",
     languageRus: "Русский",
     languageEng: "Английский",
-    fullname: "Притулюк Виктор",
+    fullName: "Притулюк Виктор",
     myMission: `Здравствуйте. <br /> 
               Люблю цифры и логические задачи, а потому хочу найти работу где много логики и надо думать. Я практикую HTML5, CSS3, JavaScript. В данный момент изучаю React. 
               Проживаю в пригороде Киева, но к городу или области не привязан и готов к релокации.`,
@@ -102,22 +108,28 @@ const data = {
     result: "Кратко о результатах",
     experience: [
       {
-        company: "Фриланс",
-        position: "Front-end разработчик trainee",
-        date: "07.2020 - настоящее время",
+        company: "Epam Laboratory",
+        position: "Front-end разработчик. Charity project",
+        date: "09.2022 - настоящее время",
         duties: [
-          "Под руководством менторов занимаюсь разработкой и созданием веб приложений",
-          "Оптимизирую, обновляю и вношу изменения в устаревшие сайты",
-          "Самообучаюсь программированию"
+          "Работа с Front-end частью сайта",
+          "Работа по Scrum методологии",
+          "Ревью кода других разработчиков"
         ],
         achieves: [
-          "Освоил верстку PerfectPixel",
-          "Научился оптимизировать и не перенагружать код",
-          "Работал с ветками GIT-а",
-          "Работал с синхронным и асинхронным кодом",
-          "Применял ES6",
-          "Применял REST api",
-          "Заливал сайты на хостинг"
+          "Выполнение задач",
+          "Нахождение ошибок в чужом коде и исправление своих",
+          "Развитие проекта"
+        ]
+      }, {
+        company: "Фриланс",
+        position: "Front-end разработчик",
+        date: "05.2021 - настоящее время",
+        duties: [],
+        achieves: [
+          "Сайты-визитки",
+          "Оптимизация legacy кода",
+          "Самообучаюсь программированию"
         ]
       }, {
         company: "SanWell - оптовая торговля, дистрибуция, импорт и экспорт сантехнической продукции",
@@ -149,6 +161,11 @@ const data = {
     ],
     education: [
       {
+        company: 'EPAM Laboratory',
+        position: '"Front-end разработка"',
+        date: "11.2021 - настоящее время",
+        description: "Курс JS, React, Angular, NodeJS"
+      }, {
         company: 'IT School "Peace IT"',
         position: '"Front-end разработчик"',
         date: "09.2020 - 04.2021",
@@ -157,11 +174,6 @@ const data = {
         company: 'Компьютерная академия "ШАГ"',
         position: '"Web разработка"',
         date: "04.2018 - 04.2019",
-        description: ""
-      }, {
-        company: 'Институт профессиональных технологий',
-        position: '"Техническое обслуживание персонального компьютера"',
-        date: "01.2018 - 03.2018",
         description: ""
       }, {
         company: 'Восточноукраинский Национальный университет им. Владимира Даля',
@@ -179,7 +191,7 @@ const data = {
     languageUkr: "Ukrainian",
     languageRus: "Russian",
     languageEng: "English",
-    fullname: "Viktor Pritulyuk",
+    fullName: "Viktor Prytuliuk",
     myMission: `Hello. <br /> 
                 My goal is to find a new opportunity for growth as a specialist. I practice HTML5, CSS3, JavaScript. I am currently learning React. I live in the suburbs 
                 of Kiev, but I am not tied to the city or region and is ready for relocation. Working for results in a team is important for me.`,
@@ -188,22 +200,28 @@ const data = {
     result: "About the results",
     experience: [
       {
-        company: "Freelance",
-        position: "Front-end developer trainee",
-        date: "07.2020 - present time",
+        company: "Epam Laboratory",
+        position: "Front-end разработчик. Charity project",
+        date: "09.2022 - today",
         duties: [
-          "Under the guidance of fellow mentors, I am engaged in the development and creation of web applications",
-          "Optimizing, updating and making changes to outdated sites",
-          "Self-study programming"
+          "Work on Front-end part",
+          "Work on the Scrum metodology",
+          "Code rewiev of others developers"
         ],
         achieves: [
-          "Mastered layout PerfectPixel ",
-          "Learned to optimize and not overload the code",
-          "Worked with GIT branches",
-          "Worked with synchronous and asynchronous code",
-          "Applied ES6",
-          "Applied REST api",
-          "Uploaded sites to hosting"
+          "Completing tasks",
+          "looking for mistakes in other developers's code and fixing my own one",
+          "Development project"
+        ]
+      }, {
+        company: "Freelance",
+        position: "Front-end developer",
+        date: "05.2021 - today",
+        duties: [],
+        achieves: [
+          "Business card websites",
+          "Optimization legacy code",
+          "Самообучаюсь программированию"
         ]
       }, {
         company: "SanWell - wholesale, distribution, import and export of sanitary products",
@@ -235,6 +253,11 @@ const data = {
     ],
     education: [
       {
+        company: 'EPAM Laboratory',
+        position: '"Front-end development"',
+        date: "11.2021 - today",
+        description: "Course JS, React, Angular, NodeJS"
+      }, {
         company: 'IT School "Peace IT"',
         position: '"Front-end developer"',
         date: "09.2020 - 04.2021",
@@ -243,11 +266,6 @@ const data = {
         company: 'Computer Academy "STEP"',
         position: '"Web development"',
         date: "04.2018 - 04.2019",
-        description: ""
-      }, {
-        company: 'Institute of Professional Technologies',
-        position: '"Maintenance of a personal computer"',
-        date: "01.2018 - 03.2018",
         description: ""
       }, {
         company: 'East Ukrainian National University. Vladimir Dahl',
