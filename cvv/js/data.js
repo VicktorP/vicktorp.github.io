@@ -221,7 +221,7 @@ const data = {
         achieves: [
           "Business card websites",
           "Optimization legacy code",
-          "Самообучаюсь программированию"
+          "Self-study programming"
         ]
       }, {
         company: "SanWell - wholesale, distribution, import and export of sanitary products",
