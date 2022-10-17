@@ -265,6 +265,13 @@ ul {
   margin-right: 5px;
 }
 
+.about-me {
+  margin-top: 50px;
+  font-weight: 0.9rem;
+  line-height: 1.5rem;
+  color: #838383;
+} 
+
 @media (max-width: 767px) {
   .skills-details-container {
     flex-wrap: wrap;
