@@ -207,7 +207,7 @@ const data = {
     experience: [
       {
         company: "EPAM Laboratory",
-        position: "Front-end разработчик. Charity project",
+        position: "Front-end developer. Charity project",
         date: "09.2022 - today",
         duties: [
           "Work on Front-end part",
