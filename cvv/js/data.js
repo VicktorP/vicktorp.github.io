@@ -35,9 +35,9 @@ const data = {
         date: "05.2021 - теперішній час",
         duties: [],
         achieves: [
-          "Сайты-визитки",
-          "Оптимизация legacy кода",
-          "Самообучаюсь программированию"
+          "Сайти-візитки",
+          "Оптимізація legacy коду",
+          "Самонавчання програмуванню"
         ]
       }, {
         company: "SanWell - оптова торгівля, дистрибуція, імпорт та експорт сантехнічної продукції",
@@ -211,12 +211,12 @@ const data = {
         date: "09.2022 - today",
         duties: [
           "Work on Front-end part",
-          "Work on the Scrum metodology",
+          "Work on the Scrum methodology",
           "Code rewiev of others developers"
         ],
         achieves: [
           "Completing tasks",
-          "looking for mistakes in other developers's code and fixing my own one",
+          "Looking for mistakes in other developers's code and fixing my own one",
           "Development project"
         ]
       }, {
@@ -239,8 +239,8 @@ const data = {
           "Search / create / edit content"
         ],
         achieves: [
-          'Established communication with other departments in order to avoid situations "Oh, we urgently, just yesterday"',
-          "Visual content passed a special selection, later the company used it to print its own catalogs",
+          'Established communication with other departments in order to avoid situations "Oh, we need it very urgently, even for yesterday"',
+          "Visual content passed my special selection, later the company used it to print its own catalogs",
           "Convinced the company's management that it is better to have a full-fledged photo-video studio and organized its work"
         ]
       }, {
