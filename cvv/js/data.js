@@ -216,7 +216,7 @@ const data = {
         ],
         achieves: [
           "Completing tasks",
-          "Looking for mistakes in other developers's code and fixing my own one",
+          "reviewing pull requests",
           "Development project"
         ]
       }, {
