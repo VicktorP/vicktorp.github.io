@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cvv Pritulyuk</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="skills-details-container">
+    <div class="skills">
+      <div class="general-info-wrapper">
+        <div class="general-info">
+          <div class="photo">
+            <img class="photo-img" src="img/photo.jpg" alt="Photo">
+          </div>
+          <p class="about-myself">
+            tel. : +48-690-662-056 <br />
+            tel. : +38-096-725-46-46 <br />
+            Email: pritulyukv@gmail.com
+          </p>  
+        </div>
+      </div>
+      <div class="skill">
+        <h4 class="skill-title">Front-end</h4>
+        <div class="skill-wrap">
+          <p class="skill-desc">HTML</p>
+          <div class="skill-bar">
+            <div class="skill-status html-bar"></div>
+          </div>
+        </div>
+        <div class="skill-wrap">
+          <p class="skill-desc">CSS</p>
+          <div class="skill-bar">
+            <div class="skill-status css-bar"></div>
+          </div>
+        </div>
+        <div class="skill-wrap">
+          <p class="skill-desc">JavaScript</p>
+          <div class="skill-bar">
+            <div class="skill-status js-bar"></div>
+          </div>
+        </div>
+        <div class="skill-wrap">
+          <p class="skill-desc">GIT</p>
+          <div class="skill-bar">
+            <div class="skill-status git-bar"></div>
+          </div>
+        </div>
+        <div class="skill-wrap">
+          <p class="skill-desc">React</p>
+          <div class="skill-bar">
+            <div class="skill-status react-bar"></div>
+          </div>
+        </div>
+        <div class="skill-wrap">
+          <p class="skill-desc">Angular</p>
+          <div class="skill-bar">
+            <div class="skill-status angular-bar"></div>
+          </div>
+        </div>
+        <div class="skill-wrap">
+          <p class="skill-desc">Node</p>
+          <div class="skill-bar">
+            <div class="skill-status node-bar"></div>
+          </div>
+        </div>
+        <div class="skill-wrap">
+          <p class="skill-desc">Bootstrap</p>
+          <div class="skill-bar">
+            <div class="skill-status bs-bar"></div>
+          </div>
+        </div>
+        <div class="skill-wrap">
+          <p class="skill-desc">Gulp</p>
+          <div class="skill-bar">
+            <div class="skill-status gulp-bar"></div>
+          </div>
+        </div>
+      </div>      
+      <div class="skill">
+        <h4 class="skill-title">Back-end</h4>
+        <div class="skill-wrap">
+          <p class="skill-desc">MySQL</p>
+          <div class="skill-bar">
+            <div class="skill-status mysql-bar"></div>
+          </div>
+        </div>
+        <div class="skill-wrap">
+          <p class="skill-desc">MongoDB</p>
+          <div class="skill-bar">
+            <div class="skill-status mongo-bar"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4 class="skill-title">Design</h4>
+        <div class="skill-wrap">
+          <p class="skill-desc">Photoshop</p>
+          <div class="skill-bar">
+            <div class="skill-status photoshop-bar"></div>
+          </div>
+        </div>
+        <div class="skill-wrap">
+          <p class="skill-desc">Figma</p>
+          <div class="skill-bar">
+            <div class="skill-status figma-bar"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4 class="skill-title">Soft-skills</h4>
+        <div class="skill-wrap">
+          <p class="skill-desc" id="skill-stress">Stress tolerance</p>
+          <div class="skill-bar">
+            <div class="skill-status stress-bar"></div>
+          </div>
+        </div>
+        <div class="skill-wrap">
+          <p class="skill-desc" id="skill-sociability">Sociability</p>
+          <div class="skill-bar">
+            <div class="skill-status commun-bar"></div>
+          </div>
+        </div>         
+        <div class="skill-wrap">
+          <p class="skill-desc" id="skill-organization">Organization</p>
+          <div class="skill-bar">
+            <div class="skill-status org-bar"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4 class="skill-title" id="skill-title-languages">Languages</h4>
+        <div class="skill-wrap">
+          <p class="skill-desc" id="skill-language-ukr">Ukrainian</p>
+          <div class="skill-bar">
+            <div class="skill-status ukr-bar"></div>
+          </div>
+        </div> 
+        <div class="skill-wrap">
+          <p class="skill-desc" id="skill-language-rus">Russian</p>
+          <div class="skill-bar">
+            <div class="skill-status rus-bar"></div>
+          </div>
+        </div>                
+        <div class="skill-wrap">
+          <p class="skill-desc" id="skill-language-eng">English</p>
+          <div class="skill-bar">
+            <div class="skill-status eng-bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="details">
+      <div id="cvv-data"></div>
+      <section class="section-title">
+        <h1 class="my-title" id="my-title">Viktor Prytuliuk</h1>
+      </section>
+      <section class="section-stage">
+        <h2 class="stage-title">Work experience</h2>        
+        <div class="stage-info">
+          <h3 class="job-title">Front-end developer. Charity project</h3>
+          <p class="stage-date">09.2022 - today</p>
+          <p class="stage-place">EPAM Laboratory</p>
+          <ul class="job-duties">
+            <li class="duty-item">Work on Front-end part</li>
+            <li class="duty-item">Work on the Scrum methodology</li>
+            <li class="duty-item">Code rewiev of others developers</li>
+          </ul>
+          <p class="achieves-wrapper">About the results:
+            <ul class="job-achieves">
+              <li class="achieve-item">Completing tasks</li>
+              <li class="achieve-item">reviewing pull requests</li>
+              <li class="achieve-item">Development project</li>
+            </ul>
+          </p>
+        </div>
+        <div class="stage-info">
+          <h3 class="job-title">Front-end developer</h3>
+          <p class="stage-date">05.2021 - today</p>
+          <p class="stage-place">Freelance</p>
+          <p class="achieves-wrapper">About the results:
+            <ul class="job-achieves">
+              <li class="achieve-item">Business card websites</li>
+              <li class="achieve-item">Optimization legacy code</li>
+              <li class="achieve-item">Self-study programming</li>
+            </ul>
+          </p>
+        </div>
+        <div class="stage-info">
+          <h3 class="job-title">Marketing manager</h3>
+          <p class="stage-date">10.2017 - 07.2020</p>
+          <p class="stage-place">SanWell - wholesale, distribution, import and export of sanitary products</p>
+          <ul class="job-duties">
+            <li class="duty-item">Control of filling the company's online store with actual products</li>
+            <li class="duty-item">Planning and development of promotions</li>
+            <li class="duty-item">Search / create / edit content</li>
+          </ul>
+          <p class="achieves-wrapper">About the results:
+            <ul class="job-achieves">
+              <li class="achieve-item">Established communication with other departments in order to avoid situations "Oh, we need it very urgently, even for yesterday"</li>
+              <li class="achieve-item">Visual content passed my special selection, later the company used it to print its own catalogs</li>
+              <li class="achieve-item">Convinced the company's management that it is better to have a full-fledged photo-video studio and organized its work</li>
+            </ul>
+          </p>
+        </div>
+        <div class="stage-info">
+          <h3 class="job-title">Head of the retail department of the warehouse</h3>
+          <p class="stage-date">05.2012 - 10.2017</p>
+          <p class="stage-place">SanWell - wholesale, distribution, import and export of sanitary products</p>
+          <ul class="job-duties">
+            <li class="duty-item">Ensuring the smooth operation of the warehouse"</li>
+            <li class="duty-item">Warehouse accounting</li>
+            <li class="duty-item">Team management, distribution of tasks</li>
+          </ul>
+          <p class="achieves-wrapper">About the results:
+            <ul class="job-achieves">
+              <li class="achieve-item">Stopped a series of re-grading and shortages in the warehouse, brought the warehouse to 0 according to the results of inventory</li>
+            </ul>
+          </p>
+        </div>
+      </section>
+      <section class="section-stage">
+        <h2 class="stage-title">Education</h2>
+        <div class="stage-info">
+          <h3 class="job-title">"Front-end development"</h3>
+          <p class="stage-date">11.2021 - today</p>
+          <p class="stage-place">EPAM Laboratory</p>
+          <p class="study-description">
+            Course JS, React, Angular, NodeJS
+          </p>
+        </div>
+        <div class="stage-info">
+          <h3 class="job-title">"Front-end developer"</h3>
+          <p class="stage-date">09.2020 - 04.2021</p>
+          <p class="stage-place">IT School "Peace IT"</p>
+          <p class="study-description">
+            Graduated with honors
+          </p>
+        </div>
+        <div class="stage-info">
+          <h3 class="job-title">"Web development"</h3>
+          <p class="stage-date">04.2018 - 04.2019</p>
+          <p class="stage-place">Computer Academy "STEP"</p>
+        </div>
+        <div class="stage-info">
+          <h3 class="job-title">"Automation and control systems"</h3>
+          <p class="stage-date">09.2000 - 06.2005</p>
+          <p class="stage-place">East Ukrainian National University. Vladimir Dahl</p>
+          <p class="study-description">
+            qualification - specialist
+          </p>
+        </div>
+      </section>
+      <section class="about-me">
+        <p>
+        birthday: 04/21/1983 <br />
+        driver's license class B <br />
+        I'm ready to relocate to each country and city
+        </p>
+      </section>
+      
+    </div>
+  </div>
+</body>
+</html>
