@@ -19,7 +19,7 @@ ul {
 }
 
 .skills-details-container {
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
@@ -28,7 +28,7 @@ ul {
 }
 
 .skills {
-  width: 200px;
+  width: 300px;
   flex-shrink: 0;
   background-color: #343a5a;
   padding: 15px 20px 20px;
@@ -152,7 +152,7 @@ ul {
 }
 
 .details {
-  width: 600px;
+  width: 700px;
   background-color: #fff;
   position: relative;
   padding: 0 20px 50px;
