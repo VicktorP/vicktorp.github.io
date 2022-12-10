@@ -102,6 +102,9 @@ ul {
 .js-bar {
   left: 90%;
 }
+.ts-bar {
+  left: 70%;
+}
 .git-bar{
   left: 50%;
 }
@@ -112,7 +115,10 @@ ul {
   left: 40%;
 }
 .react-bar {
-  left: 50%;
+  left: 60%;
+}
+.redux-bar {
+  left: 70%;
 }
 .angular-bar {
   left: 40%;
