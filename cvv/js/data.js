@@ -1,4 +1,113 @@
 const data = {
+  ENG: {
+    stress: "Stress tolerance",
+    sociability: "Sociability",
+    organization: "Organization",
+    skillLanguages: "Languages",
+    languageUkr: "Ukrainian",
+    languageRus: "Russian",
+    languageEng: "English",
+    fullName: "Viktor Prytuliuk",
+    myMission: `Hello. <br /> 
+                My goal is to find a new opportunity for growth as a specialist. I practice HTML5, CSS3, JavaScript. I am currently learning React. I live in the suburbs 
+                of Kiev, but I am not tied to the city or region and is ready for relocation. Working for results in a team is important for me.`,
+    myExperience: "Work experience",
+    myEducation: "Education",
+    result: "About the results",
+    experience: [
+      {
+        company: "Love Does(Center for Ukrainian Refugees, Warsaw)",
+        position: "Teacher of Math, Informatics, JS Programming in the Center for Ukrainian Refugees. Charity",
+        date: "01.2023 - today",
+        duties: [
+          "Teaching mathematics (5-8 grades)",
+          "Teaching informatics (5-8, 9-11 grades)",
+          "Teaching programming (9-11 grades)"
+        ],
+        achieves: [
+          "Repeated educational material for grades 5-6, conducting independent works",
+          "Learning how a computer works, google services, MS word & excell",
+          "Learning how a website works, what it includes and needs for work, html tags, layout principles, etc."
+        ]
+      }, {
+        company: "EPAM (Laboratory)",
+        position: "Front-end developer. Charity project",
+        date: "09.2022 - today",
+        duties: [
+          "Work on Front-end part",
+          "Work on the Scrum methodology",
+          "Code rewiev of others developers"
+        ],
+        achieves: [
+          "Completing tasks",
+          "reviewing pull requests",
+          "Development project"
+        ]
+      }, {
+        company: "Freelance",
+        position: "Front-end developer",
+        date: "05.2021 - 09.2021",
+        duties: [],
+        achieves: [
+          "Business card websites",
+          "Optimization legacy code",
+          "Self-study programming"
+        ]
+      }, {
+        company: "SanWell - wholesale, distribution, import and export of sanitary products",
+        position: "Marketing manager",
+        date: "10.2017 - 07.2020",
+        duties: [
+          "Control of filling the company's online store with actual products",
+          "Planning and development of promotions",
+          "Search / create / edit content"
+        ],
+        achieves: [
+          'Established communication with other departments in order to avoid situations "Oh, we need it very urgently, even for yesterday"',
+          "Visual content passed my special selection, later the company used it to print its own catalogs",
+          "Convinced the company's management that it is better to have a full-fledged photo-video studio and organized its work"
+        ]
+      }, {
+        company: "SanWell - wholesale, distribution, import and export of sanitary products",
+        position: "Head of the retail department of the warehouse",
+        date: "05.2012 - 10.2017",
+        duties: [
+          "Ensuring the smooth operation of the warehouse",
+          "Warehouse accounting",
+          "Team management, distribution of tasks"
+        ],
+        achieves: [
+          "Stopped a series of re-grading and shortages in the warehouse, brought the warehouse to 0 according to the results of inventory"
+        ]
+      }
+    ],
+    education: [
+      {
+        company: 'EPAM (Laboratory)',
+        position: '"Front-end development"',
+        date: "11.2021 - today",
+        description: "Course JS, React, Angular, NodeJS"
+      }, {
+        company: 'IT School "Peace IT"',
+        position: '"Front-end developer"',
+        date: "09.2020 - 04.2021",
+        description: "Graduated with honors"
+      }, {
+        company: 'Computer Academy "STEP"',
+        position: '"Web development"',
+        date: "04.2018 - 04.2019",
+        description: ""
+      }, {
+        company: 'East Ukrainian National University. Vladimir Dahl',
+        position: '"Automation and control systems"',
+        date: "09.2000 - 06.2005",
+        description: "qualification - specialist"
+      }
+    ],
+    birthday: 'birthday: 04/21/1983',
+    drLicense: "driver's license class B",
+    relocate: "I'm ready to relocate to each city or town"
+  },
   UKR: {
     stress: "Стрессостійкість",
     sociability: "Комунікабельність",
@@ -16,7 +125,7 @@ const data = {
     result: "Коротко про результати",
     experience: [
       {
-        company: "EPAM Laboratory",
+        company: "EPAM (Laboratory)",
         position: "Front-end розробник. Charity project",
         date: "09.2022 - теперішній час",
         duties: [
@@ -32,7 +141,7 @@ const data = {
       }, {
         company: "Фріланс",
         position: "Front-end розробник",
-        date: "05.2021 - теперішній час",
+        date: "05.2021 - 09.2021",
         duties: [],
         achieves: [
           "Сайти-візитки",
@@ -69,7 +178,7 @@ const data = {
     ],
     education: [
       {
-        company: 'EPAM Laboratory',
+        company: 'EPAM (Laboratory)',
         position: '"Front-end разработка"',
         date: "11.2021 - теперішній час",
         description: "Курс JS, React, Angular, NodeJS"
@@ -111,7 +220,7 @@ const data = {
     result: "Кратко о результатах",
     experience: [
       {
-        company: "EPAM Laboratory",
+        company: "EPAM (Laboratory)",
         position: "Front-end разработчик. Charity project",
         date: "09.2022 - настоящее время",
         duties: [
@@ -127,7 +236,7 @@ const data = {
       }, {
         company: "Фриланс",
         position: "Front-end разработчик",
-        date: "05.2021 - настоящее время",
+        date: "05.2021 - 09.2021",
         duties: [],
         achieves: [
           "Сайты-визитки",
@@ -164,7 +273,7 @@ const data = {
     ],
     education: [
       {
-        company: 'EPAM Laboratory',
+        company: 'EPAM (Laboratory)',
         position: '"Front-end разработка"',
         date: "11.2021 - настоящее время",
         description: "Курс JS, React, Angular, NodeJS"
@@ -188,100 +297,5 @@ const data = {
     birthday: 'родился: 21.04.1983',
     drLicense: "водительское удостоверение кат.В",
     relocate: "Готов к переезду в любой город"
-  },
-  ENG: {
-    stress: "Stress tolerance",
-    sociability: "Sociability",
-    organization: "Organization",
-    skillLanguages: "Languages",
-    languageUkr: "Ukrainian",
-    languageRus: "Russian",
-    languageEng: "English",
-    fullName: "Viktor Prytuliuk",
-    myMission: `Hello. <br /> 
-                My goal is to find a new opportunity for growth as a specialist. I practice HTML5, CSS3, JavaScript. I am currently learning React. I live in the suburbs 
-                of Kiev, but I am not tied to the city or region and is ready for relocation. Working for results in a team is important for me.`,
-    myExperience: "Work experience",
-    myEducation: "Education",
-    result: "About the results",
-    experience: [
-      {
-        company: "EPAM Laboratory",
-        position: "Front-end developer. Charity project",
-        date: "09.2022 - today",
-        duties: [
-          "Work on Front-end part",
-          "Work on the Scrum methodology",
-          "Code rewiev of others developers"
-        ],
-        achieves: [
-          "Completing tasks",
-          "reviewing pull requests",
-          "Development project"
-        ]
-      }, {
-        company: "Freelance",
-        position: "Front-end developer",
-        date: "05.2021 - today",
-        duties: [],
-        achieves: [
-          "Business card websites",
-          "Optimization legacy code",
-          "Self-study programming"
-        ]
-      }, {
-        company: "SanWell - wholesale, distribution, import and export of sanitary products",
-        position: "Marketing manager",
-        date: "10.2017 - 07.2020",
-        duties: [
-          "Control of filling the company's online store with actual products",
-          "Planning and development of promotions",
-          "Search / create / edit content"
-        ],
-        achieves: [
-          'Established communication with other departments in order to avoid situations "Oh, we need it very urgently, even for yesterday"',
-          "Visual content passed my special selection, later the company used it to print its own catalogs",
-          "Convinced the company's management that it is better to have a full-fledged photo-video studio and organized its work"
-        ]
-      }, {
-        company: "SanWell - wholesale, distribution, import and export of sanitary products",
-        position: "Head of the retail department of the warehouse",
-        date: "05.2012 - 10.2017",
-        duties: [
-          "Ensuring the smooth operation of the warehouse",
-          "Warehouse accounting",
-          "Team management, distribution of tasks"
-        ],
-        achieves: [
-          "Stopped a series of re-grading and shortages in the warehouse, brought the warehouse to 0 according to the results of inventory"
-        ]
-      }
-    ],
-    education: [
-      {
-        company: 'EPAM Laboratory',
-        position: '"Front-end development"',
-        date: "11.2021 - today",
-        description: "Course JS, React, Angular, NodeJS"
-      }, {
-        company: 'IT School "Peace IT"',
-        position: '"Front-end developer"',
-        date: "09.2020 - 04.2021",
-        description: "Graduated with honors"
-      }, {
-        company: 'Computer Academy "STEP"',
-        position: '"Web development"',
-        date: "04.2018 - 04.2019",
-        description: ""
-      }, {
-        company: 'East Ukrainian National University. Vladimir Dahl',
-        position: '"Automation and control systems"',
-        date: "09.2000 - 06.2005",
-        description: "qualification - specialist"
-      }
-    ],
-    birthday: 'birthday: 04/21/1983',
-    drLicense: "driver's license class B",
-    relocate: "I'm ready to relocate to each city or town"
   }
 }
