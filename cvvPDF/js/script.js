@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     languageEng.innerText = data[lang].languageEng;
 
     cvvData.innerHTML = `
-      <section class="section-title">
+      <section class="section-title">        
         <h1 class="my-title" id="my-title">${data[lang].fullName}</h1>
       </section>
       <section class="section-stage">
