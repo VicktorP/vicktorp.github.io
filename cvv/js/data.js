@@ -11,18 +11,18 @@ const data = {
     myMission: `Hello. <br /> 
                 My goal is to find a new opportunity for growth as a specialist. I practice HTML5, CSS3, JavaScript. I am currently learning React. I live in the suburbs 
                 of Kiev, but I am not tied to the city or region and is ready for relocation. Working for results in a team is important for me.`,
-    myExperience: "Work experience",
+    myExperience: "Work Experience",
     myEducation: "Education",
     result: "About the results",
     experience: [
       {
-        company: "Love Does(Center for Ukrainian Refugees, Warsaw)",
-        position: "Teacher of Math, Informatics, JS Programming in the Center for Ukrainian Refugees. Charity",
+        company: "Love Does (Center for Ukrainian Refugees, Warsaw)",
+        position: "Volunteer Math teacher, Computer science, Programming",
         date: "01.2023 - today",
         duties: [
-          "Teaching mathematics (5-8 grades)",
-          "Teaching informatics (5-8, 9-11 grades)",
-          "Teaching programming (9-11 grades)"
+          "Teach mathematics (grades 5-8)",
+          "Teach computer science (grades 5-8, 9-11)",
+          "Teach programming (grades 9-11)"
         ],
         achieves: [
           "Repeated educational material for grades 5-6, conducting independent works",
@@ -40,7 +40,7 @@ const data = {
         ],
         achieves: [
           "Completing tasks",
-          "reviewing pull requests",
+          "Reviewing pull requests",
           "Development project"
         ]
       }, {
@@ -55,12 +55,12 @@ const data = {
         ]
       }, {
         company: "SanWell - wholesale, distribution, import and export of sanitary products",
-        position: "Marketing manager",
+        position: "Marketing Manager",
         date: "10.2017 - 07.2020",
         duties: [
-          "Control of filling the company's online store with actual products",
-          "Planning and development of promotions",
-          "Search / create / edit content"
+          "Stocked products for online store",
+          "Planned and developed promotions",
+          "Created content"
         ],
         achieves: [
           'Established communication with other departments in order to avoid situations "Oh, we need it very urgently, even for yesterday"',
@@ -69,10 +69,10 @@ const data = {
         ]
       }, {
         company: "SanWell - wholesale, distribution, import and export of sanitary products",
-        position: "Head of the retail department of the warehouse",
+        position: "Head of the retail warehouse department",
         date: "05.2012 - 10.2017",
         duties: [
-          "Ensuring the smooth operation of the warehouse",
+          "Ensured smooth operation of warehouse",
           "Warehouse accounting",
           "Team management, distribution of tasks"
         ],
@@ -101,12 +101,12 @@ const data = {
         company: 'East Ukrainian National University. Vladimir Dahl',
         position: '"Automation and control systems"',
         date: "09.2000 - 06.2005",
-        description: "qualification - specialist"
+        description: "Qualification - specialist"
       }
     ],
-    birthday: 'birthday: 04/21/1983',
-    drLicense: "driver's license class B",
-    relocate: "I'm ready to relocate to each city or town"
+    birthday: "Birthday: 04/21/1983",
+    drLicense: "Driver's License: class B",
+    relocate: "I'm able to relocate to any city"
   },
   UKR: {
     stress: "Стрессостійкість",
@@ -125,6 +125,20 @@ const data = {
     result: "Коротко про результати",
     experience: [
       {
+        company: "Love Does (Центр для біжанців з України, Варшава)",
+        position: "Волонтер вчитель математики, інформатики, программування",
+        date: "01.2023 - теперішній час",
+        duties: [
+          "Навчання математиці (5-8 класси)",
+          "Навчання информатиці (5-8, 9-11 класси)",
+          "Навчання програмуванню (9-11 класси)"
+        ],
+        achieves: [
+          "Повторили матеріал за 5-6 класси, проводили самостійні роботи",
+          "Вивчаєм роботу та склад комп'ютера, використання популярних сервісів Google та Microsoft",
+          "Вивчаєм роботу та склад вебсайтів, html теги, принципи верстки, тощо"
+        ]
+      }, {
         company: "EPAM (Laboratory)",
         position: "Front-end розробник. Charity project",
         date: "09.2022 - теперішній час",
@@ -196,11 +210,11 @@ const data = {
         company: 'Східноукраїнський Національный університет ім. Володимира Даля',
         position: '"Автоматика та системи управління"',
         date: "09.2000 - 06.2005",
-        description: "кваліфікація - спеціаліст"
+        description: "Кваліфікація - спеціаліст"
       }
     ],
-    birthday: 'народився: 21.04.1983',
-    drLicense: "водійське посвідчення кат.В",
+    birthday: "Народився: 21.04.1983",
+    drLicense: "Водійське посвідчення кат.В",
     relocate: "Готовий до переїзду до будь-якого міста"
   },
   RU: {
@@ -220,6 +234,20 @@ const data = {
     result: "Кратко о результатах",
     experience: [
       {
+        company: "Love Does (Центр для бежанцев из Украины, Варшава)",
+        position: "Волонтер учитель математики, информатики, программирования",
+        date: "01.2023 - настоящее время",
+        duties: [
+          "Обучение математике (5-8 классы)",
+          "Обучение информатике (5-8, 9-11 классы)",
+          "Обучение программированию (9-11 классы)"
+        ],
+        achieves: [
+          "Повторили материал за 5-6 классы, проведение самостоятельных работ",
+          "Изучаем работу и устройство компьютера, использование популярных сервисов Google и Microsoft",
+          "Изучаем работу и устройство вебсайтов, html теги, принципы верстки, и т.д."
+        ]
+      }, {
         company: "EPAM (Laboratory)",
         position: "Front-end разработчик. Charity project",
         date: "09.2022 - настоящее время",
@@ -294,8 +322,8 @@ const data = {
         description: "квалификация - специалист"
       }
     ],
-    birthday: 'родился: 21.04.1983',
-    drLicense: "водительское удостоверение кат.В",
+    birthday: "Родился: 21.04.1983",
+    drLicense: "Водительское удостоверение кат.В",
     relocate: "Готов к переезду в любой город"
   }
 }
