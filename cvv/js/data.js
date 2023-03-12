@@ -26,8 +26,8 @@ const data = {
         ],
         achieves: [
           "Repeated educational material for grades 5-6, conducting independent works",
-          "Learning how a computer works, google services, MS word & excell",
-          "Learning how a website works, what it includes and needs for work, html tags, layout principles, etc."
+          "Learning how a computer works, google services, MS Word & Excel",
+          "Learning how a website works, what it includes and needs to work, html tags, layout principles, etc."
         ]
       }, {
         company: "EPAM (Laboratory)",
@@ -44,16 +44,6 @@ const data = {
           "Development project"
         ]
       }, {
-        company: "Freelance",
-        position: "Front-end developer",
-        date: "05.2021 - 09.2021",
-        duties: [],
-        achieves: [
-          "Business card websites",
-          "Optimization legacy code",
-          "Self-study programming"
-        ]
-      }, {
         company: "SanWell - wholesale, distribution, import and export of sanitary products",
         position: "Marketing Manager",
         date: "10.2017 - 07.2020",
@@ -63,7 +53,7 @@ const data = {
           "Created content"
         ],
         achieves: [
-          'Established communication with other departments in order to avoid situations "Oh, we need it very urgently, even for yesterday"',
+          "Established better communication between departments",
           "Visual content passed my special selection, later the company used it to print its own catalogs",
           "Convinced the company's management that it is better to have a full-fledged photo-video studio and organized its work"
         ]
@@ -74,7 +64,7 @@ const data = {
         duties: [
           "Ensured smooth operation of warehouse",
           "Warehouse accounting",
-          "Team management, distribution of tasks"
+          "Team management, delegated tasks"
         ],
         achieves: [
           "Stopped a series of re-grading and shortages in the warehouse, brought the warehouse to 0 according to the results of inventory"
@@ -151,16 +141,6 @@ const data = {
           "Виконання завдань",
           "Пошук помилок у чужому коді та виправлення своїх",
           "Розвиток проекту"
-        ]
-      }, {
-        company: "Фріланс",
-        position: "Front-end розробник",
-        date: "05.2021 - 09.2021",
-        duties: [],
-        achieves: [
-          "Сайти-візитки",
-          "Оптимізація legacy коду",
-          "Самонавчання програмуванню"
         ]
       }, {
         company: "SanWell - оптова торгівля, дистрибуція, імпорт та експорт сантехнічної продукції",
@@ -260,16 +240,6 @@ const data = {
           "Выполнение задач",
           "Нахождение ошибок в чужом коде и исправление своих",
           "Развитие проекта"
-        ]
-      }, {
-        company: "Фриланс",
-        position: "Front-end разработчик",
-        date: "05.2021 - 09.2021",
-        duties: [],
-        achieves: [
-          "Сайты-визитки",
-          "Оптимизация legacy кода",
-          "Самообучаюсь программированию"
         ]
       }, {
         company: "SanWell - оптовая торговля, дистрибуция, импорт и экспорт сантехнической продукции",
