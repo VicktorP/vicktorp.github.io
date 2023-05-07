@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, .container {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-size: 32px;
+}
+
+body {
+    background-color: #88bcf498;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container, .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    padding: 50px 0;
+    width: 450px;
+}
+
+.cards-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card {
+    width: 100%;
+    min-height: 200px;
+    padding: 0 50px;
+}
+
+.card {
+    border-radius: 20px;
+    background: rgb(212,212,212) radial-gradient(circle at 50% 0, rgba(255,255,255,.65), rgba(255,255,255,.35));
+    box-shadow: inset   rgba(0,100,0,0.6) 0 -3px 8px, 
+                inset   rgba(252,255,255,.7) 0 3px 8px, 
+                        rgba(0,100,0,.8) 0 3px 8px -3px;
+}
+
+.buttons-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button {
+    position: relative;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.5em;
+    border-radius: 5px;
+    position:relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
+    transition: transform 0.15s
+}
+
+.button:active {
+    transform: translateY(4px)
+}
+
+.button:disabled {
+    transform: translateY(0px)
+}
+
+.button:after {
+    right: 10px;
+    left: auto;
+    transform: skew(8deg) rotate(3deg);
+}
+
+.practice-foreign-input {
+    font-size: 1em;
+    border: none;
+    outline:none;
+}
+
+.js-hide {
+    display: none;
+}
+
+.opacity-hide {
+    opacity: 0;
+}
+
+/* 
+
+@media (min-width: 768px) {  Стили для устройств с маленьким экраном, размерами 768px - 991px (планшеты и подобные)  }
+@media (min-width: 992px) {   Стили для ноутбуков и компьютеров с экранами в диапазоне 992px - 1199px  }
+@media (min-width: 1200px) {   Стили для устройств с большой шириной экрана >1200px  }
+
+@media screen and (min-width: 1200px) and (orientation: landscape) {  }
+
+
+@media screen and (min-width: 1200px) and (orientation: landscape) { 
+    .container {
+
+    }
+} 
+*/
