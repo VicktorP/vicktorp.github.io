@@ -131,3 +131,8 @@ homeButton.addEventListener('click', () => {
     buttonsWrapper.classList.add('opacity-hide')
     tipButton.classList.add('opacity-hide')
 })
+
+window.onresize = () => { 
+    document.body.height = window.innerHeight
+    practiceTranslating.innerHTML = window.innerHeight
+}
