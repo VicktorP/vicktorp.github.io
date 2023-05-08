@@ -89,7 +89,7 @@ const practicing = () => {
         checkNextButton()
     })
     next.addEventListener('click', () => {
-        if (practiceForeign.value.trim() === wordsList[number].word) {
+        if (practiceForeign.value.trim().toLowerCase() === wordsList[number].word) {
             numbersPrintedWords.push(number)
             number = randNumber()
             practiceTranslating.innerHTML = wordsList[number].translation
