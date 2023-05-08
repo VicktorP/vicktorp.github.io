@@ -5,7 +5,8 @@ const buttonsWrapper = document.querySelector('#buttons-wrapper')
 const home = document.querySelector('#button-home')
 const prev = document.querySelector('#previous')
 const next = document.querySelector('#next')
-const learnForeign = document.querySelector('#learn-foreign')
+const learnForeignWord = document.querySelector('#learn-foreign-word')
+const learnForeignTranscription = document.querySelector('#learn-foreign-transcription')
 const learnTranslating = document.querySelector('#learn-translating')
 const practiceForeign = document.querySelector('#practice-foreign')
 const practiceTranslating = document.querySelector('#practice-translating')
@@ -39,7 +40,7 @@ const checkNextButton = () => {
 
 const fillBlock = (block, number, method) => {
     const words = wordsList[number][method].split(' ')
-    if (words.some(word=>word.length>16)) {
+    if (words.some(word=>word.length>16) && method!=='transcription') {
         block.classList.add('small-size-js')
     } else {
         block.classList.remove('small-size-js')
@@ -54,7 +55,8 @@ const fillLearnBlocks = (wordNumber) => {
     } else {
         number = randNumber()
     }
-    fillBlock(learnForeign, number, 'word')
+    fillBlock(learnForeignWord, number, 'word')
+    fillBlock(learnForeignTranscription, number, 'transcription')
     fillBlock(learnTranslating, number, 'translation')
     numbersPrintedWords.push(number)
 }
