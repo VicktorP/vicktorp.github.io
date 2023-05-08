@@ -1,5 +1,6 @@
 import wordsList from '../assets/db/dictionary.js'
 
+const container = document.querySelector('#container')
 const appChoise = document.querySelector('#app-choice')
 const buttonsWrapper = document.querySelector('#buttons-wrapper')
 const homeButton = document.querySelector('#button-home')
@@ -12,6 +13,9 @@ const learnTranslating = document.querySelector('#learn-translating')
 const practiceForeign = document.querySelector('#practice-foreign')
 const practiceTranslating = document.querySelector('#practice-translating')
 const numbersPrintedWords = []
+const startHeight = window.innerHeight
+
+document.body.height = startHeight
 
 const randNumber = () => Math.floor(Math.random() * wordsList.length)
 
@@ -134,5 +138,9 @@ homeButton.addEventListener('click', () => {
 
 window.onresize = () => { 
     document.body.height = window.innerHeight
-    practiceTranslating.innerHTML = window.innerHeight
+    if (startHeight > window.innerHeight) {
+        container.style.justifyContent = 'flex-start'
+    } else {
+        container.style.justifyContent = 'space-between'
+    }
 }
