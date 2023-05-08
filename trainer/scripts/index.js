@@ -38,6 +38,12 @@ const checkNextButton = () => {
 }
 
 const fillBlock = (block, number, method) => {
+    const words = wordsList[number][method].split(' ')
+    if (words.some(word=>word.length>16)) {
+        block.classList.add('small-size-js')
+    } else {
+        block.classList.remove('small-size-js')
+    }
     block.innerHTML = wordsList[number][method].toLowerCase()
 }
 
