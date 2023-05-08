@@ -136,11 +136,12 @@ homeButton.addEventListener('click', () => {
     tipButton.classList.add('opacity-hide')
 })
 
-window.onresize = () => { 
-    document.body.height = window.innerHeight
-    if (startHeight !== window.innerHeight) {
-        container.style.justifyContent = 'flex-start'
-    } else {
-        container.style.justifyContent = 'space-between'
-    }
-}
+window.addEventListener('scroll', () => { 
+    // if (startHeight !== window.innerHeight) {
+    //     container.style.justifyContent = 'flex-start'
+    // } else {
+    //     container.style.justifyContent = 'space-between'
+    // }
+    
+    container.style.justifyContent = 'flex-start'    
+})
