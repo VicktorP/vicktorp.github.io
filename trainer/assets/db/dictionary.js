@@ -2,14 +2,14 @@ const wordsList = [
     {
         word: "to abuse",
         translation: "злоупотреблять, оскорблять, плохо обращаться, браниться",
-        transcription: "ə'bju:s",
+        transcription: "to͞o ə'bju:s",
         rate: 1,
         success: 0,
         statistics: []
     }, {
         word: "to keep up",
         translation: "поддерживать, успевать",
-        transcription: "kēp əp",
+        transcription: "to͞o kēp əp",
         rate: 1,
         success: 0,
         statistics: []
@@ -30,7 +30,7 @@ const wordsList = [
     }, {
         word: "to pick up",
         translation: "собирать (вещи), подобрать, забрать",
-        transcription: "pik up",
+        transcription: "to͞o pik up",
         rate: 1,
         success: 0,
         statistics: []
@@ -100,7 +100,7 @@ const wordsList = [
     }, {
         word: "to consider",
         translation: "рассматривать, учитывать, принимать во внимание",
-        transcription: "kən'sidər",
+        transcription: "to͞o kən'sidər",
         rate: 1,
         success: 0,
         statistics: []
@@ -268,21 +268,21 @@ const wordsList = [
     }, {
         word: "to get along",
         translation: "ладить (отшения между людьми)",
-        transcription: "",
+        transcription: "to͞o  ɡet ə'lôNG",
         rate: 1,
         success: 0,
         statistics: []
     }, {
         word: "to cross",
         translation: "переходить",
-        transcription: "krôs",
+        transcription: "to͞o krôs",
         rate: 1,
         success: 0,
         statistics: []
     }, {
         word: "terrified",
         translation: "испуганный",
-        transcription: "",
+        transcription: "'terɪfaɪd",
         rate: 1,
         success: 0,
         statistics: []
@@ -364,174 +364,294 @@ const wordsList = [
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "essential",
+        translation: "существенный, ценный",
+        transcription: "ə'sen(t)SHəl",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "to examine",
+        translation: "исследовать, рассматривать",
+        transcription: "to͞o ig'zamən",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "precise",
+        translation: "точный, четкий, аккуратный",
+        transcription: "prə'sīs",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "to make up for",
+        translation: "компенсировать",
+        transcription: "to͞o māk əp fɔ:r",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "according to",
+        translation: "согласно, в соответствии с",
+        transcription: "ə'kôrdiNG to͞o",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "apparently",
+        translation: "видимо, очевидно",
+        transcription: "ə'perəntlē",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "concerned",
+        translation: "обеспокоенный",
+        transcription: "kən'sərnd",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "to run out",
+        translation: "убегать, кончаться, истощаться",
+        transcription: "to͞o rən out",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "certain",
+        translation: "определенный, некоторый",
+        transcription: "'sərtn",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "to resign",
+        translation: "уйти в отставку, увольняться",
+        transcription: "to͞o rə'zīn",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "applicable",
+        translation: "применимый",
+        transcription: "'apləkəb(ə)l",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "sensible",
+        translation: "разумный",
+        transcription: "'sensəb(ə)l",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "justified",
+        translation: "оправданный",
+        transcription: "'jəstəˌfīd",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "prey",
+        translation: "добыча, жертва, охотиться",
+        transcription: "prā",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "cramped",
+        translation: "тесный, ограниченный",
+        transcription: "kram(p)t",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "to assume",
+        translation: "предполагать",
+        transcription: "to͞o ə'so͞om",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "mystery",
+        translation: "тайна",
+        transcription: "'mist(ə)rē",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "coniferous",
+        translation: "хвойный, вечнозеленый",
+        transcription: "kə'nɪfərəs",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "deciduous",
+        translation: "лиственный",
+        transcription: "di'sijo͞oəs",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "to split up",
+        translation: "разделить",
+        transcription: "to͞o split əp ",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "washing up",
+        translation: "мытье посуды",
+        transcription: "'wäSHiNG əp",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "ironing",
+        translation: "глажка",
+        transcription: "'ī(ə)rniNG",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "fascinated",
+        translation: "очарованный",
+        transcription: "'fasinādəd",
         rate: 1,
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
-        transcription: "",
+        word: "to deny",
+        translation: "отрицать, отказывать",
+        transcription: "to͞o də'nī",
         rate: 1,
         success: 0,
         statistics: []
-    }
+    }, {
+        word: "to admit",
+        translation: "признавать, допускать",
+        transcription: "to͞o əd'mit",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to wonder",
+        translation: "удивляться",
+        transcription: "to͞o 'wəndər",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "up to",
+        translation: "вплоть до",
+        transcription: "əp to͞o ",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "up to you",
+        translation: "вам решать, на ваше усмотрение",
+        transcription: "əp to͞o yo͞o",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to woo",
+        translation: "ухаживать",
+        transcription: "to͞o wo͞o",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "vulnerable",
+        translation: "уязвимый, ранимый",
+        transcription: "'vəln(ə)rəb(ə)l",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "desperate",
+        translation: "отчаянный, безнадежный",
+        transcription: "'desp(ə)rət",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to commit (a crime)",
+        translation: "совершить (преступление)",
+        transcription: "to͞o kə'mit",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "victim",
+        translation: "жертва",
+        transcription: "'viktəm",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "diverse",
+        translation: "разнообразный",
+        transcription: "də'vərs",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "perished",
+        translation: "погиб, погибший",
+        transcription: "'perɪʃt",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to witness",
+        translation: "чтобы засвидетельствовать, давать показания",
+        transcription: "to͞o 'witnəs",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to bond",
+        translation: "связывать",
+        transcription: "to͞o bänd",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "fiber",
+        translation: "волокно",
+        transcription: "'fībər",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "literate",
+        translation: "грамотный, образованный",
+        transcription: "'lidərət",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "legible",
+        translation: "разборчивый, четкий",
+        transcription: "'lejəb(ə)l",
+        rate: 1,
+        success: 0,
+        statistics: []
+    } 
+    // , {
+    //     word: "",
+    //     translation: "",
+    //     transcription: "",
+    //     rate: 1,
+    //     success: 0,
+    //     statistics: []
+    // }
 ]
 
 export default wordsList
