@@ -2,6 +2,7 @@ import wordsList from '../assets/db/dictionary.js'
 
 const appChoise = document.querySelector('#app-choice')
 const buttonsWrapper = document.querySelector('#buttons-wrapper')
+const home = document.querySelector('#button-home')
 const prev = document.querySelector('#previous')
 const next = document.querySelector('#next')
 const learnForeign = document.querySelector('#learn-foreign')
@@ -53,8 +54,10 @@ const fillLearnBlocks = (wordNumber) => {
 }
 
 const studying = () => {
+    numbersPrintedWords.length = 0
     showItem('#app-learning')
     fillLearnBlocks()
+    next.disabled = false
     next.addEventListener('click', () => {
         fillLearnBlocks()
         checkPrevButton()
@@ -70,6 +73,7 @@ const studying = () => {
 }
 
 const practicing = () => {
+    numbersPrintedWords.length = 0
     checkNextButton()
     showItem('#app-practicing')
     let number = randNumber()
@@ -98,6 +102,7 @@ const start = (mode) => {
     } else if (mode === 'practice') {
         practicing()
     }
+    home.classList.remove('opacity-hide')
     buttonsWrapper.classList.remove('opacity-hide')
     checkPrevButton()
 }
@@ -105,4 +110,13 @@ const start = (mode) => {
 appChoise.addEventListener('click', (event) => {
     const mode = event.target.dataset.id
     start(mode)
+})
+
+home.addEventListener('click', () => {
+    showItem('#app-choice')
+    hideItem('#app-work')
+    hideItem('#app-learning')
+    hideItem('#app-practicing')
+    home.classList.add('opacity-hide')
+    buttonsWrapper.classList.add('opacity-hide')
 })
