@@ -1,5 +1,6 @@
 import wordsList from '../assets/db/dictionary.js'
 
+const container = document.querySelector('#container')
 const appChoise = document.querySelector('#app-choice')
 const buttonsWrapper = document.querySelector('#buttons-wrapper')
 const homeButton = document.querySelector('#button-home')
@@ -135,9 +136,14 @@ homeButton.addEventListener('click', () => {
     tipButton.classList.add('opacity-hide')
 })
 
-window.addEventListener('resize', () => { 
-    document.body.height = window.innerHeight
-    if (startHeight !== window.innerHeight) {
-        practiceTranslating.innerHTML = window.innerHeight
+practiceForeign.addEventListener('focus',() => {
+    if (window.innerWidth < 920) {
+        container.style.justifyContent = 'flex-start'
+    } else {
+        container.style.justifyContent = 'space-between'
     }
-}) 
+})
+
+practiceForeign.addEventListener('blur',() => {
+    container.style.justifyContent = 'space-between'
+})
