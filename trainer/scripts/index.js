@@ -2,7 +2,8 @@ import wordsList from '../assets/db/dictionary.js'
 
 const appChoise = document.querySelector('#app-choice')
 const buttonsWrapper = document.querySelector('#buttons-wrapper')
-const home = document.querySelector('#button-home')
+const homeButton = document.querySelector('#button-home')
+const tipButton = document.querySelector('#button-tip')
 const prev = document.querySelector('#previous')
 const next = document.querySelector('#next')
 const learnForeignWord = document.querySelector('#learn-foreign-word')
@@ -81,17 +82,18 @@ const studying = () => {
 }
 
 const practicing = () => {
+    tipButton.classList.remove('opacity-hide')
     numbersPrintedWords.length = 0
+    practiceForeign.value = ''
     checkNextButton()
     showItem('#app-practicing')
     let number = randNumber()
     practiceTranslating.innerHTML = wordsList[number].translation
-    practiceForeign.value = ''
     practiceForeign.addEventListener('input',() => {
         checkNextButton()
     })
     next.addEventListener('click', () => {
-        if (practiceForeign.value.trim().toLowerCase() === wordsList[number].word) {
+        if (practiceForeign.value.trim().toLowerCase() === wordsList[number].word.trim().toLowerCase()) {
             numbersPrintedWords.push(number)
             number = randNumber()
             practiceTranslating.innerHTML = wordsList[number].translation
@@ -110,21 +112,22 @@ const start = (mode) => {
     } else if (mode === 'practice') {
         practicing()
     }
-    home.classList.remove('opacity-hide')
+    homeButton.classList.remove('opacity-hide')
+    homeButton.classList.remove('opacity-hide')
     buttonsWrapper.classList.remove('opacity-hide')
     checkPrevButton()
 }
 
 appChoise.addEventListener('click', (event) => {
-    const mode = event.target.dataset.id
-    start(mode)
+    start(event.target.dataset.id)
 })
 
-home.addEventListener('click', () => {
+homeButton.addEventListener('click', () => {
     showItem('#app-choice')
     hideItem('#app-work')
     hideItem('#app-learning')
     hideItem('#app-practicing')
-    home.classList.add('opacity-hide')
+    homeButton.classList.add('opacity-hide')
     buttonsWrapper.classList.add('opacity-hide')
+    tipButton.classList.add('opacity-hide')
 })

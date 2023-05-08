@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-    padding: 50px 0;
+    padding: 30px 0;
     max-width: 350px;
 }
 
@@ -53,16 +53,17 @@ body {
 
 .card {
     width: 100%;
-    min-height: 170px;
+    min-height: 160px;
     padding: 0 50px;
-}
-
-.card {
     border-radius: 20px;
     background: rgb(212,212,212) radial-gradient(circle at 50% 0, rgba(255,255,255,.65), rgba(255,255,255,.35));
     box-shadow: inset   rgba(82, 90, 94, 0.6) 0 -3px 8px, 
                 inset   rgba(252,255,255,.7) 0 3px 8px, 
                         rgba(54, 60, 113, 0.8) 0 3px 8px -3px;
+}
+
+.app-choice .card {
+    cursor: pointer;
 }
 
 .learn-foreign-transcription {
@@ -88,35 +89,40 @@ body {
 
 .button {
     position: relative;
-    padding: 20px;
     border: none;
     cursor: pointer;
     font-size: 0.5em;
     border-radius: 5px;
     position:relative;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
-    transition: transform 0.15s
-}
-
-.button:active {
-    transform: translateY(4px)
-}
-
-.button:disabled {
-    transform: translateY(0px)
-}
-
-.home-button-wrapper {
-    align-self: flex-start;
-}
-
-.button-home {
-    max-height: 50px;
-    max-width: 50px;
+    transition: transform 0.15s;
+    max-height: 70px;
+    max-width: 70px;
     padding: 6px;
 }
 
-.button-home img {
+.button:active {
+    transform: translateY(4px);
+}
+
+.button:disabled {
+    transform: translateY(0px);
+    background-color: #cccccc95;
+}
+
+.header-button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-button-wrapper .button {
+    max-height: 50px;
+    max-width: 50px;
+    background-color: #fff;
+}
+
+.button img {
     width: 100%;
     height: 100%;
 }
@@ -125,6 +131,10 @@ body {
     font-size: 1em;
     border: none;
     outline:none;
+}
+
+.practice-foreign-input::placeholder {
+    color: #ccccccac;
 }
 
 .js-hide {
@@ -138,19 +148,3 @@ body {
 .small-size-js {
     font-size: 24px;
 }
-
-/* 
-
-@media (min-width: 768px) {  Стили для устройств с маленьким экраном, размерами 768px - 991px (планшеты и подобные)  }
-@media (min-width: 992px) {   Стили для ноутбуков и компьютеров с экранами в диапазоне 992px - 1199px  }
-@media (min-width: 1200px) {   Стили для устройств с большой шириной экрана >1200px  }
-
-@media screen and (min-width: 1200px) and (orientation: landscape) {  }
-
-
-@media screen and (min-width: 1200px) and (orientation: landscape) { 
-    .container {
-
-    }
-} 
-*/

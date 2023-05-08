@@ -9,12 +9,15 @@
 </head>
 <body>
     <div class="container">
-        <div class="home-button-wrapper">
+        <div class="header-button-wrapper">
             <button class="button button-home opacity-hide" id="button-home">
-                <img src="./assets/images/house6.png" alt="">
+                <img src="./assets/images/house.png" alt="image">
+            </button>
+            <button class="button button-tip opacity-hide" id="button-tip">
+                <img src="./assets/images/lamp.png" alt="image">
             </button>
         </div>
-        <div class="cards-wrapper" id="app-choice">
+        <div class="app-choice cards-wrapper" id="app-choice">
             <div class="card" data-id="learn">Learning</div>
             <div class="card" data-id="practice">Training</div>
         </div>
@@ -28,12 +31,21 @@
             </div>
             <div class="cards-wrapper js-hide" id="app-practicing">
                 <div class="card" id="practice-translating">Word</div>
-                <input class="card practice-foreign-input" type="text" id="practice-foreign" autocomplete="off">
+                <input 
+                    class="card practice-foreign-input" 
+                    id="practice-foreign" 
+                    type="text" 
+                    autocomplete="off"
+                    placeholder="input word here">
             </div>
         </div>
         <div class="buttons-wrapper opacity-hide" id="buttons-wrapper">
-            <button class="button" id="previous">Prev</button>
-            <button class="button" id="next">Next</button>
+            <button class="button" id="previous">
+                <img src="./assets/images/arrowLeft.png" alt="image">
+            </button>
+            <button class="button" id="next">
+                <img src="./assets/images/arrowRight.png" alt="image">
+            </button>
         </div>
     </div>
 
