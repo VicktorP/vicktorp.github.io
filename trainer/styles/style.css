@@ -97,7 +97,7 @@ body {
     cursor: pointer;
     font-size: 0.5em;
     border-radius: 5px;
-    position:relative;
+    position: relative;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
     transition: transform 0.15s;
     max-height: 70px;
@@ -107,6 +107,7 @@ body {
 
 .button:active {
     transform: translateY(4px);
+    background-color: #fff;
 }
 
 .button:disabled {

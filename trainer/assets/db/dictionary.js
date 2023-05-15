@@ -247,7 +247,7 @@ const wordsList = [
     }, {
         word: "remediation",
         translation: "исправление",
-        transcription: "rəˌmēdē'āSH(ə)n",
+        transcription: "rə,mēdē'āSH(ə)n",
         rate: 1,
         success: 0,
         statistics: []
@@ -261,14 +261,14 @@ const wordsList = [
     }, {
         word: "indignation",
         translation: "возмущение",
-        transcription: "ˌindig'nāSH(ə)n",
+        transcription: ",indig'nāSH(ə)n",
         rate: 1,
         success: 0,
         statistics: []
     }, {
         word: "to get along",
         translation: "ладить (отшения между людьми)",
-        transcription: "to͞o  ɡet ə'lôNG",
+        transcription: "to͞o  get ə'lôNG",
         rate: 1,
         success: 0,
         statistics: []
@@ -282,7 +282,7 @@ const wordsList = [
     }, {
         word: "terrified",
         translation: "испуганный",
-        transcription: "'terɪfaɪd",
+        transcription: "'terifaid",
         rate: 1,
         success: 0,
         statistics: []
@@ -296,7 +296,7 @@ const wordsList = [
     }, {
         word: "frustrated",
         translation: "расстроенный",
-        transcription: "'frəˌstrādəd",
+        transcription: "'frə,strādəd",
         rate: 1,
         success: 0,
         statistics: []
@@ -352,7 +352,7 @@ const wordsList = [
     }, {
         word: "smug",
         translation: "самодовольный",
-        transcription: "sməɡ",
+        transcription: "sməg",
         rate: 1,
         success: 0,
         statistics: []
@@ -450,7 +450,7 @@ const wordsList = [
     }, {
         word: "justified",
         translation: "оправданный",
-        transcription: "'jəstəˌfīd",
+        transcription: "'jəstə,fīd",
         rate: 1,
         success: 0,
         statistics: []
@@ -485,7 +485,7 @@ const wordsList = [
     }, {
         word: "coniferous",
         translation: "хвойный, вечнозеленый",
-        transcription: "kə'nɪfərəs",
+        transcription: "kə'nifərəs",
         rate: 1,
         success: 0,
         statistics: []
@@ -604,7 +604,7 @@ const wordsList = [
     }, {
         word: "perished",
         translation: "погиб, погибший",
-        transcription: "'perɪʃt",
+        transcription: "'periʃt",
         rate: 1,
         success: 0,
         statistics: []
@@ -643,7 +643,133 @@ const wordsList = [
         rate: 1,
         success: 0,
         statistics: []
-    } 
+    }, {
+        word: "flatmate",
+        translation: "сосед по квартире",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "magnificent",
+        translation: "великолепный, прекрасный, величественный",
+        transcription: "mag'nifəsənt",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "contemplate",
+        translation: "созерцать, лицезреть",
+        transcription: "'kän(t)əm,plāt",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to perceive",
+        translation: "воспринимать, чувствовать, постигать",
+        transcription: "to͞o pər'sēv",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "perception",
+        translation: "восприятие, осознание, ощущение",
+        transcription: "pər'sepSH(ə)n",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to develop",
+        translation: "развивать, разрабатывать",
+        transcription: "to͞o  di'veləp",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "distortion",
+        translation: "искажение, извращение",
+        transcription: "də'stôrSH(ə)n",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "decline",
+        translation: "снижение, падение, упадок",
+        transcription: "də'klīn",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "impeccable",
+        translation: "безупречный",
+        transcription: "im'pekəb(ə)l",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to encourage",
+        translation: "поощрять",
+        transcription: "to͞o  in'kərij",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "glitch",
+        translation: "сбой",
+        transcription: "glitʃ",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "unless",
+        translation: "пока не, если не",
+        transcription: "ən'les",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to suspend",
+        translation: "приостановить",
+        transcription: "to͞o  sə'spend",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to afford",
+        translation: "предоставлять",
+        transcription: "to͞o ə'fôrd",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "off we go",
+        translation: "поехали",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "witty",
+        translation: "остроумный",
+        transcription: "'witi",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "glory",
+        translation: "слава",
+        transcription: "'glɔːri",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "consequence",
+        translation: "последствие",
+        transcription: "'känsikwəns",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }
     // , {
     //     word: "",
     //     translation: "",

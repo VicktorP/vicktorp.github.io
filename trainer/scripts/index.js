@@ -1,4 +1,5 @@
 import wordsList from '../assets/db/dictionary.js'
+import { addTag, removeTag, hideTag, showTag } from '../assets/helpers/tagViewing.js'
 
 const container = document.querySelector('#container')
 const appChoise = document.querySelector('#app-choice')
@@ -13,19 +14,11 @@ const learnTranslating = document.querySelector('#learn-translating')
 const practiceForeign = document.querySelector('#practice-foreign')
 const practiceTranslating = document.querySelector('#practice-translating')
 const numbersPrintedWords = []
-const startHeight = window.innerHeight
+let activeModeId = ''
 
-document.body.height = startHeight
+document.body.height = window.innerHeight
 
 const randNumber = () => Math.floor(Math.random() * wordsList.length)
-
-const showItem = (item) => {
-    document.querySelector(`${item}`).classList.remove('js-hide')
-}
-
-const hideItem = (item) => {
-    document.querySelector(`${item}`).classList.add('js-hide')
-}
 
 const checkPrevButton = () => {
     if (numbersPrintedWords.length > 1) {
@@ -67,8 +60,9 @@ const fillLearnBlocks = (wordNumber) => {
 }
 
 const studying = () => {
+    activeModeId = '#app-learning'
     numbersPrintedWords.length = 0
-    showItem('#app-learning')
+    addTag('#app-learning')
     fillLearnBlocks()
     next.disabled = false
     next.addEventListener('click', () => {
@@ -86,11 +80,12 @@ const studying = () => {
 }
 
 const practicing = () => {
+    activeModeId = '#app-practicing'
     tipButton.classList.remove('opacity-hide')
     numbersPrintedWords.length = 0
     practiceForeign.value = ''
     checkNextButton()
-    showItem('#app-practicing')
+    addTag('#app-practicing')
     let number = randNumber()
     practiceTranslating.innerHTML = wordsList[number].translation
     practiceForeign.addEventListener('input',() => {
@@ -109,16 +104,14 @@ const practicing = () => {
 }
 
 const start = (mode) => {
-    hideItem('#app-choice')
-    showItem('#app-work')
+    removeTag('#app-choice')
     if (mode === 'learn') {
         studying()        
     } else if (mode === 'practice') {
         practicing()
     }
-    homeButton.classList.remove('opacity-hide')
-    homeButton.classList.remove('opacity-hide')
-    buttonsWrapper.classList.remove('opacity-hide')
+    showTag(homeButton)
+    showTag(buttonsWrapper)
     checkPrevButton()
 }
 
@@ -127,13 +120,11 @@ appChoise.addEventListener('click', (event) => {
 })
 
 homeButton.addEventListener('click', () => {
-    showItem('#app-choice')
-    hideItem('#app-work')
-    hideItem('#app-learning')
-    hideItem('#app-practicing')
-    homeButton.classList.add('opacity-hide')
-    buttonsWrapper.classList.add('opacity-hide')
-    tipButton.classList.add('opacity-hide')
+    addTag('#app-choice')
+    removeTag(activeModeId)
+    hideTag(homeButton)
+    hideTag(buttonsWrapper)
+    hideTag(tipButton)
 })
 
 practiceForeign.addEventListener('focus',() => {
