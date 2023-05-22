@@ -769,6 +769,132 @@ const wordsList = [
         rate: 1,
         success: 0,
         statistics: []
+    }, {
+        word: "untidy",
+        translation: "неопрятный",
+        transcription: ",ən'tīdē",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "fumigation",
+        translation: "дезинфекция, окуривание",
+        transcription: "ˌfyo͞omə'ɡāSH(ə)n",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "broom",
+        translation: "метла, веник",
+        transcription: "bro͞om",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to sweep",
+        translation: "мести",
+        transcription: "to͞o swēp",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "accommodation",
+        translation: "размещение, жилье",
+        transcription: "ə,kämə'dāSH(ə)n",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "premises",
+        translation: "помещение, дом",
+        transcription: "'preməsəz",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "socket",
+        translation: "разъем, розетка",
+        transcription: "'säkət",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "substitute",
+        translation: "заменитель",
+        transcription: "'səbstə,t(y)o͞ot",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "upbringing",
+        translation: "воспитание",
+        transcription: "'əp,briNGiNG",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "behavior",
+        translation: "поведение",
+        transcription: "bə'hāvyər",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "scold",
+        translation: "ругать, бранить",
+        transcription: "skōld",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "merit",
+        translation: "заслуга",
+        transcription: "'merət",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "due to",
+        translation: "из-за, благодаря",
+        transcription: "d(y)o͞o to͞o",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "unsatisfied",
+        translation: "неудовлетворенный",
+        transcription: ",ən'sadəs,fīd",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "displeased",
+        translation: "недоволен",
+        transcription: "dis'plēzd",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "heavy traffic",
+        translation: "интенсивное движение",
+        transcription: "'hevē 'trafik",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "outskirts",
+        translation: "окраина",
+        transcription: "'out,skərts",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "noticeable",
+        translation: "заметный",
+        transcription: "'nōdəsəb(ə)l",
+        rate: 1,
+        success: 0,
+        statistics: []
     }
     // , {
     //     word: "",

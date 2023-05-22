@@ -1,5 +1,5 @@
 import wordsList from '../assets/db/dictionary.js'
-import { addTag, removeTag, hideTag, showTag } from '../assets/helpers/tagViewing.js'
+import { debounce, addTag, removeTag, hideTag, showTag } from '../assets/helpers/index.js'
 
 const container = document.querySelector('#container')
 const appChoise = document.querySelector('#app-choice')
@@ -46,33 +46,32 @@ const fillBlock = (block, number, method) => {
     block.innerHTML = wordsList[number][method].toLowerCase()
 }
 
-const fillLearnBlocks = (wordNumber) => {
-    let number = 0
-    if (wordNumber) {
-        number = wordNumber
-    } else {
-        number = randNumber()
-    }
+const showNextStudyWord = (wordNumber) => {
+    const number = wordNumber ? wordNumber : randNumber()
     fillBlock(learnForeignWord, number, 'word')
     fillBlock(learnForeignTranscription, number, 'transcription')
     fillBlock(learnTranslating, number, 'translation')
     numbersPrintedWords.push(number)
 }
 
+const showNextStudyWordPaused =  debounce(() => {
+    showNextStudyWord()
+    checkPrevButton()
+}, 250);
+
 const studying = () => {
     activeModeId = '#app-learning'
     numbersPrintedWords.length = 0
     addTag('#app-learning')
-    fillLearnBlocks()
+    showNextStudyWord()
     next.disabled = false
     next.addEventListener('click', () => {
-        fillLearnBlocks()
-        checkPrevButton()
+        showNextStudyWordPaused()
     })
     prev.addEventListener('click', () => {
         if (numbersPrintedWords.length > 1) {
             numbersPrintedWords.length = numbersPrintedWords.length-1
-            fillLearnBlocks(numbersPrintedWords[numbersPrintedWords.length-1])
+            showNextStudyWord(numbersPrintedWords[numbersPrintedWords.length-1])
             numbersPrintedWords.length = numbersPrintedWords.length-1
             checkPrevButton()
         }
@@ -138,3 +137,5 @@ practiceForeign.addEventListener('focus',() => {
 practiceForeign.addEventListener('blur',() => {
     container.style.justifyContent = 'space-between'
 })
+
+
