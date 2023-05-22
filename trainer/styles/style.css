@@ -138,6 +138,8 @@ body {
     border: none;
     outline:none;
     text-align: start;
+    resize: none;
+    background-color: transparent;
 }
 
 .practice-foreign-input::placeholder {
