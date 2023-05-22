@@ -57,7 +57,7 @@ const showNextStudyWord = (wordNumber) => {
 const showNextStudyWordPaused =  debounce(() => {
     showNextStudyWord()
     checkPrevButton()
-}, 250);
+}, 200);
 
 const studying = () => {
     activeModeId = '#app-learning'

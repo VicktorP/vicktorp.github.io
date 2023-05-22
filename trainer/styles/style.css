@@ -10,7 +10,7 @@ html, body, .container {
 }
 
 html {
-    font-size: 21px;
+    font-size: 22px;
 }
 
 
@@ -58,7 +58,7 @@ body {
 
 .card {
     width: 80%;
-    min-height: 120px;
+    min-height: 110px;
     padding: 5px 50px;
     border-radius: 20px;
     background: rgb(212,212,212) radial-gradient(circle at 50% 0, rgba(255,255,255,.65), rgba(255,255,255,.35));
@@ -74,7 +74,7 @@ body {
 .learn-foreign-transcription {
     margin-top: 10px;
     color: #6b6b6b;
-    font-size: 0.55em;
+    font-size: 0.8em;
 }
 
 .learn-foreign-transcription::before {
@@ -137,6 +137,7 @@ body {
     font-size: 1em;
     border: none;
     outline:none;
+    text-align: start;
 }
 
 .practice-foreign-input::placeholder {
