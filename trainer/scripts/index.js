@@ -13,7 +13,7 @@ const learnForeignTranscription = document.querySelector('#learn-foreign-transcr
 const learnTranslating = document.querySelector('#learn-translating')
 const practiceForeign = document.querySelector('#practice-foreign')
 const practiceTranslating = document.querySelector('#practice-translating')
-const numbersPrintedWords = []
+const wordNumbers = []
 let activeModeId = ''
 
 document.body.height = window.innerHeight
@@ -21,7 +21,7 @@ document.body.height = window.innerHeight
 const randNumber = () => Math.floor(Math.random() * wordsList.length)
 
 const checkPrevButton = () => {
-    if (numbersPrintedWords.length > 1) {
+    if (wordNumbers.length > 1) {
         prev.disabled = false
     } else {
         prev.disabled = true
@@ -51,7 +51,7 @@ const showNextStudyWord = (wordNumber) => {
     fillBlock(learnForeignWord, number, 'word')
     fillBlock(learnForeignTranscription, number, 'transcription')
     fillBlock(learnTranslating, number, 'translation')
-    numbersPrintedWords.push(number)
+    wordNumbers.push(number)
 }
 
 const showNextStudyWordPaused =  debounce(() => {
@@ -61,7 +61,7 @@ const showNextStudyWordPaused =  debounce(() => {
 
 const studying = () => {
     activeModeId = '#app-learning'
-    numbersPrintedWords.length = 0
+    wordNumbers.length = 0
     addTag('#app-learning')
     showNextStudyWord()
     next.disabled = false
@@ -69,10 +69,10 @@ const studying = () => {
         showNextStudyWordPaused()
     })
     prev.addEventListener('click', () => {
-        if (numbersPrintedWords.length > 1) {
-            numbersPrintedWords.length = numbersPrintedWords.length-1
-            showNextStudyWord(numbersPrintedWords[numbersPrintedWords.length-1])
-            numbersPrintedWords.length = numbersPrintedWords.length-1
+        if (wordNumbers.length > 1) {
+            wordNumbers.length = wordNumbers.length-1
+            showNextStudyWord(wordNumbers[wordNumbers.length-1])
+            wordNumbers.length = wordNumbers.length-1
             checkPrevButton()
         }
     })
@@ -81,7 +81,7 @@ const studying = () => {
 const practicing = () => {
     activeModeId = '#app-practicing'
     tipButton.classList.remove('opacity-hide')
-    numbersPrintedWords.length = 0
+    wordNumbers.length = 0
     practiceForeign.value = ''
     checkNextButton()
     addTag('#app-practicing')
@@ -92,7 +92,7 @@ const practicing = () => {
     })
     next.addEventListener('click', () => {
         if (practiceForeign.value.trim().toLowerCase() === wordsList[number].word.trim().toLowerCase()) {
-            numbersPrintedWords.push(number)
+            wordNumbers.push(number)
             number = randNumber()
             practiceTranslating.innerHTML = wordsList[number].translation
             practiceForeign.value = ''
