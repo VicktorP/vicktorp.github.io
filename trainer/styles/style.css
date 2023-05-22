@@ -140,6 +140,7 @@ body {
     text-align: start;
     resize: none;
     background-color: transparent;
+    width: 100%;
 }
 
 .practice-foreign-input::placeholder {
