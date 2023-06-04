@@ -895,6 +895,384 @@ const wordsList = [
         rate: 1,
         success: 0,
         statistics: []
+    }, {
+        word: "state of the art",
+        translation: "уровень развития (чего-либо)",
+        transcription: ",stād ə(v) T͟Hə 'ärt",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "neat",
+        translation: "аккуратный, опрятный, чистый",
+        transcription: "nēt",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "anxiety",
+        translation: "беспокойство",
+        transcription: "aNG'zīədē",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to dedicate",
+        translation: "посвятить",
+        transcription: "to͞o 'dedə,kāt",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "behalf",
+        translation: "от имени",
+        transcription: "bi'hæf",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "fee",
+        translation: "платеж, гонорар",
+        transcription: "fē",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "overall",
+        translation: "общий, полный, всеобщий",
+        transcription: ",əʊvər'ɔ:l",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "nevertheless",
+        translation: "тем не менее, несмотря на",
+        transcription: ",nevərT͟Hə'les",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "council",
+        translation: "совет (организация)",
+        transcription: "'kounsəl",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "quintessential",
+        translation: "крайне важный",
+        transcription: ",kwin(t)ə'sen(t)SHəl",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to remind",
+        translation: "напоминать",
+        transcription: "to͞o rə'mind",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to remain",
+        translation: "оставаться",
+        transcription: "to͞o rə'mān",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "influence",
+        translation: "влияние, воздействие",
+        transcription: "'inflo͝oəns",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "masculine",
+        translation: "мужской, мужественный",
+        transcription: "'maskyələn",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "single-handedly",
+        translation: "в одиночку",
+        transcription: ",siNGgəl'handədlē",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "grateful",
+        translation: "благодарный",
+        transcription: "'grātfəl",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "down-to-earth",
+        translation: "приземленный",
+        transcription: "'daʊntʊ'ɜrθ",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "drastic",
+        translation: "резкий, решительный, радикальный",
+        transcription: "'drastik",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "alluring",
+        translation: "соблазнительный, заманчивый",
+        transcription: "ə'lo͝oriNG",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "gorgeous",
+        translation: "великолепный",
+        transcription: "'gôrjəs",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "drop-dead-gorgeous",
+        translation: "сногсшибательный",
+        transcription: "dräp ded 'gôrjəs",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "innocent",
+        translation: "невиновный",
+        transcription: "'inəsənt",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "mysterious",
+        translation: "загадочный",
+        transcription: "mə'stirēəs",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "vest",
+        translation: "жилет",
+        transcription: "vest",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "possession",
+        translation: "владение, обладание",
+        transcription: "pə'zeSHən",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to nap",
+        translation: "дремать, вздремнуть",
+        transcription: "to͞o nap",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "auxiliary",
+        translation: "вспомогательный",
+        transcription: "ôɡ'zilyərē",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "striped",
+        translation: "в полоску, полосатый",
+        transcription: "strīpt",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "plain",
+        translation: "простой, одноцветный",
+        transcription: "plān",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "spotted",
+        translation: "пятнистый",
+        transcription: "'spädəd",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "patterned",
+        translation: "узорчатый",
+        transcription: "'padərnd",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "checked",
+        translation: "сдержанный",
+        transcription: "CHekt",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "wool",
+        translation: "шерсть",
+        transcription: "wo͝ol",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "velvet",
+        translation: "бархат",
+        transcription: "'velvət",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "fur",
+        translation: "шкура",
+        transcription: "fər",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "tidy",
+        translation: "аккуратный, опрятный",
+        transcription: "'tīdē",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "scruffy",
+        translation: "неряшливый",
+        transcription: "'skrəfē",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "lounging",
+        translation: "безделье, бездельничающий",
+        transcription: "'laʊndʒiŋ",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "couch potato",
+        translation: "лежебока, лентяй",
+        transcription: "'kouCH pə,tādō",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to mould",
+        translation: "формировать, лепить, форма",
+        transcription: "to͞o mōld",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to crave",
+        translation: "жаждать, страстно желать",
+        transcription: "to͞o krāv",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to struggle",
+        translation: "бороться, борьба",
+        transcription: "to͞o 'strəɡəl",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "offspring",
+        translation: "потомство",
+        transcription: "'ôf,spriNG",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "trait",
+        translation: "черта, особенность",
+        transcription: "trāt",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "rather",
+        translation: "скорее, довольно",
+        transcription: "'raT͟Hər",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to postpone",
+        translation: "откладывать",
+        transcription: "to͞o pō'spōn",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to injure",
+        translation: "ранить, повредить",
+        transcription: "to͞o 'injər",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "anxious",
+        translation: "тревожный, озабоченный",
+        transcription: "'aNG(k)SHəs",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "moody",
+        translation: "капризный",
+        transcription: "'mo͞odē",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "rebellious",
+        translation: "мятежный, непослушный",
+        transcription: "rə'belyəs",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "stubborn",
+        translation: "упрямый",
+        transcription: "'stəbərn",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "generous",
+        translation: "щедрый, великодушный",
+        transcription: "'jen(ə)rəs",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "talkative",
+        translation: "разговорчивый, словоохотливый",
+        transcription: "'tôkədiv",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "halfway",
+        translation: "наполовину, на полпути",
+        transcription: "'haf,wā",
+        rate: 1,
+        success: 0,
+        statistics: []
     }
     // , {
     //     word: "",
