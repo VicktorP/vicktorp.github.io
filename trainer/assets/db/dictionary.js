@@ -1273,6 +1273,48 @@ const wordsList = [
         rate: 1,
         success: 0,
         statistics: []
+    }, {
+        word: "to empower",
+        translation: "уполномочивать",
+        transcription: "to͞o əm'pou(ə)r",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to occur",
+        translation: "происходить, иметь место",
+        transcription: "to͞o ə'kər",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "consecutive",
+        translation: "последовательный",
+        transcription: "kən'sekyədiv",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "squad",
+        translation: "отряд, команда",
+        transcription: "skwäd",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "legacy",
+        translation: "наследие, наследство",
+        transcription: "'legəsē",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "disaster",
+        translation: "катастрофа, бедствие",
+        transcription: "də'zastər",
+        rate: 1,
+        success: 0,
+        statistics: []
     }
     // , {
     //     word: "",
