@@ -10,12 +10,29 @@
 <body>
     <div class="container" id="container">
         <div class="header-button-wrapper">
-            <button class="button button-home opacity-hide" id="button-home">
-                <img src="./assets/images/house.png" alt="image">
-            </button>
-            <button class="button button-tip opacity-hide" id="button-tip">
-                <img src="./assets/images/lamp.png" alt="image">
-            </button>
+            <div class="header-buttons opacity-hide" id="header-buttons">
+                <button class="button button-home" id="button-home">
+                    <img src="./assets/images/house.png" alt="image">
+                </button>
+                <button class="button button-tip" id="button-settings">
+                    <img src="./assets/images/lamp.png" alt="image">
+                </button>
+            </div>
+            <div class="start-end-positions-wrapper opacity-hide" id="start-end-positions-wrapper">
+                <div class="point-inputs-block">
+                    <span class="point-input-way">c</span>
+                    <input class="point-input-text" type="text" id="start-point-text" value="1">
+                    <input class="point-input-range" type="range" id="start-point-range" value="1" step="1" min="1">
+                </div>
+                <div class="point-inputs-block">
+                    <span class="point-input-way">по</span>
+                    <input class="point-input-text" type="text" id="end-point-text">
+                    <input class="point-input-range" type="range" id="end-point-range" step="1" min="2">
+                </div>
+                <button class="start-end-positions-button button" id="start-end-positions-button">
+                    <img src="./assets/images/OK.png" alt="okButton">
+                </button>
+            </div>
         </div>
         <div class="app-choice cards-wrapper" id="app-choice">
             <div class="card" data-id="learn">Обучение</div>

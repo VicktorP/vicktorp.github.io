@@ -4,8 +4,9 @@ import { debounce, addTag, removeTag, hideTag, showTag } from '../assets/helpers
 const container = document.querySelector('#container')
 const appChoise = document.querySelector('#app-choice')
 const buttonsWrapper = document.querySelector('#buttons-wrapper')
+const headerButtonsBlock = document.querySelector('#header-buttons')
 const homeButton = document.querySelector('#button-home')
-const tipButton = document.querySelector('#button-tip')
+const settingsButton = document.querySelector('#button-settings')
 const prev = document.querySelector('#previous')
 const next = document.querySelector('#next')
 const learnForeignWord = document.querySelector('#learn-foreign-word')
@@ -13,12 +14,29 @@ const learnForeignTranscription = document.querySelector('#learn-foreign-transcr
 const learnTranslating = document.querySelector('#learn-translating')
 const practiceForeign = document.querySelector('#practice-foreign')
 const practiceTranslating = document.querySelector('#practice-translating')
+const startEndPositionsWrapper = document.querySelector('#start-end-positions-wrapper')
+const startPointTextInput = document.querySelector('#start-point-text')
+const startPointRangeInput = document.querySelector('#start-point-range')
+const endPointTextInput = document.querySelector('#end-point-text')
+const endPointRangeInput = document.querySelector('#end-point-range')
+const startEndPositionsButton = document.querySelector('#start-end-positions-button')
+
 const wordNumbers = []
 let activeModeId = ''
 
 document.body.height = window.innerHeight
 
+startPointRangeInput.setAttribute('max', wordsList.length)
+endPointRangeInput.setAttribute('max', wordsList.length)
+endPointTextInput.value = wordsList.length
+endPointRangeInput.value = wordsList.length
+
 const randNumber = () => Math.floor(Math.random() * wordsList.length)
+
+// const changeMinMaxPoints = () => {
+//     startPointRangeInput.setAttribute('max', Number(endPointTextInput.value) - 1)
+//     endPointRangeInput.setAttribute('min', Number(startPointTextInput.value) + 1)
+// }
 
 const checkPrevButton = () => {
     if (wordNumbers.length > 1) {
@@ -80,7 +98,6 @@ const studying = () => {
 
 const practicing = () => {
     activeModeId = '#app-practicing'
-    tipButton.classList.remove('opacity-hide')
     wordNumbers.length = 0
     practiceForeign.value = ''
     checkNextButton()
@@ -109,8 +126,9 @@ const start = (mode) => {
     } else if (mode === 'practice') {
         practicing()
     }
-    showTag(homeButton)
+    showTag(headerButtonsBlock)
     showTag(buttonsWrapper)
+    changeMinMaxPoints()
     checkPrevButton()
 }
 
@@ -123,7 +141,7 @@ homeButton.addEventListener('click', () => {
     removeTag(activeModeId)
     hideTag(homeButton)
     hideTag(buttonsWrapper)
-    hideTag(tipButton)
+    hideTag(settingsButton)
 })
 
 practiceForeign.addEventListener('focus',() => {
@@ -138,4 +156,38 @@ practiceForeign.addEventListener('blur',() => {
     container.style.justifyContent = 'space-between'
 })
 
+startPointRangeInput.addEventListener('input', () => {
+    if(Number(startPointRangeInput.value) < Number(endPointRangeInput.value)) {
+        startPointTextInput.value = startPointRangeInput.value
+    }
+})
 
+startPointTextInput.addEventListener('input', () => {
+    if(Number(startPointTextInput.value) < Number(endPointTextInput.value)) {
+        startPointRangeInput.value = startPointTextInput.value
+    } else {
+        startPointTextInput.value = startPointTextInput.value.slice(0,-1)
+    }
+})
+
+endPointRangeInput.addEventListener('input', () => {
+    if(Number(endPointRangeInput.value) > Number(startPointRangeInput.value)) {
+        endPointTextInput.value = endPointRangeInput.value
+    }
+})
+
+endPointTextInput.addEventListener('input', () => {
+    if(Number(endPointTextInput.value) > Number(startPointTextInput.value)) {
+        endPointRangeInput.value = endPointTextInput.value
+    } else {
+        endPointTextInput.value.length = endPointTextInput.value.slice(0,-1)
+    }
+})
+
+settingsButton.addEventListener('click', () => {
+    startEndPositionsWrapper.classList.toggle('opacity-hide')
+})
+
+startEndPositionsButton.addEventListener('click', () => {
+    startEndPositionsWrapper.classList.toggle('opacity-hide')
+})
