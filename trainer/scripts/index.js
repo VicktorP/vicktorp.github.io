@@ -14,15 +14,20 @@ const learnForeignTranscription = document.querySelector('#learn-foreign-transcr
 const learnTranslating = document.querySelector('#learn-translating')
 const practiceForeign = document.querySelector('#practice-foreign')
 const practiceTranslating = document.querySelector('#practice-translating')
-const startEndPositionsWrapper = document.querySelector('#start-end-positions-wrapper')
+const startEndPositionsWrapper = document.querySelector('#settings-wrapper')
 const startPointTextInput = document.querySelector('#start-point-text')
 const startPointRangeInput = document.querySelector('#start-point-range')
 const endPointTextInput = document.querySelector('#end-point-text')
 const endPointRangeInput = document.querySelector('#end-point-range')
-const startEndPositionsButton = document.querySelector('#start-end-positions-button')
+const startEndPositionsButton = document.querySelector('#settings-button')
 
-const wordNumbers = []
+const showedWordsNumbers = []
 let activeModeId = ''
+let startWord = 0
+let endWord = 0
+let wordsOrder = 'straight'
+let wordsOrderNumbers = []
+let activeWordIndex = 0
 
 document.body.height = window.innerHeight
 
@@ -31,15 +36,10 @@ endPointRangeInput.setAttribute('max', wordsList.length)
 endPointTextInput.value = wordsList.length
 endPointRangeInput.value = wordsList.length
 
-const randNumber = () => Math.floor(Math.random() * wordsList.length)
-
-// const changeMinMaxPoints = () => {
-//     startPointRangeInput.setAttribute('max', Number(endPointTextInput.value) - 1)
-//     endPointRangeInput.setAttribute('min', Number(startPointTextInput.value) + 1)
-// }
+const randNumber = () => Math.round(startWord + Math.random() * (endWord - startWord))
 
 const checkPrevButton = () => {
-    if (wordNumbers.length > 1) {
+    if (showedWordsNumbers.length > 1) {
         prev.disabled = false
     } else {
         prev.disabled = true
@@ -54,7 +54,7 @@ const checkNextButton = () => {
     }
 }
 
-const fillBlock = (block, number, method) => {
+const fillTag = (block, number, method) => {
     const words = wordsList[number][method].split(' ')
     if (words.some(word=>word.length>16) && method!=='transcription') {
         block.classList.add('small-size-js')
@@ -64,12 +64,41 @@ const fillBlock = (block, number, method) => {
     block.innerHTML = wordsList[number][method].toLowerCase()
 }
 
+const fillBlock = (number) => {
+    fillTag(learnForeignWord, number, 'word')
+    fillTag(learnForeignTranscription, number, 'transcription')
+    fillTag(learnTranslating, number, 'translation')
+} 
+
 const showNextStudyWord = (wordNumber) => {
-    const number = wordNumber ? wordNumber : randNumber()
-    fillBlock(learnForeignWord, number, 'word')
-    fillBlock(learnForeignTranscription, number, 'transcription')
-    fillBlock(learnTranslating, number, 'translation')
-    wordNumbers.push(number)
+    let number
+    if (wordsOrder === 'random') {
+        number = wordNumber ? wordNumber : randNumber()
+    } else if (wordsOrder === 'straight') {
+        if (endWord === 0) {
+            for (let i = 0; i < wordsList.length; i++) {
+                wordsOrderNumbers.push(i)
+            }
+        }
+        if (Number.isInteger(wordNumber)) {
+            number = wordNumber
+            activeWordIndex -= 1
+            if (activeWordIndex < 0) {
+                activeWordIndex += wordsOrderNumbers.length
+            }
+        } else {
+            number = wordsOrderNumbers[activeWordIndex++]
+        }
+        if (activeWordIndex === wordsOrderNumbers.length) {
+            activeWordIndex = 0
+        }
+    }
+    console.log(number)
+    fillBlock(number)
+    showedWordsNumbers.push(number)
+    
+    
+    
 }
 
 const showNextStudyWordPaused =  debounce(() => {
@@ -79,7 +108,7 @@ const showNextStudyWordPaused =  debounce(() => {
 
 const studying = () => {
     activeModeId = '#app-learning'
-    wordNumbers.length = 0
+    showedWordsNumbers.length = 0
     addTag('#app-learning')
     showNextStudyWord()
     next.disabled = false
@@ -87,10 +116,10 @@ const studying = () => {
         showNextStudyWordPaused()
     })
     prev.addEventListener('click', () => {
-        if (wordNumbers.length > 1) {
-            wordNumbers.length = wordNumbers.length-1
-            showNextStudyWord(wordNumbers[wordNumbers.length-1])
-            wordNumbers.length = wordNumbers.length-1
+        if (showedWordsNumbers.length > 1) {
+            showedWordsNumbers.length = showedWordsNumbers.length-1
+            showNextStudyWord(showedWordsNumbers[showedWordsNumbers.length-1])
+            showedWordsNumbers.length = showedWordsNumbers.length-1
             checkPrevButton()
         }
     })
@@ -98,7 +127,7 @@ const studying = () => {
 
 const practicing = () => {
     activeModeId = '#app-practicing'
-    wordNumbers.length = 0
+    showedWordsNumbers.length = 0
     practiceForeign.value = ''
     checkNextButton()
     addTag('#app-practicing')
@@ -109,7 +138,7 @@ const practicing = () => {
     })
     next.addEventListener('click', () => {
         if (practiceForeign.value.trim().toLowerCase() === wordsList[number].word.trim().toLowerCase()) {
-            wordNumbers.push(number)
+            showedWordsNumbers.push(number)
             number = randNumber()
             practiceTranslating.innerHTML = wordsList[number].translation
             practiceForeign.value = ''
@@ -128,7 +157,6 @@ const start = (mode) => {
     }
     showTag(headerButtonsBlock)
     showTag(buttonsWrapper)
-    changeMinMaxPoints()
     checkPrevButton()
 }
 
@@ -158,7 +186,11 @@ practiceForeign.addEventListener('blur',() => {
 
 startPointRangeInput.addEventListener('input', () => {
     if(Number(startPointRangeInput.value) < Number(endPointRangeInput.value)) {
-        startPointTextInput.value = startPointRangeInput.value
+        setTimeout(() => {
+            startPointTextInput.value = startPointRangeInput.value
+        }, 50)
+    } else {
+        startPointRangeInput.value = Number(endPointRangeInput.value) - 1
     }
 })
 
@@ -172,7 +204,11 @@ startPointTextInput.addEventListener('input', () => {
 
 endPointRangeInput.addEventListener('input', () => {
     if(Number(endPointRangeInput.value) > Number(startPointRangeInput.value)) {
-        endPointTextInput.value = endPointRangeInput.value
+        setTimeout(() => {
+            endPointTextInput.value = endPointRangeInput.value
+        }, 50)        
+    } else {
+        endPointRangeInput.value = Number(startPointRangeInput.value) + 1
     }
 })
 
@@ -188,6 +224,14 @@ settingsButton.addEventListener('click', () => {
     startEndPositionsWrapper.classList.toggle('opacity-hide')
 })
 
-startEndPositionsButton.addEventListener('click', () => {
+startEndPositionsButton.addEventListener('click', (event) => {
+    event.preventDefault()
+    wordsOrder = document.querySelector('input[name="words-order"]:checked').value
     startEndPositionsWrapper.classList.toggle('opacity-hide')
+    startWord = Number(startPointTextInput.value)
+    endWord = Number(endPointTextInput.value)
+    wordsOrderNumbers = []
+    for (let i = startWord-1; i <= endWord-1; i++) {
+        wordsOrderNumbers.push(i)
+    }
 })

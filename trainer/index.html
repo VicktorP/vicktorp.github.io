@@ -18,21 +18,33 @@
                     <img src="./assets/images/lamp.png" alt="image">
                 </button>
             </div>
-            <div class="start-end-positions-wrapper opacity-hide" id="start-end-positions-wrapper">
-                <div class="point-inputs-block">
-                    <span class="point-input-way">c</span>
-                    <input class="point-input-text" type="text" id="start-point-text" value="1">
-                    <input class="point-input-range" type="range" id="start-point-range" value="1" step="1" min="1">
+            <form class="settings-wrapper opacity-hide" id="settings-wrapper">
+                <div class="settings__wrap-for-style">
+                    <div class="settings__order">
+                        <label class="order-point">
+                            <input type="radio" name="words-order" id="" value="straight" checked> по порядку
+                        </label>
+                        <label class="order-point">
+                            <input type="radio" name="words-order" id="" value="random"> в разброс
+                        </label>
+                    </div>
+                    <div class="settings__range">
+                        <div class="point-inputs-block">
+                            <span class="point-input-way">c</span>
+                            <input class="point-input-text" type="text" id="start-point-text" value="1">
+                            <input class="point-input-range" type="range" id="start-point-range" value="1" step="1" min="1">
+                        </div>
+                        <div class="point-inputs-block">
+                            <span class="point-input-way">по</span>
+                            <input class="point-input-text" type="text" id="end-point-text">
+                            <input class="point-input-range" type="range" id="end-point-range" step="1" min="2">
+                        </div>
+                    </div>
                 </div>
-                <div class="point-inputs-block">
-                    <span class="point-input-way">по</span>
-                    <input class="point-input-text" type="text" id="end-point-text">
-                    <input class="point-input-range" type="range" id="end-point-range" step="1" min="2">
-                </div>
-                <button class="start-end-positions-button button" id="start-end-positions-button">
+                <button class="settings-button button" id="settings-button">
                     <img src="./assets/images/OK.png" alt="okButton">
                 </button>
-            </div>
+            </form>
         </div>
         <div class="app-choice cards-wrapper" id="app-choice">
             <div class="card" data-id="learn">Обучение</div>
