@@ -221,13 +221,13 @@ endPointTextInput.addEventListener('input', () => {
 })
 
 settingsButton.addEventListener('click', () => {
-    startEndPositionsWrapper.classList.toggle('opacity-hide')
+    startEndPositionsWrapper.classList.toggle('js-hide')
 })
 
 startEndPositionsButton.addEventListener('click', (event) => {
     event.preventDefault()
     wordsOrder = document.querySelector('input[name="words-order"]:checked').value
-    startEndPositionsWrapper.classList.toggle('opacity-hide')
+    startEndPositionsWrapper.classList.toggle('js-hide')
     startWord = Number(startPointTextInput.value)
     endWord = Number(endPointTextInput.value)
     wordsOrderNumbers = []
