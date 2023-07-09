@@ -14,7 +14,7 @@ const learnForeignTranscription = document.querySelector('#learn-foreign-transcr
 const learnTranslating = document.querySelector('#learn-translating')
 const practiceForeign = document.querySelector('#practice-foreign')
 const practiceTranslating = document.querySelector('#practice-translating')
-const startEndPositionsWrapper = document.querySelector('#settings-wrapper')
+const settingsBlockWrapper = document.querySelector('#settings-wrapper')
 const startPointTextInput = document.querySelector('#start-point-text')
 const startPointRangeInput = document.querySelector('#start-point-range')
 const endPointTextInput = document.querySelector('#end-point-text')
@@ -221,13 +221,13 @@ endPointTextInput.addEventListener('input', () => {
 })
 
 settingsButton.addEventListener('click', () => {
-    startEndPositionsWrapper.classList.toggle('js-hide')
+    settingsBlockWrapper.classList.toggle('js-hide')
 })
 
 startEndPositionsButton.addEventListener('click', (event) => {
     event.preventDefault()
     wordsOrder = document.querySelector('input[name="words-order"]:checked').value
-    startEndPositionsWrapper.classList.toggle('js-hide')
+    settingsBlockWrapper.classList.toggle('js-hide')
     startWord = Number(startPointTextInput.value)
     endWord = Number(endPointTextInput.value)
     wordsOrderNumbers = []
