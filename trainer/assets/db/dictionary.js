@@ -779,7 +779,7 @@ const wordsList = [
     }, {
         word: "fumigation",
         translation: "дезинфекция, окуривание",
-        transcription: "ˌfyo͞omə'ɡāSH(ə)n",
+        transcription: "ˌfyo͞omə'gāSH(ə)n",
         rate: 1,
         success: 0,
         statistics: []
@@ -1080,7 +1080,7 @@ const wordsList = [
     }, {
         word: "auxiliary",
         translation: "вспомогательный",
-        transcription: "ôɡ'zilyərē",
+        transcription: "ôg'zilyərē",
         rate: 1,
         success: 0,
         statistics: []
@@ -1185,7 +1185,7 @@ const wordsList = [
     }, {
         word: "to struggle",
         translation: "бороться, борьба",
-        transcription: "to͞o 'strəɡəl",
+        transcription: "to͞o 'strəgəl",
         rate: 1,
         success: 0,
         statistics: []
@@ -1315,8 +1315,218 @@ const wordsList = [
         rate: 1,
         success: 0,
         statistics: []
+    }, {
+        word: "to envy",
+        translation: "зависть, завидовать",
+        transcription: "to͞o 'envē",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "precipitation",
+        translation: "осадки, атмосферные осадки",
+        transcription: "prə/sipə'tāSH(ə)n",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "wildfire",
+        translation: "лесной пожар",
+        transcription: "'wīld,fī(ə)r",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "shortage",
+        translation: "нехватка, дефицит",
+        transcription: "'SHôrdij",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to maintain",
+        translation: "поддерживать, сохранять",
+        transcription: "to͞o mān'tān",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "influx",
+        translation: "приток, наплыв",
+        transcription: "'in,fləks",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "resentful",
+        translation: "обиженный, обидчивый",
+        transcription: "rə'zentfəl",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to offend",
+        translation: "обижать, оскорблять, задевать",
+        transcription: "to͞o ə'fend",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to homesick",
+        translation: "тосковать / тоска / тоскующий по дому",
+        transcription: "to͞o 'hōm,sik",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "disappointed",
+        translation: "расстроенный, разочарованный",
+        transcription: ",disə'poin(t)əd",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "guilty",
+        translation: "виновный",
+        transcription: "'giltē",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "grateful",
+        translation: "благодарный",
+        transcription: "'grātfəl",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "stunned",
+        translation: "ошеломленный",
+        transcription: "stənd",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "delighted",
+        translation: "восхищенный",
+        transcription: "də'līdəd",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "desperate",
+        translation: "отчаянный, безнадежный",
+        transcription: "'desp(ə)rət",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "devastated",
+        translation: "потрясенный, опустошенный",
+        transcription: "'devə,stāted",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "horrified",
+        translation: "в ужасе",
+        transcription: "'härəfīd",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "overwhelmed",
+        translation: "переполненный чувствами, перегруженный",
+        transcription: ",əʊvə'welmd",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "astonished",
+        translation: "пораженный, изумленный",
+        transcription: "ə'stänəSHt",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "stiff",
+        translation: "жесткий, тугой",
+        transcription: "stif",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "shattered",
+        translation: "разбитый",
+        transcription: "'SHadərd",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "gutted",
+        translation: "выпотрошенный",
+        transcription: "'gʌtid",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "forger",
+        translation: "фальсификатор, фальшивомонетчик",
+        transcription: "'fôrjər",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to counterfeit",
+        translation: "подделывать, поддедка, фальшивка",
+        transcription: "'kaʊntərfit",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "renown",
+        translation: "известность, слава",
+        transcription: "rə'noun",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "contented",
+        translation: "довольный",
+        transcription: "kən'ten(t)əd",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "gloomy",
+        translation: "хмурый, мрачный, угрюмый",
+        transcription: "'glo͞omē",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to wind up",
+        translation: "заводить (механизм), завершать",
+        transcription: "to͞o waind əp",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to hog",
+        translation: "заграбастать, прибрать к рукам",
+        transcription: "to͞o hôg",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "deluge",
+        translation: "наводнение, поток, потоп",
+        transcription: "'delyo͞o(d)ZH",
+        rate: 1,
+        success: 0,
+        statistics: []
     }
-    // , {
+    //     , {
     //     word: "",
     //     translation: "",
     //     transcription: "",

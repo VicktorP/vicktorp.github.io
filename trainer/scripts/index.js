@@ -1,9 +1,9 @@
 import wordsList from '../assets/db/dictionary.js'
-import { debounce, addTag, removeTag, hideTag, showTag } from '../assets/helpers/index.js'
+import { debounce, addBlock, removeBlock, hideBlock, showBlock, clearList, randNumber } from '../assets/helpers/index.js'
 
 const container = document.querySelector('#container')
 const appChoise = document.querySelector('#app-choice')
-const buttonsWrapper = document.querySelector('#buttons-wrapper')
+const buttonsNextPrevBlock = document.querySelector('#buttons-wrapper')
 const headerButtonsBlock = document.querySelector('#header-buttons')
 const homeButton = document.querySelector('#button-home')
 const settingsButton = document.querySelector('#button-settings')
@@ -22,21 +22,23 @@ const endPointRangeInput = document.querySelector('#end-point-range')
 const startEndPositionsButton = document.querySelector('#settings-button')
 
 const showedWordsNumbers = []
-let activeModeId = ''
+let activeModeName = ''
 let startWord = 0
 let endWord = 0
 let wordsOrder = 'straight'
 let wordsOrderNumbers = []
 let activeWordIndex = 0
 
-document.body.height = window.innerHeight
 
-startPointRangeInput.setAttribute('max', wordsList.length)
-endPointRangeInput.setAttribute('max', wordsList.length)
-endPointTextInput.value = wordsList.length
-endPointRangeInput.value = wordsList.length
-
-const randNumber = () => Math.round(startWord + Math.random() * (endWord - startWord))
+const startInit = () => {
+    document.body.height = window.innerHeight
+    startPointRangeInput.setAttribute('max', wordsList.length)
+    endPointRangeInput.setAttribute('max', wordsList.length)
+    startPointTextInput.value = 1
+    endPointTextInput.value = wordsList.length
+    startPointRangeInput.value = 1
+    endPointRangeInput.value = wordsList.length
+}
 
 const checkPrevButton = () => {
     if (showedWordsNumbers.length > 1) {
@@ -73,7 +75,7 @@ const fillBlock = (number) => {
 const showNextStudyWord = (wordNumber) => {
     let number
     if (wordsOrder === 'random') {
-        number = wordNumber ? wordNumber : randNumber()
+        number = wordNumber ? wordNumber : randNumber(startWord, endWord)
     } else if (wordsOrder === 'straight') {
         if (endWord === 0) {
             for (let i = 0; i < wordsList.length; i++) {
@@ -94,11 +96,9 @@ const showNextStudyWord = (wordNumber) => {
         }
     }
     console.log(number)
+    console.log(showedWordsNumbers)
     fillBlock(number)
     showedWordsNumbers.push(number)
-    
-    
-    
 }
 
 const showNextStudyWordPaused =  debounce(() => {
@@ -107,9 +107,9 @@ const showNextStudyWordPaused =  debounce(() => {
 }, 200);
 
 const studying = () => {
-    activeModeId = '#app-learning'
-    showedWordsNumbers.length = 0
-    addTag('#app-learning')
+    activeModeName = '#app-learning'
+    clearList(showedWordsNumbers)
+    addBlock(activeModeName)
     showNextStudyWord()
     next.disabled = false
     next.addEventListener('click', () => {
@@ -126,12 +126,12 @@ const studying = () => {
 }
 
 const practicing = () => {
-    activeModeId = '#app-practicing'
+    activeModeName = '#app-practicing'
     showedWordsNumbers.length = 0
     practiceForeign.value = ''
     checkNextButton()
-    addTag('#app-practicing')
-    let number = randNumber()
+    addBlock('#app-practicing')
+    let number = randNumber(startWord, endWord)
     practiceTranslating.innerHTML = wordsList[number].translation
     practiceForeign.addEventListener('input',() => {
         checkNextButton()
@@ -139,7 +139,7 @@ const practicing = () => {
     next.addEventListener('click', () => {
         if (practiceForeign.value.trim().toLowerCase() === wordsList[number].word.trim().toLowerCase()) {
             showedWordsNumbers.push(number)
-            number = randNumber()
+            number = randNumber(startWord, endWord)
             practiceTranslating.innerHTML = wordsList[number].translation
             practiceForeign.value = ''
             checkPrevButton()
@@ -149,14 +149,15 @@ const practicing = () => {
 }
 
 const start = (mode) => {
-    removeTag('#app-choice')
+    startInit()
+    removeBlock('#app-choice')
     if (mode === 'learn') {
         studying()        
     } else if (mode === 'practice') {
         practicing()
     }
-    showTag(headerButtonsBlock)
-    showTag(buttonsWrapper)
+    showBlock(headerButtonsBlock)
+    showBlock(buttonsNextPrevBlock)
     checkPrevButton()
 }
 
@@ -165,11 +166,10 @@ appChoise.addEventListener('click', (event) => {
 })
 
 homeButton.addEventListener('click', () => {
-    addTag('#app-choice')
-    removeTag(activeModeId)
-    hideTag(homeButton)
-    hideTag(buttonsWrapper)
-    hideTag(settingsButton)
+    removeBlock(activeModeName)
+    addBlock('#app-choice')
+    hideBlock(headerButtonsBlock)
+    hideBlock(buttonsNextPrevBlock)
 })
 
 practiceForeign.addEventListener('focus',() => {

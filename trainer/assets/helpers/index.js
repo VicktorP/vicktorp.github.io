@@ -1,11 +1,13 @@
 import debounce from './debounce.js'
-import {addTag, removeTag, hideTag, showTag} from './tagViewing.js'
+import {addBlock, removeBlock, hideBlock, showBlock, clearList, randNumber} from './functions.js'
 
 
 export {
     debounce,
-    addTag, 
-    removeTag, 
-    hideTag, 
-    showTag
+    addBlock, 
+    removeBlock, 
+    hideBlock, 
+    showBlock,
+    clearList,
+    randNumber
 }

@@ -11,10 +11,10 @@
     <div class="container" id="container">
         <div class="header-button-wrapper">
             <div class="header-buttons opacity-hide" id="header-buttons">
-                <button class="button button-home" id="button-home">
+                <button class="button button-home button-disabled" id="button-home" disabled>
                     <img src="./assets/images/house.png" alt="image">
                 </button>
-                <button class="button button-tip" id="button-settings">
+                <button class="button button-tip button-disabled" id="button-settings" disabled>
                     <img src="./assets/images/settings1.png" alt="image">
                 </button>
             </div>
@@ -31,8 +31,8 @@
                     <div class="settings__range">
                         <div class="point-inputs-block">
                             <span class="point-input-way">c</span>
-                            <input class="point-input-text" type="text" id="start-point-text" value="1">
-                            <input class="point-input-range" type="range" id="start-point-range" value="1" step="1" min="1">
+                            <input class="point-input-text" type="text" id="start-point-text">
+                            <input class="point-input-range" type="range" id="start-point-range" step="1" min="1">
                         </div>
                         <div class="point-inputs-block">
                             <span class="point-input-way">по</span>
@@ -69,10 +69,10 @@
             </div>
         </div>
         <div class="buttons-wrapper opacity-hide" id="buttons-wrapper">
-            <button class="button" id="previous">
+            <button class="button button-disabled" id="previous" disabled>
                 <img src="./assets/images/arrowLeft.png" alt="image">
             </button>
-            <button class="button" id="next">
+            <button class="button button-disabled" id="next" disabled>
                 <img src="./assets/images/arrowRight.png" alt="image">
             </button>
         </div>
