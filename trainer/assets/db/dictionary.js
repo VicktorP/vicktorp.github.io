@@ -1525,8 +1525,64 @@ const wordsList = [
         rate: 1,
         success: 0,
         statistics: []
+    }, {
+        word: "spare",
+        translation: "запасной, свободный, лишний",
+        transcription: "sper",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "flat",
+        translation: "плоский, плашмя, квартира",
+        transcription: "flat",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "honeymoon",
+        translation: "медовый месяц",
+        transcription: "'hənē,mo͞on",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "guess what",
+        translation: "представь, знаешь что…",
+        transcription: "ges (h)wət",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "",
+        translation: "",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "",
+        translation: "",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "",
+        translation: "",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "",
+        translation: "",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
     }
-    //     , {
+    //, {
     //     word: "",
     //     translation: "",
     //     transcription: "",
