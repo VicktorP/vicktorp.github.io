@@ -29,6 +29,7 @@ let wordsOrder = 'straight'
 let wordsOrderNumbers = []
 let activeWordIndex = 0
 
+document.oncontextmenu = function (){return false}
 
 const startInit = () => {
     document.body.height = window.innerHeight
@@ -95,8 +96,6 @@ const showNextStudyWord = (wordNumber) => {
             activeWordIndex = 0
         }
     }
-    console.log(number)
-    console.log(showedWordsNumbers)
     fillBlock(number)
     showedWordsNumbers.push(number)
 }
