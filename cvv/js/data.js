@@ -93,10 +93,7 @@ const data = {
         date: "09.2000 - 06.2005",
         description: "Qualification - specialist"
       }
-    ],
-    birthday: "Birthday: 04/21/1983",
-    drLicense: "Driver's License: class B",
-    relocate: "I'm able to relocate to any city"
+    ]
   },
   UKR: {
     stress: "Стрессостійкість",
@@ -192,10 +189,7 @@ const data = {
         date: "09.2000 - 06.2005",
         description: "Кваліфікація - спеціаліст"
       }
-    ],
-    birthday: "Народився: 21.04.1983",
-    drLicense: "Водійське посвідчення кат.В",
-    relocate: "Готовий до переїзду до будь-якого міста"
+    ]
   },
   RU: {
     stress: "Стрессоустойчивость",
@@ -291,9 +285,6 @@ const data = {
         date: "09.2000 - 06.2005",
         description: "квалификация - специалист"
       }
-    ],
-    birthday: "Родился: 21.04.1983",
-    drLicense: "Водительское удостоверение кат.В",
-    relocate: "Готов к переезду в любой город"
+    ]
   }
 }

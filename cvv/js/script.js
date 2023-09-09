@@ -65,13 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
         <h2 class="stage-title">${data[lang].myEducation}</h2>
         ${renderStageInfo(data[lang].education)}
       </section>
-      <section class="about-me">
-        <p>
-        ${data[lang].birthday} <br />
-        ${data[lang].drLicense} <br />
-        ${data[lang].relocate}
-        </p>
-      </section>
     `;
   }
 
