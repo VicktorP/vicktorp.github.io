@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- <html lang="en"> -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,22 +10,39 @@
 <body>
     <div class="container" id="container">
         <div class="header-button-wrapper">
-            <div class="header-buttons opacity-hide" id="header-buttons">
-                <button class="button button-home button-disabled" id="button-home" disabled>
+            <div class="header-buttons" id="header-buttons">
+                <button class="button button-home button-disabled" id="button-home">
                     <img src="./assets/images/house.png" alt="image">
                 </button>
-                <button class="button button-tip button-disabled" id="button-settings" disabled>
+                <button class="button button-tip button-disabled" id="button-settings">
                     <img src="./assets/images/settings1.png" alt="image">
                 </button>
             </div>
             <form class="settings-wrapper js-hide" id="settings-wrapper">
-                <div class="settings__wrap-for-style">
-                    <div class="settings__order">
+                <div class="setting-group">
+                    <div class="setting-group-header">
+                        <div class="setting-group-image-wrapper">
+                            <img class="setting-group-image" src="./assets/images/user.png" alt="settingsGroupIcon">
+                        </div>
+                        <div class="setting-group-line"></div>
+                    </div>
+                    <button class="simple-button" id="to-change-password">change password</button>
+                    <button class="simple-button" id="to-delete-user">delete user</button>
+                    <button class="simple-button" id="logout">logout</button>
+                </div>
+                <div class="setting-group">
+                    <div class="setting-group-header">
+                        <div class="setting-group-image-wrapper">
+                            <img class="setting-group-image" src="./assets/images/book3.png" alt="settingsGroupIcon">
+                        </div>
+                        <div class="setting-group-line"></div>
+                    </div>
+                    <!-- <div class="settings__order">
                         <label class="order-point">
-                            <input type="radio" name="words-order" id="" value="straight" checked> по порядку
+                            <input type="radio" name="words-order" id="smth1" value="straight" checked> по порядку
                         </label>
                         <label class="order-point">
-                            <input type="radio" name="words-order" id="" value="random"> в разброс
+                            <input type="radio" name="words-order" id="smth2" value="random"> в разброс
                         </label>
                     </div>
                     <div class="settings__range">
@@ -39,25 +56,79 @@
                             <input class="point-input-text" type="text" id="end-point-text">
                             <input class="point-input-range" type="range" id="end-point-range" step="1" min="2">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-                <button class="settings-button button" id="settings-button">
+                <button class="settings-button button" id="apply-settings-button">
                     <img src="./assets/images/OK.png" alt="okButton">
                 </button>
             </form>
         </div>
-        <div class="app-choice cards-wrapper" id="app-choice">
-            <div class="card" data-id="learn">Обучение</div>
-            <div class="card" data-id="practice">Тренировка</div>
+        <div class="autorisation cards-wrapper" id="autorisation">
+            <button class="simple-button" id="new-registration">new user</button>
+            <button class="simple-button" id="login">login</button>
         </div>
-        <div class="cards-wrapper js-hide" id="app-learning">
+        <div class="registration cards-wrapper js-hide" id="registration-form">
+            <input class="autorisation-input" type="text" placeholder="your name" id="new-user-name">
+            <input class="autorisation-input" type="email" placeholder="your email" id="new-user-email">
+            <input class="autorisation-input" type="password" placeholder="password" id="new-user-password">
+            <button class="simple-button" id="create-user">create user</button>
+            <button class="simple-button back-button" id="registration-back">back</button>
+        </div>
+        <div class="login cards-wrapper js-hide" id="login-form">
+            <input class="autorisation-input" type="text" placeholder="your name" id="login-user-name">
+            <input class="autorisation-input" type="password" placeholder="password" id="login-user-password">
+            <button class="simple-button" id="login-user">login</button>
+            <button class="simple-button" id="to-password-recovery">forgot password</button>
+            <button class="simple-button back-button" id="login-back">back</button>
+        </div>
+        <div class="change-password cards-wrapper js-hide" id="change-password-form">
+            <input class="autorisation-input" type="password" placeholder="old password" id="change-password-old">
+            <input class="autorisation-input" type="password" placeholder="new password" id="change-password-new">
+            <button class="simple-button" id="change-password">change password</button>
+            <button class="simple-button back-button" id="change-back">back</button>
+        </div>
+        <div class="user-check cards-wrapper js-hide" id="user-check-form">
+            <input class="autorisation-input" type="text" placeholder="your name" id="user-check-name">
+            <input class="autorisation-input" type="email" placeholder="your email" id="user-check-email">
+            <button class="simple-button" id="user-check">check user</button>
+            <button class="simple-button back-button" id="user-check-back">back</button>
+        </div>
+        <div class="password-recovery cards-wrapper js-hide" id="password-recovery-form">
+            <input class="autorisation-input" type="text" id="password-recovery-name" disabled>
+            <input class="autorisation-input" type="password" placeholder="your new password" id="password-recovery-password">
+            <input class="autorisation-input" type="password" placeholder="repeat your new password" id="password-recovery-password-repeat">
+            <button class="simple-button" id="password-recovery">recovery password</button>
+            <button class="simple-button back-button" id="password-recovery-back">back</button>
+        </div>
+        <div class="delete-user cards-wrapper js-hide" id="delete-user-form">
+            <input class="autorisation-input" type="password" placeholder="password" id="delete-password">
+            <button class="simple-button" id="delete-user">delete user</button>
+            <button class="simple-button back-button" id="delete-back">back</button>
+        </div>
+        <div class="app-choice cards-wrapper js-hide" id="app-choice">
+            <button class="simple-button" data-id="learn" id="to-learn">learn</button>
+            <button class="simple-button" data-id="practice" id="to-practice">practice</button>
+        </div>
+        <div class="app-learning cards-wrapper js-hide" id="app-learning-wrapper">
             <div class="card" id="learn-foreign">
                 <p id="learn-foreign-word"></p>
                 <p class="learn-foreign-transcription" id="learn-foreign-transcription"></p>
             </div>
             <div class="card" id="learn-translating"></div>
         </div>
-        <div class="cards-wrapper js-hide" id="app-practicing">
+
+
+        <div class="new-word cards-wrapper js-hide" id="new-word-form">
+            <input class="autorisation-input" type="text" placeholder="word" id="new-word-word">
+            <input class="autorisation-input" type="text" placeholder="translation" id="new-word-translation">
+            <input class="autorisation-input" type="text" placeholder="transcription" id="new-word-transcription">
+            <button class="simple-button" id="new-word-add">add word</button>
+            <button class="simple-button back-button" id="new-word-back">back</button>
+        </div>
+
+
+
+        <!-- <div class="cards-wrapper js-hide" id="app-practicing">
                 <div class="card" id="practice-translating"></div>
             <div class="card">
                 <textarea
@@ -67,8 +138,8 @@
                 placeholder="Вводи ответ сюда">
             </textarea>
             </div>
-        </div>
-        <div class="buttons-wrapper opacity-hide" id="buttons-wrapper">
+        </div> -->
+        <div class="control-buttons-wrapper opacity-hide" id="control-buttons-wrapper">
             <button class="button button-disabled" id="previous" disabled>
                 <img src="./assets/images/arrowLeft.png" alt="image">
             </button>
