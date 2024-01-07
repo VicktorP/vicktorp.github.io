@@ -185,7 +185,7 @@ newUsercreateButton.addEventListener('click', () => {
             hideBlock(userRegistrationForm)
             showBlock(appChoise)
             newUserNameInput.value = ''
-            newUserPasswordInput.value = ''
+            newUserEmailnput.value = ''
             newUserPasswordInput.value = ''
             changeActiveWindow(appChoise)
         })

@@ -1554,6 +1554,405 @@ const wordsList = [
         success: 0,
         statistics: []
     }, {
+        word: "my treat",
+        translation: "я угощаю",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "point taken",
+        translation: "намек понят",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "take your time",
+        translation: "не торопись",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "that's a bummer",
+        translation: "обидно, жалко, вот облом",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "let's cut to the chase",
+        translation: "давай ближе к делу",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "get to carried away",
+        translation: "отвлекаться",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to turn down",
+        translation: "отказываться, отклонять",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to call off",
+        translation: "отменять",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to take up",
+        translation: "начинать делать что-то",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "come across",
+        translation: "наткнуться",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "I'm beat",
+        translation: "я очень устал",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "that's a no-brainer",
+        translation: "максимально очевидно",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "keep me posted",
+        translation: "держи меня в курсе",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "hit me up",
+        translation: "свяжись со мной, маякни мне",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "zip up",
+        translation: "застегнуть молнию",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "help yourself",
+        translation: "угощайся",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "designated",
+        translation: "назначенный",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "rent free",
+        translation: "занимать мысли, сознание",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "jeepers creepers",
+        translation: "эмоция удивления, \"черт возьми\"",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "cat got your tonge?",
+        translation: "язык прогнлотил?",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "lit",
+        translation: "классная, крутая вечеринка. ",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "bring someone to heel",
+        translation: "приструнить, подчинить приказам",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "tough",
+        translation: "жесткий, тяжелый",
+        transcription: "təf",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "though",
+        translation: "хотя, однако",
+        transcription: "T͟Hō",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "through",
+        translation: "через, сквозь",
+        transcription: "THro͞o",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "thought",
+        translation: "мысль. думал",
+        transcription: "THôt",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "thorough",
+        translation: "тщательный, подробный",
+        transcription: "'THərō",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "throughout",
+        translation: "через, повсюду, на всем протяжении",
+        transcription: "THro͞o'out",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to pull over",
+        translation: "останавливаться",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to be into it",
+        translation: "очень нравиться",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to make out",
+        translation: "очень сильно, сексуально целоваться",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "put a pin in it",
+        translation: "отметить точку и вернуться к обсуждению позже",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "severe",
+        translation: "серьезный, строгий, тяжелый, резкий, жестокий",
+        transcription: "sə'vir",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "suck up",
+        translation: "подлиза, подхалим, льстец",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to take it back a notch",
+        translation: "притормозить, сбросить обороты, не делать столь интенсивно",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "likewise",
+        translation: "взаимно",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "my bad",
+        translation: "мой косяк, мой залет, я сделал неправильно",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "like what?",
+        translation: "типа чего? что например?",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "pretty much",
+        translation: "почти, практически",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "as far as I ...",
+        translation: "насколько я ...",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "subtle",
+        translation: "тонкий, нежный, утонченный",
+        transcription: "'sədl",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "genuine",
+        translation: "подлинный, настоящий, истинный",
+        transcription: "'jenyo͞oən",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "thoroughly",
+        translation: "тщательно, основательно, до конца",
+        transcription: "'THərəlē",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "keep the change",
+        translation: "сдачи не надо",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "keep it down",
+        translation: "сделай тише",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "veg out",
+        translation: "быть как овощ, ниче не делать",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "by accident",
+        translation: "случайно",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "by heart",
+        translation: "наизусть, на память",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "by and large",
+        translation: "в общем и целом",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "by mistake",
+        translation: "по ошибке",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "by the way",
+        translation: "кстати",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "my go-to",
+        translation: "мой привычный, мой любимый",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "turn out",
+        translation: "оказаться (чем-то)",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "turn down",
+        translation: "отказать",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "turn into",
+        translation: "превращаться",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "for good",
+        translation: "навсегда",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "",
+        translation: "",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
         word: "",
         translation: "",
         transcription: "",
@@ -1582,14 +1981,6 @@ const wordsList = [
         success: 0,
         statistics: []
     }
-    //, {
-    //     word: "",
-    //     translation: "",
-    //     transcription: "",
-    //     rate: 1,
-    //     success: 0,
-    //     statistics: []
-    // }
 ]
 
 export default wordsList

@@ -1,10 +1,13 @@
-const { User } = require('../models/User.js')
-const { Word } = require('../models/Word.js')
+const nodemailer = require("nodemailer")
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
+// const NODE_TLS_REJECT_UNAUTHORIZED='0'
+
+const { User } = require('../models/User.js')
+const { Word } = require('../models/Word.js')
 
 const createUser = async (req, res, next) => {
-    if (!req.body.userName || !req.body.password || !req.body.userEmail) {
+    if (!req.body.userName || !req.body.userEmail || !req.body.password) {
         return res.status(500).send({
             message: 'You must fill all the necessary fields', 
             status: 500
@@ -18,7 +21,7 @@ const createUser = async (req, res, next) => {
             message: 'Email isn\'t correct format', 
             status: 500
         })
-    }    
+    }
 
     const user = new User({
         userName,
@@ -29,20 +32,31 @@ const createUser = async (req, res, next) => {
     await User.findOne({userName})
         .then(result => {
             if (result) {
-                return res.status(500).send({
+                return res.status(200).send({
                     message: 'User already exist', 
                     status: 500
                 })
-            } else {
-                user.save()
-                    .then(saved => res.status(200).json({
-                        message: `User ${userName} has been created successfully`, 
-                        status: 200
-                    }))
-                    .catch(err => next(err))
             }
         }
     )
+
+    await User.findOne({userEmail})
+        .then(result => {
+            if (result) {
+                return res.status(500).send({
+                    message: 'This email already used', 
+                    status: 500
+                })
+            }
+        }
+    )
+
+    user.save()
+        .then(saved => res.status(200).json({
+            message: `User ${userName} has been created successfully`, 
+            status: 200
+        }))
+        .catch(err => next(err))
 }
 
 const loginUser = async (req, res, next) => {
@@ -54,7 +68,6 @@ const loginUser = async (req, res, next) => {
     }
 
     const { userName, password } = req.body
-    console.log(process.env.EMAIL_HOST)
 
     const user = await User.findOne({ userName })
 
@@ -73,6 +86,31 @@ const loginUser = async (req, res, next) => {
     }
 
     if ( user && await bcrypt.compare(String(password), String(user.password)) ) {
+
+        let config = {
+            service: 'gmail',
+            auth: {
+              user: 'pritulyukv@gmail.com',
+              pass: 'lppniwruxpgraoyf'
+            }
+        }
+
+        const transporter = nodemailer.createTransport(config)
+
+            async function main() {
+                const info = await transporter.sendMail({
+                from: '"Fred Foo 👻" <pritulyukv@gmail.com>', // sender address
+                to: "pritulyukv@gmail.com", // list of receivers
+                subject: "Hello ✔", // Subject line
+                text: "Hello world?", // plain text body
+                html: "<b>Hello world?</b>", // html body
+                });
+            
+                console.log("Message sent: %s", info.messageId);
+            }
+          
+          main().catch(console.error)
+
         const payload = { userName: user.userName, userId: user._id }
         const jwtToken = jwt.sign(payload, 'secret-jwt-key')
         return res.json({
@@ -127,12 +165,10 @@ const checkUser = async (req, res, next) => {
     })
 }
 
-
-
 const signUserPassword = async (req, res, next) => {
     if (!req.body.userName || !req.body.userPassword) {
-        console.log('userName - ', req.body.userName)
-        console.log('userPassword - ', req.body.userPassword)
+        // console.log('userName - ', req.body.userName)
+        // console.log('userPassword - ', req.body.userPassword)
         return res.status(500).send({
             message: 'You must fill all the necessary fields', 
             status: 500
@@ -250,4 +286,3 @@ module.exports = {
 }
 
 //add .env to work
-// add locale storage to protect against unlogged during page reload
