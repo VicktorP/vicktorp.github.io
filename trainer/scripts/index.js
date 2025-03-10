@@ -1,14 +1,15 @@
-import { debounce, hideBlock, showBlock, isLogged } from '../assets/helpers/index.js'
+import { debounce, hideBlock, showBlock, isLogged, randNumber } from '../assets/helpers/index.js'
+import wordsList from '../assets/db/dictionary.js'
 
+const userAutorisationJoice = document.querySelector('#autorisation-joice')
 const appChoise = document.querySelector('#app-choice')
 const homeButton = document.querySelector('#button-home')
 const settingsButton = document.querySelector('#button-settings')
 const settingsBlockWrapper = document.querySelector('#settings-wrapper')
 const applySettingsButton = document.querySelector('#apply-settings-button')
-const userAutorisation = document.querySelector('#autorisation')
 const newUserRegistrationButton = document.querySelector('#new-registration')
 const userRegistrationForm = document.querySelector('#registration-form')
-const newUsercreateButton = document.querySelector('#create-user')
+const newUserCreateButton = document.querySelector('#create-user')
 const newUserNameInput = document.querySelector('#new-user-name')
 const newUserEmailnput = document.querySelector('#new-user-email')
 const newUserPasswordInput = document.querySelector('#new-user-password')
@@ -40,13 +41,13 @@ const logoutButton = document.querySelector('#logout')
 const backButtons = document.querySelectorAll('.back-button')
 
 // const container = document.querySelector('#container')
-// const controlButtonsWrapper = document.querySelector('#control-buttons-wrapper')
+const controlButtonsWrapper = document.querySelector('#control-buttons-wrapper')
 // const headerButtonsBlock = document.querySelector('#header-buttons')
-// const prev = document.querySelector('#previous')
-// const next = document.querySelector('#next')
-// const learnForeignWord = document.querySelector('#learn-foreign-word')
-// const learnForeignTranscription = document.querySelector('#learn-foreign-transcription')
-// const learnTranslating = document.querySelector('#learn-translating')
+const prev = document.querySelector('#previous')
+const next = document.querySelector('#next')
+const learnForeignWord = document.querySelector('#learn-foreign-word')
+const learnForeignTranscription = document.querySelector('#learn-foreign-transcription')
+const learnTranslating = document.querySelector('#learn-translating')
 // const practiceForeign = document.querySelector('#practice-foreign')
 // const practiceTranslating = document.querySelector('#practice-translating')
 // const startPointTextInput = document.querySelector('#start-point-text')
@@ -58,25 +59,22 @@ const learningButton = document.querySelector('#to-learn')
 const appLearningWrapper = document.querySelector('#app-learning-wrapper')
 
 const showedWordsNumbers = []
-let activeModeName = ''
+// let activeModeName = ''
 let startWord = 0
-let endWord = 0
+let endWord = wordsList.length
 let wordsOrder = 'straight'
 let wordsOrderNumbers = []
 let activeWordIndex = 0
-let activeWindow = userAutorisation
-let lastActiveWindow
-
-// transfer this data to .env
+let activeWindow = userAutorisationJoice
+let lastActiveWindow = userAutorisationJoice
 let authorization = ''
 
-// transfer this data to .env
 const url = {
     createUser:         'http://localhost:8080/api/users/register',
     loginUser:          'http://localhost:8080/api/users/login',
     checkUser:          'http://localhost:8080/api/users/checkuser',
     signUserPassword:   'http://localhost:8080/api/users/signpassword',
-    changePassword:     'http://localhost:8080/api/users/changepassword',
+    changePassword:     'http://localhost:8080/api/users/changepassword', 
     deleteUser:         'http://localhost:8080/api/users/delete',
     createWord:         'http://localhost:8080/api/words',
     getWords:           'http://localhost:8080/api/words',
@@ -84,7 +82,6 @@ const url = {
     deleteWord:         'http://localhost:8080/api/words/:id'
 }
 
-// transfer this data to .env
 const method = {
     post: "POST",
     get: "GET",
@@ -96,12 +93,17 @@ document.oncontextmenu = function () { return false }
 
 const startInit = () => {
     document.body.height = window.innerHeight
-    if (isLogged()) {
-        authorization = localStorage.getItem("userToken")
-        hideBlock(userAutorisation)
-        showBlock(appChoise)
-        changeActiveWindow(appChoise)
-    }
+    // if (isLogged()) {
+    //     authorization = localStorage.getItem("userToken")
+    //     hideBlock(userAutorisationJoice)
+    //     showBlock(appChoise)
+    //     changeActiveWindow(appChoise)
+    // }
+
+    hideBlock(userAutorisationJoice)
+    showBlock(appChoise)
+    changeActiveWindow(appChoise)
+
     // startPointRangeInput.setAttribute('max', wordsList.length)
     // endPointRangeInput.setAttribute('max', wordsList.length)
     // startPointTextInput.value = 1
@@ -121,12 +123,13 @@ const returnToMainScreen = () => {
         wereActiveInputs.forEach(input => input.value = '')
     }
 
-    if ( activeWindow !== userAutorisation ) {
+    if ( activeWindow !== userAutorisationJoice ) {
         hideBlock(activeWindow)
+        hideBlock(controlButtonsWrapper)
         if (isLogged()) {
             changeActiveWindow(appChoise)
         } else {
-            changeActiveWindow(userAutorisation)
+            changeActiveWindow(userAutorisationJoice)
         }
         showBlock(activeWindow)
     }
@@ -151,12 +154,12 @@ const sendRequest = async (method, URL, data, headers) => {
 backButtons.forEach(backButton => backButton.addEventListener('click', () => returnToMainScreen()))
 
 newUserRegistrationButton.addEventListener('click', () => {
-    hideBlock(userAutorisation)
+    hideBlock(userAutorisationJoice)
     showBlock(userRegistrationForm)
     changeActiveWindow(userRegistrationForm)
 })
 
-newUsercreateButton.addEventListener('click', () => {
+newUserCreateButton.addEventListener('click', () => {
     const data = {
         userName: newUserNameInput.value,
         password: newUserPasswordInput.value,
@@ -193,7 +196,7 @@ newUsercreateButton.addEventListener('click', () => {
 })
 
 userLoggingButton.addEventListener('click', () => {
-    hideBlock(userAutorisation)
+    hideBlock(userAutorisationJoice)
     showBlock(userLoginForm)
     changeActiveWindow(userLoginForm)
 })
@@ -297,8 +300,8 @@ passwordRecoveryButton.addEventListener('click', () => {
                 window.alert(res.message)
                 if (res.status === 200) {
                     hideBlock(passwordRecoveryForm)
-                    showBlock(userAutorisation)
-                    changeActiveWindow(userAutorisation)
+                    showBlock(userAutorisationJoice)
+                    changeActiveWindow(userAutorisationJoice)
                 }
             })
     }
@@ -324,7 +327,7 @@ deleteUserButton.addEventListener('click', () => {
             window.alert(res.message)
             if (res.status === 200) {
                 hideBlock(deleteUserForm)
-                showBlock(userAutorisation)
+                showBlock(userAutorisationJoice)
                 localStorage.removeItem("userName")
                 localStorage.removeItem("userToken")
                 authorization = ''
@@ -352,12 +355,17 @@ settingsBlockWrapper.addEventListener('click', (event) => {
 settingsButton.addEventListener('click', () => {
     settingsBlockWrapper.classList.toggle('js-hide')
 
-    if ( activeWindow !== settingsBlockWrapper ) {
+    if (activeWindow !== settingsBlockWrapper) {
         hideBlock(activeWindow)
+        hideBlock(controlButtonsWrapper)
         changeActiveWindow(settingsBlockWrapper)
-    } else {
+    } else if (lastActiveWindow === appLearningWrapper) {
+        showBlock(controlButtonsWrapper)
         showBlock(lastActiveWindow)
         changeActiveWindow(lastActiveWindow)
+    } else {
+        showBlock(lastActiveWindow)
+        changeActiveWindow(lastActiveWindow)  
     }
 
     if (!isLogged()) {
@@ -381,9 +389,11 @@ applySettingsButton.addEventListener('click', () => {
 
 learningButton.addEventListener('click', () => {
     hideBlock(appChoise)
-    showBlock(appLearningWrapper)
+    showBlock(appLearningWrapper) 
     changeActiveWindow(appLearningWrapper)
-    document.querySelector('#control-buttons-wrapper').classList.remove('opacity-hide')
+    showBlock(controlButtonsWrapper)
+    studying()
+    checkPrevButton()
 })
 
 const start = () => {
@@ -399,88 +409,82 @@ const start = () => {
     // checkPrevButton()
 }
 
-// const checkPrevButton = () => {
-//     if (showedWordsNumbers.length > 1) {
-//         prev.disabled = false
-//     } else {
-//         prev.disabled = true
-//     }
-// }
+const checkPrevButton = () => {
+    if (showedWordsNumbers.length > 1) {
+        prev.disabled = false
+    } else {
+        prev.disabled = true
+    }
+}
 
-// const checkNextButton = () => {
-//     if (practiceForeign.value.length > 0) {
-//         next.disabled = false
-//     } else {
-//         next.disabled = true
-//     }
-// }
+const checkNextButton = () => {
+    if (practiceForeign.value.length > 0) {
+        next.disabled = false
+    } else {
+        next.disabled = true
+    }
+}
 
-// const fillTag = (block, number, method) => {
-//     const words = wordsList[number][method].split(' ')
-//     if (words.some(word=>word.length>16) && method!=='transcription') {
-//         block.classList.add('small-size-js')
-//     } else {
-//         block.classList.remove('small-size-js')
-//     }
-//     block.innerHTML = wordsList[number][method].toLowerCase()
-// }
+const fillTag = (block, number, method) => {
+    const words = wordsList[number][method].split(' ')
+    if (words.some(word=>word.length>16) && method!=='transcription') {
+        block.classList.add('small-size-js')
+    } else {
+        block.classList.remove('small-size-js')
+    }
+    block.innerHTML = wordsList[number][method].toLowerCase()
+}
 
-// const fillBlock = (number) => {
-//     fillTag(learnForeignWord, number, 'word')
-//     fillTag(learnForeignTranscription, number, 'transcription')
-//     fillTag(learnTranslating, number, 'translation')
-// }
+const fillBlock = (number) => {
+    fillTag(learnForeignWord, number, 'word')
+    fillTag(learnForeignTranscription, number, 'transcription')
+    fillTag(learnTranslating, number, 'translation')
+}
 
-// const showNextStudyWord = (wordNumber) => {
-//     let number
-//     if (wordsOrder === 'random') {
-//         number = wordNumber ? wordNumber : randNumber(startWord, endWord)
-//     } else if (wordsOrder === 'straight') {
-//         if (endWord === 0) {
-//             for (let i = 0; i < wordsList.length; i++) {
-//                 wordsOrderNumbers.push(i)
-//             }
-//         }
-//         if (Number.isInteger(wordNumber)) {
-//             number = wordNumber
-//             activeWordIndex -= 1
-//             if (activeWordIndex < 0) {
-//                 activeWordIndex += wordsOrderNumbers.length
-//             }
-//         } else {
-//             number = wordsOrderNumbers[activeWordIndex++]
-//         }
-//         if (activeWordIndex === wordsOrderNumbers.length) {
-//             activeWordIndex = 0
-//         }
-//     }
-//     fillBlock(number)
-//     showedWordsNumbers.push(number)
-// }
+const showStudyWord = (direction, wordNumber) => {
+    let number
+    if (wordNumber) {
+        number = wordNumber
+    } else if (wordsOrder === 'random') {
+        number = randNumber(startWord, endWord) 
+    } else if (wordsOrder === 'straight') {
+        if (showedWordsNumbers.length === 0) {
+            number = 0
+        } else {
+            number = showedWordsNumbers.length
+        }
+    }
+    
+    if (direction === 'forward') {
+        fillBlock(number)
+        showedWordsNumbers.push(number)
+    } else if (direction === 'back') {
+        showedWordsNumbers.length = showedWordsNumbers.length-1
+        fillBlock(showedWordsNumbers[showedWordsNumbers.length-1])
+    }
+}
 
-// const showNextStudyWordPaused =  debounce(() => {
-//     showNextStudyWord()
+// const showStudyWordPaused =  debounce(() => {
+//     showStudyWord()
 //     checkPrevButton()
 // }, 200);
 
-// const studying = () => {
-//     activeModeName = '#app-learning'
-//     clearList(showedWordsNumbers)
-//     addBlock(activeModeName)
-//     showNextStudyWord()
-//     next.disabled = false
-//     next.addEventListener('click', () => {
-//         showNextStudyWordPaused()
-//     })
-//     prev.addEventListener('click', () => {
-//         if (showedWordsNumbers.length > 1) {
-//             showedWordsNumbers.length = showedWordsNumbers.length-1
-//             showNextStudyWord(showedWordsNumbers[showedWordsNumbers.length-1])
-//             showedWordsNumbers.length = showedWordsNumbers.length-1
-//             checkPrevButton()
-//         }
-//     })
-// }
+const studying = () => {
+    // clearList(showedWordsNumbers)
+    showStudyWord('forward')
+    next.disabled = false
+    next.addEventListener('click', () => {
+        // showStudyWordPaused()
+        showStudyWord('forward')
+        checkPrevButton()
+    })
+    prev.addEventListener('click', () => {
+        if (showedWordsNumbers.length >= 1) {
+            showStudyWord('back')
+            checkPrevButton()
+        }  
+    })
+}
 
 // const practicing = () => {
 //     activeModeName = '#app-practicing'

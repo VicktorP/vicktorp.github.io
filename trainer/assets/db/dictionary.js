@@ -1,26 +1,5 @@
 const wordsList = [
     {
-        word: "to abuse",
-        translation: "злоупотреблять, оскорблять, плохо обращаться, браниться",
-        transcription: "to͞o ə'bju:s",
-        rate: 1,
-        success: 0,
-        statistics: []
-    }, {
-        word: "to keep up",
-        translation: "поддерживать, успевать",
-        transcription: "to͞o kēp əp",
-        rate: 1,
-        success: 0,
-        statistics: []
-    }, {
-        word: "roof",
-        translation: "крыша",
-        transcription: "ro͞of",
-        rate: 1,
-        success: 0,
-        statistics: []
-    }, {
         word: "relief",
         translation: "облегчение",
         transcription: "rə'lēf",
@@ -31,13 +10,6 @@ const wordsList = [
         word: "to pick up",
         translation: "собирать (вещи), подобрать, забрать",
         transcription: "to͞o pik up",
-        rate: 1,
-        success: 0,
-        statistics: []
-    }, {
-        word: "melting",
-        translation: "таяние, плавление, тающий",
-        transcription: "'meltiNG",
         rate: 1,
         success: 0,
         statistics: []
@@ -56,23 +28,9 @@ const wordsList = [
         success: 0,
         statistics: []
     }, {
-        word: "labour",
-        translation: "труд, работа, рабочие, трудиться",
-        transcription: "'leibər",
-        rate: 1,
-        success: 0,
-        statistics: []
-    }, {
         word: "interrogative",
         translation: "вопросительное слово, вопросительный",
         transcription: ",in(t)ə'rägədiv",
-        rate: 1,
-        success: 0,
-        statistics: []
-    }, {
-        word: "exception",
-        translation: "исключение",
-        transcription: "ik'sepSH(ə)n",
         rate: 1,
         success: 0,
         statistics: []
@@ -112,37 +70,9 @@ const wordsList = [
         success: 0,
         statistics: []
     }, {
-        word: "can afford",
-        translation: "мочь позволить",
-        transcription: "kan ə'fôrd",
-        rate: 1,
-        success: 0,
-        statistics: []
-    }, {
         word: "blank",
         translation: "пробел, пустой, бланк, прикрывать",
         transcription: "blaNGk",
-        rate: 1,
-        success: 0,
-        statistics: []
-    }, {
-        word: "bitter",
-        translation: "горький",
-        transcription: "'bidər",
-        rate: 1,
-        success: 0,
-        statistics: []
-    }, {
-        word: "because of",
-        translation: "из-за",
-        transcription: "bē'kəz əv",
-        rate: 1,
-        success: 0,
-        statistics: []
-    }, {
-        word: "average",
-        translation: "средний",
-        transcription: "'av(ə)rij",
         rate: 1,
         success: 0,
         statistics: []
@@ -287,13 +217,6 @@ const wordsList = [
         success: 0,
         statistics: []
     }, {
-        word: "annoyed",
-        translation: "раздраженный",
-        transcription: "ə'noid",
-        rate: 1,
-        success: 0,
-        statistics: []
-    }, {
         word: "frustrated",
         translation: "расстроенный",
         transcription: "'frə,strādəd",
@@ -332,13 +255,6 @@ const wordsList = [
         word: "frightened",
         translation: "испуганный",
         transcription: "'frītnd",
-        rate: 1,
-        success: 0,
-        statistics: []
-    }, {
-        word: "shy",
-        translation: "застенчивый",
-        transcription: "SHī",
         rate: 1,
         success: 0,
         statistics: []
@@ -1638,13 +1554,6 @@ const wordsList = [
         success: 0,
         statistics: []
     }, {
-        word: "keep me posted",
-        translation: "держи меня в курсе",
-        transcription: "",
-        rate: 1,
-        success: 0,
-        statistics: []
-    }, {
         word: "hit me up",
         translation: "свяжись со мной, маякни мне",
         transcription: "",
@@ -1855,6 +1764,27 @@ const wordsList = [
         success: 0,
         statistics: []
     }, {
+        word: "to keep up",
+        translation: "поддерживать, успевать",
+        transcription: "to͞o kēp əp",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to keep verb(ing)",
+        translation: "продолжать делать что-то",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "keep me posted",
+        translation: "держи меня в курсе",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
         word: "keep the change",
         translation: "сдачи не надо",
         transcription: "",
@@ -1864,6 +1794,27 @@ const wordsList = [
     }, {
         word: "keep it down",
         translation: "сделай тише",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "keep(bear) in mind",
+        translation: "помнить, не забывать",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to keep away (from)",
+        translation: "держать дистанцию от ..., держаться подальше от ...",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "to keep track of (smth)",
+        translation: "следить за чем-то",
         transcription: "",
         rate: 1,
         success: 0,
@@ -1946,8 +1897,78 @@ const wordsList = [
         success: 0,
         statistics: []
     }, {
-        word: "",
-        translation: "",
+        word: "every so often",
+        translation: "время от времени",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "sex on a stick",
+        translation: "красавчик",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "put my foot down",
+        translation: "быть принципиальным, настаивать",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "donkey's years",
+        translation: "сколько лет сколько зим",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "reminisce",
+        translation: "предаваться воспоминаниям",
+        transcription: ",remə'nis",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "I lost track of time",
+        translation: "я потерял счет времени",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "pull over",
+        translation: "съехать с дороги, перетаскивать, перетягивать",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "long story short",
+        translation: "короче говоря",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "beneath",
+        translation: "внизу, ниже, под",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "get hold of",
+        translation: "найти кого-то, получить что-то",
+        transcription: "",
+        rate: 1,
+        success: 0,
+        statistics: []
+    }, {
+        word: "potluck",
+        translation: "складчина, сбор денег или еды на общее дело",
         transcription: "",
         rate: 1,
         success: 0,

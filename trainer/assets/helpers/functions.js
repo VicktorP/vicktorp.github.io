@@ -12,10 +12,11 @@ const isLogged = () => localStorage.getItem("userName") && localStorage.getItem(
 //     list.length = 0
 // }
 
-// const randNumber = (startWord, endWord) => Math.round(startWord + Math.random() * (endWord - startWord))
+const randNumber = (startWord, endWord) => Math.round(startWord + Math.random() * (endWord - startWord))
 
 export {
     hideBlock,
     showBlock,
-    isLogged
+    isLogged,
+    randNumber
 }

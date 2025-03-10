@@ -1,7 +1,7 @@
-const nodemailer = require("nodemailer")
+require('dotenv').config()
+
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
-// const NODE_TLS_REJECT_UNAUTHORIZED='0'
 
 const { User } = require('../models/User.js')
 const { Word } = require('../models/Word.js')
@@ -23,24 +23,7 @@ const createUser = async (req, res, next) => {
         })
     }
 
-    const user = new User({
-        userName,
-        userEmail,
-        password: await bcrypt.hash(password,10)
-    })
-
-    await User.findOne({userName})
-        .then(result => {
-            if (result) {
-                return res.status(200).send({
-                    message: 'User already exist', 
-                    status: 500
-                })
-            }
-        }
-    )
-
-    await User.findOne({userEmail})
+    User.findOne({userEmail})
         .then(result => {
             if (result) {
                 return res.status(500).send({
@@ -50,6 +33,12 @@ const createUser = async (req, res, next) => {
             }
         }
     )
+
+    const user = new User({
+        userName,
+        userEmail,
+        password: await bcrypt.hash(password,10)
+    })
 
     user.save()
         .then(saved => res.status(200).json({
@@ -86,31 +75,6 @@ const loginUser = async (req, res, next) => {
     }
 
     if ( user && await bcrypt.compare(String(password), String(user.password)) ) {
-
-        let config = {
-            service: 'gmail',
-            auth: {
-              user: 'pritulyukv@gmail.com',
-              pass: 'lppniwruxpgraoyf'
-            }
-        }
-
-        const transporter = nodemailer.createTransport(config)
-
-            async function main() {
-                const info = await transporter.sendMail({
-                from: '"Fred Foo 👻" <pritulyukv@gmail.com>', // sender address
-                to: "pritulyukv@gmail.com", // list of receivers
-                subject: "Hello ✔", // Subject line
-                text: "Hello world?", // plain text body
-                html: "<b>Hello world?</b>", // html body
-                });
-            
-                console.log("Message sent: %s", info.messageId);
-            }
-          
-          main().catch(console.error)
-
         const payload = { userName: user.userName, userId: user._id }
         const jwtToken = jwt.sign(payload, 'secret-jwt-key')
         return res.json({
@@ -167,8 +131,6 @@ const checkUser = async (req, res, next) => {
 
 const signUserPassword = async (req, res, next) => {
     if (!req.body.userName || !req.body.userPassword) {
-        // console.log('userName - ', req.body.userName)
-        // console.log('userPassword - ', req.body.userPassword)
         return res.status(500).send({
             message: 'You must fill all the necessary fields', 
             status: 500
@@ -195,9 +157,6 @@ const signUserPassword = async (req, res, next) => {
         status: 400
     })
 }
-
-
-
 
 const changePassword = async (req, res, next) => {
     if (!req.body.oldPassword || !req.body.newPassword) {
